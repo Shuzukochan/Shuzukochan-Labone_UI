@@ -84,8 +84,12 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            shuzukoButton1 = new ShuzukoButton();
+            shuzukoButton2 = new ShuzukoButton();
             leftPanel.SuspendLayout();
             shuzukoPanel1.SuspendLayout();
+            shuzukoPanel6.SuspendLayout();
+            shuzukoPanel3.SuspendLayout();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
@@ -147,6 +151,7 @@
             // 
             shuzukoPanel6.BackColor = Color.White;
             shuzukoPanel6.BorderRadius = 30;
+            shuzukoPanel6.Controls.Add(shuzukoButton2);
             shuzukoPanel6.ForeColor = Color.Black;
             shuzukoPanel6.GradientAngle = 0F;
             shuzukoPanel6.GradientBottomColor = Color.FromArgb(161, 208, 250);
@@ -160,6 +165,7 @@
             // 
             shuzukoPanel3.BackColor = Color.White;
             shuzukoPanel3.BorderRadius = 30;
+            shuzukoPanel3.Controls.Add(shuzukoButton1);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 0F;
             shuzukoPanel3.GradientBottomColor = Color.FromArgb(161, 208, 250);
@@ -907,6 +913,50 @@
             label1.Text = "INFORMATION";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // shuzukoButton1
+            // 
+            shuzukoButton1.Anchor = AnchorStyles.None;
+            shuzukoButton1.BackColor = Color.White;
+            shuzukoButton1.BackgroundColor = Color.White;
+            shuzukoButton1.BorderColor = Color.White;
+            shuzukoButton1.BorderRadius = 15;
+            shuzukoButton1.BorderSize = 0;
+            shuzukoButton1.FlatAppearance.BorderSize = 0;
+            shuzukoButton1.FlatStyle = FlatStyle.Flat;
+            shuzukoButton1.ForeColor = Color.White;
+            shuzukoButton1.Image = Properties.Resources.Area1;
+            shuzukoButton1.Location = new Point(230, 0);
+            shuzukoButton1.Name = "shuzukoButton1";
+            shuzukoButton1.Size = new Size(115, 44);
+            shuzukoButton1.TabIndex = 0;
+            shuzukoButton1.TextAlign = ContentAlignment.MiddleLeft;
+            shuzukoButton1.TextColor = Color.White;
+            shuzukoButton1.TextOffsetX = 0;
+            shuzukoButton1.TextOffsetY = 0;
+            shuzukoButton1.UseVisualStyleBackColor = false;
+            // 
+            // shuzukoButton2
+            // 
+            shuzukoButton2.Anchor = AnchorStyles.None;
+            shuzukoButton2.BackColor = Color.White;
+            shuzukoButton2.BackgroundColor = Color.White;
+            shuzukoButton2.BorderColor = Color.White;
+            shuzukoButton2.BorderRadius = 15;
+            shuzukoButton2.BorderSize = 0;
+            shuzukoButton2.FlatAppearance.BorderSize = 0;
+            shuzukoButton2.FlatStyle = FlatStyle.Flat;
+            shuzukoButton2.ForeColor = Color.White;
+            shuzukoButton2.Image = Properties.Resources.Area2;
+            shuzukoButton2.Location = new Point(229, 0);
+            shuzukoButton2.Name = "shuzukoButton2";
+            shuzukoButton2.Size = new Size(115, 44);
+            shuzukoButton2.TabIndex = 1;
+            shuzukoButton2.TextAlign = ContentAlignment.MiddleLeft;
+            shuzukoButton2.TextColor = Color.White;
+            shuzukoButton2.TextOffsetX = 0;
+            shuzukoButton2.TextOffsetY = 0;
+            shuzukoButton2.UseVisualStyleBackColor = false;
+            // 
             // Begin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -922,6 +972,8 @@
             leftPanel.ResumeLayout(false);
             leftPanel.PerformLayout();
             shuzukoPanel1.ResumeLayout(false);
+            shuzukoPanel6.ResumeLayout(false);
+            shuzukoPanel3.ResumeLayout(false);
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);
             underLeftPanel.PerformLayout();
@@ -994,5 +1046,7 @@
         private ShuzukoPanel shuzukoPanel24;
         private ShuzukoPanel shuzukoPanel23;
         private ShuzukoPanel shuzukoPanel22;
+        private ShuzukoButton shuzukoButton1;
+        private ShuzukoButton shuzukoButton2;
     }
 }
