@@ -32,7 +32,9 @@
             shuzukoPanel1 = new ShuzukoPanel();
             shuzukoPanel9 = new ShuzukoPanel();
             shuzukoPanel6 = new ShuzukoPanel();
+            shuzukoButton2 = new ShuzukoButton();
             shuzukoPanel3 = new ShuzukoPanel();
+            shuzukoButton1 = new ShuzukoButton();
             shuzukoPanel5 = new ShuzukoPanel();
             shuzukoPanel4 = new ShuzukoPanel();
             shuzukoPanel2 = new ShuzukoPanel();
@@ -84,8 +86,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            shuzukoButton1 = new ShuzukoButton();
-            shuzukoButton2 = new ShuzukoButton();
             leftPanel.SuspendLayout();
             shuzukoPanel1.SuspendLayout();
             shuzukoPanel6.SuspendLayout();
@@ -161,6 +161,28 @@
             shuzukoPanel6.Size = new Size(344, 44);
             shuzukoPanel6.TabIndex = 0;
             // 
+            // shuzukoButton2
+            // 
+            shuzukoButton2.Anchor = AnchorStyles.None;
+            shuzukoButton2.BackColor = Color.White;
+            shuzukoButton2.BackgroundColor = Color.White;
+            shuzukoButton2.BorderColor = Color.White;
+            shuzukoButton2.BorderRadius = 15;
+            shuzukoButton2.BorderSize = 0;
+            shuzukoButton2.FlatAppearance.BorderSize = 0;
+            shuzukoButton2.FlatStyle = FlatStyle.Flat;
+            shuzukoButton2.ForeColor = Color.White;
+            shuzukoButton2.Image = Properties.Resources.Area2;
+            shuzukoButton2.Location = new Point(229, 0);
+            shuzukoButton2.Name = "shuzukoButton2";
+            shuzukoButton2.Size = new Size(115, 44);
+            shuzukoButton2.TabIndex = 1;
+            shuzukoButton2.TextAlign = ContentAlignment.MiddleLeft;
+            shuzukoButton2.TextColor = Color.White;
+            shuzukoButton2.TextOffsetX = 0;
+            shuzukoButton2.TextOffsetY = 0;
+            shuzukoButton2.UseVisualStyleBackColor = false;
+            // 
             // shuzukoPanel3
             // 
             shuzukoPanel3.BackColor = Color.White;
@@ -174,6 +196,28 @@
             shuzukoPanel3.Name = "shuzukoPanel3";
             shuzukoPanel3.Size = new Size(345, 44);
             shuzukoPanel3.TabIndex = 0;
+            // 
+            // shuzukoButton1
+            // 
+            shuzukoButton1.Anchor = AnchorStyles.None;
+            shuzukoButton1.BackColor = Color.White;
+            shuzukoButton1.BackgroundColor = Color.White;
+            shuzukoButton1.BorderColor = Color.White;
+            shuzukoButton1.BorderRadius = 15;
+            shuzukoButton1.BorderSize = 0;
+            shuzukoButton1.FlatAppearance.BorderSize = 0;
+            shuzukoButton1.FlatStyle = FlatStyle.Flat;
+            shuzukoButton1.ForeColor = Color.White;
+            shuzukoButton1.Image = Properties.Resources.Area1;
+            shuzukoButton1.Location = new Point(230, 0);
+            shuzukoButton1.Name = "shuzukoButton1";
+            shuzukoButton1.Size = new Size(115, 44);
+            shuzukoButton1.TabIndex = 0;
+            shuzukoButton1.TextAlign = ContentAlignment.MiddleLeft;
+            shuzukoButton1.TextColor = Color.White;
+            shuzukoButton1.TextOffsetX = 0;
+            shuzukoButton1.TextOffsetY = 0;
+            shuzukoButton1.UseVisualStyleBackColor = false;
             // 
             // shuzukoPanel5
             // 
@@ -259,7 +303,6 @@
             vectorButton.FlatAppearance.BorderSize = 0;
             vectorButton.FlatStyle = FlatStyle.Flat;
             vectorButton.ForeColor = Color.White;
-            vectorButton.Image = Properties.Resources.Vector;
             vectorButton.Location = new Point(1550, 363);
             vectorButton.Name = "vectorButton";
             vectorButton.Size = new Size(68, 68);
@@ -912,50 +955,6 @@
             label1.TabIndex = 2;
             label1.Text = "INFORMATION";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // shuzukoButton1
-            // 
-            shuzukoButton1.Anchor = AnchorStyles.None;
-            shuzukoButton1.BackColor = Color.White;
-            shuzukoButton1.BackgroundColor = Color.White;
-            shuzukoButton1.BorderColor = Color.White;
-            shuzukoButton1.BorderRadius = 15;
-            shuzukoButton1.BorderSize = 0;
-            shuzukoButton1.FlatAppearance.BorderSize = 0;
-            shuzukoButton1.FlatStyle = FlatStyle.Flat;
-            shuzukoButton1.ForeColor = Color.White;
-            shuzukoButton1.Image = Properties.Resources.Area1;
-            shuzukoButton1.Location = new Point(230, 0);
-            shuzukoButton1.Name = "shuzukoButton1";
-            shuzukoButton1.Size = new Size(115, 44);
-            shuzukoButton1.TabIndex = 0;
-            shuzukoButton1.TextAlign = ContentAlignment.MiddleLeft;
-            shuzukoButton1.TextColor = Color.White;
-            shuzukoButton1.TextOffsetX = 0;
-            shuzukoButton1.TextOffsetY = 0;
-            shuzukoButton1.UseVisualStyleBackColor = false;
-            // 
-            // shuzukoButton2
-            // 
-            shuzukoButton2.Anchor = AnchorStyles.None;
-            shuzukoButton2.BackColor = Color.White;
-            shuzukoButton2.BackgroundColor = Color.White;
-            shuzukoButton2.BorderColor = Color.White;
-            shuzukoButton2.BorderRadius = 15;
-            shuzukoButton2.BorderSize = 0;
-            shuzukoButton2.FlatAppearance.BorderSize = 0;
-            shuzukoButton2.FlatStyle = FlatStyle.Flat;
-            shuzukoButton2.ForeColor = Color.White;
-            shuzukoButton2.Image = Properties.Resources.Area2;
-            shuzukoButton2.Location = new Point(229, 0);
-            shuzukoButton2.Name = "shuzukoButton2";
-            shuzukoButton2.Size = new Size(115, 44);
-            shuzukoButton2.TabIndex = 1;
-            shuzukoButton2.TextAlign = ContentAlignment.MiddleLeft;
-            shuzukoButton2.TextColor = Color.White;
-            shuzukoButton2.TextOffsetX = 0;
-            shuzukoButton2.TextOffsetY = 0;
-            shuzukoButton2.UseVisualStyleBackColor = false;
             // 
             // Begin
             // 
