@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class Form1 : Form
+    public partial class Setting : Form
     {
-        public Form1()
+        public Setting()
         {
             InitializeComponent();
         }
