@@ -10,15 +10,9 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-<<<<<<<< HEAD:Setting.cs
-    public partial class Setting : Form
-    {
-        public Setting()
-========
     public partial class GetLocation : Form
     {
         public GetLocation()
->>>>>>>> origin/main:GetLocation.cs
         {
             InitializeComponent();
         }
