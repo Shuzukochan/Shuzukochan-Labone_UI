@@ -139,7 +139,6 @@
             playButton.FlatStyle = FlatStyle.Flat;
             playButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             playButton.ForeColor = Color.FromArgb(45, 48, 129);
-            playButton.Image = Properties.Resources.Play;
             playButton.ImageAlign = ContentAlignment.MiddleLeft;
             playButton.Location = new Point(1630, 364);
             playButton.Name = "playButton";
@@ -380,7 +379,7 @@
             shuzukoButton4.Name = "shuzukoButton4";
             shuzukoButton4.Size = new Size(234, 126);
             shuzukoButton4.TabIndex = 16;
-            shuzukoButton4.Text = "0";
+            shuzukoButton4.Text = "   GET C";
             shuzukoButton4.TextColor = Color.FromArgb(45, 48, 129);
             shuzukoButton4.TextOffsetX = 0;
             shuzukoButton4.TextOffsetY = 0;
