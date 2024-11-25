@@ -139,6 +139,7 @@
             playButton.FlatStyle = FlatStyle.Flat;
             playButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             playButton.ForeColor = Color.FromArgb(45, 48, 129);
+            playButton.Image = Properties.Resources.Play;
             playButton.ImageAlign = ContentAlignment.MiddleLeft;
             playButton.Location = new Point(1630, 364);
             playButton.Name = "playButton";

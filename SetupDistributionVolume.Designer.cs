@@ -41,6 +41,8 @@
             KingTubeAuto = new Label();
             logo = new PictureBox();
             leftPanel = new ShuzukoPanel();
+            shuzukoPanel9 = new ShuzukoPanel();
+            label10 = new Label();
             shuzukoPanel3 = new ShuzukoPanel();
             label4 = new Label();
             shuzukoPanel7 = new ShuzukoPanel();
@@ -57,14 +59,13 @@
             label2 = new Label();
             shuzukoPanel2 = new ShuzukoPanel();
             label3 = new Label();
-            shuzukoPanel9 = new ShuzukoPanel();
-            label10 = new Label();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             leftPanel.SuspendLayout();
+            shuzukoPanel9.SuspendLayout();
             shuzukoPanel3.SuspendLayout();
             shuzukoPanel7.SuspendLayout();
             shuzukoPanel6.SuspendLayout();
@@ -73,7 +74,6 @@
             shuzukoPanel13.SuspendLayout();
             shuzukoPanel5.SuspendLayout();
             shuzukoPanel2.SuspendLayout();
-            shuzukoPanel9.SuspendLayout();
             SuspendLayout();
             // 
             // groundPanel
@@ -100,8 +100,8 @@
             // 
             // vectorButton
             // 
-            vectorButton.BackColor = Color.LightGray;
-            vectorButton.BackgroundColor = Color.LightGray;
+            vectorButton.BackColor = Color.White;
+            vectorButton.BackgroundColor = Color.White;
             vectorButton.BorderColor = Color.Transparent;
             vectorButton.BorderRadius = 34;
             vectorButton.BorderSize = 0;
@@ -120,8 +120,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.LightGray;
-            playButton.BackgroundColor = Color.LightGray;
+            playButton.BackColor = Color.White;
+            playButton.BackgroundColor = Color.White;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -129,6 +129,7 @@
             playButton.FlatStyle = FlatStyle.Flat;
             playButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             playButton.ForeColor = Color.FromArgb(45, 48, 129);
+            playButton.Image = Properties.Resources.Play;
             playButton.ImageAlign = ContentAlignment.MiddleLeft;
             playButton.Location = new Point(1630, 364);
             playButton.Name = "playButton";
@@ -142,8 +143,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.LightGray;
-            settingButton.BackgroundColor = Color.LightGray;
+            settingButton.BackColor = Color.White;
+            settingButton.BackgroundColor = Color.White;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -202,8 +203,8 @@
             // 
             // homeButton
             // 
-            homeButton.BackColor = Color.LightGray;
-            homeButton.BackgroundColor = Color.LightGray;
+            homeButton.BackColor = Color.White;
+            homeButton.BackgroundColor = Color.White;
             homeButton.BorderColor = Color.Transparent;
             homeButton.BorderRadius = 34;
             homeButton.BorderSize = 0;
@@ -299,6 +300,32 @@
             leftPanel.Name = "leftPanel";
             leftPanel.Size = new Size(1889, 345);
             leftPanel.TabIndex = 2;
+            // 
+            // shuzukoPanel9
+            // 
+            shuzukoPanel9.BackColor = Color.White;
+            shuzukoPanel9.BorderRadius = 30;
+            shuzukoPanel9.Controls.Add(label10);
+            shuzukoPanel9.ForeColor = Color.Black;
+            shuzukoPanel9.GradientAngle = 90F;
+            shuzukoPanel9.GradientBottomColor = Color.FromArgb(142, 199, 254);
+            shuzukoPanel9.GradientTopColor = Color.FromArgb(142, 199, 254);
+            shuzukoPanel9.Location = new Point(12, 12);
+            shuzukoPanel9.Name = "shuzukoPanel9";
+            shuzukoPanel9.Size = new Size(1855, 44);
+            shuzukoPanel9.TabIndex = 12;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label10.ForeColor = Color.FromArgb(45, 48, 129);
+            label10.Location = new Point(879, 4);
+            label10.Name = "label10";
+            label10.Size = new Size(367, 32);
+            label10.TabIndex = 2;
+            label10.Text = "SETUP DISTRIBUTION VOLUME";
             // 
             // shuzukoPanel3
             // 
@@ -502,32 +529,6 @@
             label3.TabIndex = 9;
             label3.Text = "TUBING ID";
             // 
-            // shuzukoPanel9
-            // 
-            shuzukoPanel9.BackColor = Color.White;
-            shuzukoPanel9.BorderRadius = 30;
-            shuzukoPanel9.Controls.Add(label10);
-            shuzukoPanel9.ForeColor = Color.Black;
-            shuzukoPanel9.GradientAngle = 90F;
-            shuzukoPanel9.GradientBottomColor = Color.FromArgb(142, 199, 254);
-            shuzukoPanel9.GradientTopColor = Color.FromArgb(142, 199, 254);
-            shuzukoPanel9.Location = new Point(12, 12);
-            shuzukoPanel9.Name = "shuzukoPanel9";
-            shuzukoPanel9.Size = new Size(1855, 44);
-            shuzukoPanel9.TabIndex = 12;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label10.ForeColor = Color.FromArgb(45, 48, 129);
-            label10.Location = new Point(879, 4);
-            label10.Name = "label10";
-            label10.Size = new Size(367, 32);
-            label10.TabIndex = 2;
-            label10.Text = "SETUP DISTRIBUTION VOLUME";
-            // 
             // SetupDistributionVolume
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -543,6 +544,8 @@
             ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             leftPanel.ResumeLayout(false);
+            shuzukoPanel9.ResumeLayout(false);
+            shuzukoPanel9.PerformLayout();
             shuzukoPanel3.ResumeLayout(false);
             shuzukoPanel3.PerformLayout();
             shuzukoPanel7.ResumeLayout(false);
@@ -559,8 +562,6 @@
             shuzukoPanel5.PerformLayout();
             shuzukoPanel2.ResumeLayout(false);
             shuzukoPanel2.PerformLayout();
-            shuzukoPanel9.ResumeLayout(false);
-            shuzukoPanel9.PerformLayout();
             ResumeLayout(false);
         }
 

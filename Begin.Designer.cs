@@ -316,6 +316,7 @@
             // 
             playButton.BackColor = Color.White;
             playButton.BackgroundColor = Color.White;
+            playButton.BackgroundImageLayout = ImageLayout.None;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;

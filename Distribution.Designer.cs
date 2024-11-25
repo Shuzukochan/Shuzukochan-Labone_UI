@@ -45,22 +45,22 @@
             KingTubeAuto = new Label();
             logo = new PictureBox();
             leftPanel = new ShuzukoPanel();
-            shuzukoPanel1 = new ShuzukoPanel();
-            label1 = new Label();
+            shuzukoPanel3 = new ShuzukoPanel();
+            label4 = new Label();
+            label3 = new Label();
             shuzukoPanel2 = new ShuzukoPanel();
             label2 = new Label();
-            shuzukoPanel3 = new ShuzukoPanel();
-            label3 = new Label();
-            label4 = new Label();
+            shuzukoPanel1 = new ShuzukoPanel();
+            label1 = new Label();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             leftPanel.SuspendLayout();
-            shuzukoPanel1.SuspendLayout();
-            shuzukoPanel2.SuspendLayout();
             shuzukoPanel3.SuspendLayout();
+            shuzukoPanel2.SuspendLayout();
+            shuzukoPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // rightPanel
@@ -362,31 +362,44 @@
             leftPanel.Size = new Size(690, 345);
             leftPanel.TabIndex = 2;
             // 
-            // shuzukoPanel1
+            // shuzukoPanel3
             // 
-            shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 20;
-            shuzukoPanel1.Controls.Add(label1);
-            shuzukoPanel1.ForeColor = Color.Black;
-            shuzukoPanel1.GradientAngle = 0F;
-            shuzukoPanel1.GradientBottomColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel1.GradientTopColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel1.Location = new Point(10, 10);
-            shuzukoPanel1.Name = "shuzukoPanel1";
-            shuzukoPanel1.Size = new Size(670, 50);
-            shuzukoPanel1.TabIndex = 0;
+            shuzukoPanel3.BackColor = Color.White;
+            shuzukoPanel3.BorderRadius = 20;
+            shuzukoPanel3.Controls.Add(label4);
+            shuzukoPanel3.Controls.Add(label3);
+            shuzukoPanel3.ForeColor = Color.Black;
+            shuzukoPanel3.GradientAngle = 0F;
+            shuzukoPanel3.GradientBottomColor = Color.White;
+            shuzukoPanel3.GradientTopColor = Color.White;
+            shuzukoPanel3.Location = new Point(10, 72);
+            shuzukoPanel3.Name = "shuzukoPanel3";
+            shuzukoPanel3.Size = new Size(141, 50);
+            shuzukoPanel3.TabIndex = 4;
             // 
-            // label1
+            // label4
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(45, 48, 129);
-            label1.Location = new Point(162, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(347, 37);
-            label1.TabIndex = 2;
-            label1.Text = "DISTRIBUTION LOCATION";
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(45, 48, 129);
+            label4.Location = new Point(22, 6);
+            label4.Name = "label4";
+            label4.Size = new Size(97, 37);
+            label4.TabIndex = 3;
+            label4.Text = "NAME";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.None;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label3.ForeColor = Color.FromArgb(45, 48, 129);
+            label3.Location = new Point(143, -144);
+            label3.Name = "label3";
+            label3.Size = new Size(347, 37);
+            label3.TabIndex = 2;
+            label3.Text = "DISTRIBUTION LOCATION";
             // 
             // shuzukoPanel2
             // 
@@ -414,44 +427,31 @@
             label2.TabIndex = 2;
             label2.Text = "DISTRIBUTION LOCATION";
             // 
-            // shuzukoPanel3
+            // shuzukoPanel1
             // 
-            shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 20;
-            shuzukoPanel3.Controls.Add(label4);
-            shuzukoPanel3.Controls.Add(label3);
-            shuzukoPanel3.ForeColor = Color.Black;
-            shuzukoPanel3.GradientAngle = 0F;
-            shuzukoPanel3.GradientBottomColor = Color.White;
-            shuzukoPanel3.GradientTopColor = Color.White;
-            shuzukoPanel3.Location = new Point(10, 72);
-            shuzukoPanel3.Name = "shuzukoPanel3";
-            shuzukoPanel3.Size = new Size(141, 50);
-            shuzukoPanel3.TabIndex = 4;
+            shuzukoPanel1.BackColor = Color.White;
+            shuzukoPanel1.BorderRadius = 20;
+            shuzukoPanel1.Controls.Add(label1);
+            shuzukoPanel1.ForeColor = Color.Black;
+            shuzukoPanel1.GradientAngle = 0F;
+            shuzukoPanel1.GradientBottomColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel1.GradientTopColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel1.Location = new Point(10, 10);
+            shuzukoPanel1.Name = "shuzukoPanel1";
+            shuzukoPanel1.Size = new Size(670, 50);
+            shuzukoPanel1.TabIndex = 0;
             // 
-            // label3
+            // label1
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(45, 48, 129);
-            label3.Location = new Point(143, -144);
-            label3.Name = "label3";
-            label3.Size = new Size(347, 37);
-            label3.TabIndex = 2;
-            label3.Text = "DISTRIBUTION LOCATION";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label4.ForeColor = Color.FromArgb(45, 48, 129);
-            label4.Location = new Point(22, 6);
-            label4.Name = "label4";
-            label4.Size = new Size(97, 37);
-            label4.TabIndex = 3;
-            label4.Text = "NAME";
+            label1.Anchor = AnchorStyles.None;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(45, 48, 129);
+            label1.Location = new Point(162, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(347, 37);
+            label1.TabIndex = 2;
+            label1.Text = "DISTRIBUTION LOCATION";
             // 
             // Distribution
             // 
@@ -468,10 +468,10 @@
             ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             leftPanel.ResumeLayout(false);
-            shuzukoPanel1.ResumeLayout(false);
-            shuzukoPanel2.ResumeLayout(false);
             shuzukoPanel3.ResumeLayout(false);
             shuzukoPanel3.PerformLayout();
+            shuzukoPanel2.ResumeLayout(false);
+            shuzukoPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
