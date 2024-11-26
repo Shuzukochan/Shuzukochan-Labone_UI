@@ -21,5 +21,10 @@ namespace Labone_UI
         {
 
         }
+
+        private void shuzukoButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
