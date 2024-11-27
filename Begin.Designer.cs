@@ -331,7 +331,7 @@
             playButton.Name = "playButton";
             playButton.Size = new Size(261, 68);
             playButton.TabIndex = 15;
-            playButton.Text = "LET'S GO";
+            playButton.Text = "  BEGIN";
             playButton.TextColor = Color.FromArgb(45, 48, 129);
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
@@ -359,8 +359,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.White;
-            enterButton.BackgroundColor = Color.White;
+            enterButton.BackColor = Color.Silver;
+            enterButton.BackgroundColor = Color.Silver;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;
@@ -379,8 +379,8 @@
             // 
             // backButton
             // 
-            backButton.BackColor = Color.White;
-            backButton.BackgroundColor = Color.White;
+            backButton.BackColor = Color.Silver;
+            backButton.BackgroundColor = Color.Silver;
             backButton.BorderColor = Color.Transparent;
             backButton.BorderRadius = 34;
             backButton.BorderSize = 0;
@@ -399,20 +399,20 @@
             // 
             // homeButton
             // 
-            homeButton.BackColor = Color.White;
-            homeButton.BackgroundColor = Color.White;
+            homeButton.BackColor = Color.Silver;
+            homeButton.BackgroundColor = Color.Silver;
             homeButton.BorderColor = Color.Transparent;
             homeButton.BorderRadius = 34;
             homeButton.BorderSize = 0;
             homeButton.FlatAppearance.BorderSize = 0;
             homeButton.FlatStyle = FlatStyle.Flat;
-            homeButton.ForeColor = Color.White;
+            homeButton.ForeColor = SystemColors.WindowText;
             homeButton.Image = Properties.Resources.Home;
             homeButton.Location = new Point(970, 363);
             homeButton.Name = "homeButton";
             homeButton.Size = new Size(68, 68);
             homeButton.TabIndex = 11;
-            homeButton.TextColor = Color.White;
+            homeButton.TextColor = SystemColors.WindowText;
             homeButton.TextOffsetX = 0;
             homeButton.TextOffsetY = 0;
             homeButton.UseVisualStyleBackColor = false;
