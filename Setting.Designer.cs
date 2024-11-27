@@ -41,7 +41,6 @@
             KingTubeAuto = new Label();
             logo = new PictureBox();
             mainPanel = new ShuzukoPanel();
-            nextButton = new ShuzukoButton();
             shuzukoPanel5 = new ShuzukoPanel();
             shutdownButton = new ShuzukoButton();
             label5 = new Label();
@@ -57,6 +56,12 @@
             shuzukoPanel1 = new ShuzukoPanel();
             calibrationButton = new ShuzukoButton();
             label1 = new Label();
+            shuzukoPanel6 = new ShuzukoPanel();
+            in4Button = new ShuzukoButton();
+            label6 = new Label();
+            shuzukoPanel7 = new ShuzukoPanel();
+            otaButton = new ShuzukoButton();
+            label7 = new Label();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
@@ -68,6 +73,8 @@
             shuzukoPanel3.SuspendLayout();
             shuzukoPanel2.SuspendLayout();
             shuzukoPanel1.SuspendLayout();
+            shuzukoPanel6.SuspendLayout();
+            shuzukoPanel7.SuspendLayout();
             SuspendLayout();
             // 
             // groundPanel
@@ -94,8 +101,8 @@
             // 
             // vectorButton
             // 
-            vectorButton.BackColor = Color.White;
-            vectorButton.BackgroundColor = Color.White;
+            vectorButton.BackColor = Color.Silver;
+            vectorButton.BackgroundColor = Color.Silver;
             vectorButton.BorderColor = Color.Transparent;
             vectorButton.BorderRadius = 34;
             vectorButton.BorderSize = 0;
@@ -114,8 +121,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.White;
-            playButton.BackgroundColor = Color.White;
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -129,7 +136,7 @@
             playButton.Name = "playButton";
             playButton.Size = new Size(261, 68);
             playButton.TabIndex = 8;
-            playButton.Text = "LET'S GO";
+            playButton.Text = "  BEGIN";
             playButton.TextColor = Color.FromArgb(45, 48, 129);
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
@@ -137,8 +144,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.White;
-            settingButton.BackgroundColor = Color.White;
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -157,8 +164,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.White;
-            enterButton.BackgroundColor = Color.White;
+            enterButton.BackColor = Color.Silver;
+            enterButton.BackgroundColor = Color.Silver;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;
@@ -277,7 +284,8 @@
             // 
             mainPanel.BackColor = Color.White;
             mainPanel.BorderRadius = 15;
-            mainPanel.Controls.Add(nextButton);
+            mainPanel.Controls.Add(shuzukoPanel6);
+            mainPanel.Controls.Add(shuzukoPanel7);
             mainPanel.Controls.Add(shuzukoPanel5);
             mainPanel.Controls.Add(shuzukoPanel4);
             mainPanel.Controls.Add(shuzukoPanel3);
@@ -292,26 +300,6 @@
             mainPanel.Size = new Size(1882, 345);
             mainPanel.TabIndex = 2;
             // 
-            // nextButton
-            // 
-            nextButton.BackColor = Color.FromArgb(152, 221, 254);
-            nextButton.BackgroundColor = Color.FromArgb(152, 221, 254);
-            nextButton.BorderColor = Color.PaleVioletRed;
-            nextButton.BorderRadius = 20;
-            nextButton.BorderSize = 0;
-            nextButton.FlatAppearance.BorderSize = 0;
-            nextButton.FlatStyle = FlatStyle.Flat;
-            nextButton.ForeColor = Color.White;
-            nextButton.Image = Properties.Resources.Next;
-            nextButton.Location = new Point(1690, 47);
-            nextButton.Name = "nextButton";
-            nextButton.Size = new Size(163, 250);
-            nextButton.TabIndex = 0;
-            nextButton.TextColor = Color.White;
-            nextButton.TextOffsetX = 0;
-            nextButton.TextOffsetY = 0;
-            nextButton.UseVisualStyleBackColor = false;
-            // 
             // shuzukoPanel5
             // 
             shuzukoPanel5.BackColor = Color.White;
@@ -322,9 +310,9 @@
             shuzukoPanel5.GradientAngle = -90F;
             shuzukoPanel5.GradientBottomColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel5.GradientTopColor = Color.FromArgb(226, 227, 229);
-            shuzukoPanel5.Location = new Point(1355, 47);
+            shuzukoPanel5.Location = new Point(1079, 46);
             shuzukoPanel5.Name = "shuzukoPanel5";
-            shuzukoPanel5.Size = new Size(300, 250);
+            shuzukoPanel5.Size = new Size(260, 250);
             shuzukoPanel5.TabIndex = 2;
             // 
             // shutdownButton
@@ -340,7 +328,7 @@
             shutdownButton.Image = Properties.Resources.Shutdown;
             shutdownButton.Location = new Point(0, -1);
             shutdownButton.Name = "shutdownButton";
-            shutdownButton.Size = new Size(300, 190);
+            shutdownButton.Size = new Size(260, 190);
             shutdownButton.TabIndex = 0;
             shutdownButton.TextColor = Color.White;
             shutdownButton.TextOffsetX = 0;
@@ -353,7 +341,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(45, 48, 129);
-            label5.Location = new Point(47, 198);
+            label5.Location = new Point(28, 198);
             label5.Name = "label5";
             label5.Size = new Size(205, 41);
             label5.TabIndex = 1;
@@ -369,9 +357,9 @@
             shuzukoPanel4.GradientAngle = -90F;
             shuzukoPanel4.GradientBottomColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel4.GradientTopColor = Color.FromArgb(226, 227, 229);
-            shuzukoPanel4.Location = new Point(1020, 47);
+            shuzukoPanel4.Location = new Point(813, 47);
             shuzukoPanel4.Name = "shuzukoPanel4";
-            shuzukoPanel4.Size = new Size(300, 250);
+            shuzukoPanel4.Size = new Size(260, 250);
             shuzukoPanel4.TabIndex = 2;
             // 
             // setupButton
@@ -400,7 +388,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             label4.ForeColor = Color.FromArgb(45, 48, 129);
-            label4.Location = new Point(15, 198);
+            label4.Location = new Point(-3, 198);
             label4.Name = "label4";
             label4.Size = new Size(269, 41);
             label4.TabIndex = 1;
@@ -416,9 +404,9 @@
             shuzukoPanel3.GradientAngle = -90F;
             shuzukoPanel3.GradientBottomColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel3.GradientTopColor = Color.FromArgb(226, 227, 229);
-            shuzukoPanel3.Location = new Point(685, 46);
+            shuzukoPanel3.Location = new Point(547, 47);
             shuzukoPanel3.Name = "shuzukoPanel3";
-            shuzukoPanel3.Size = new Size(300, 250);
+            shuzukoPanel3.Size = new Size(260, 250);
             shuzukoPanel3.TabIndex = 2;
             // 
             // configButton
@@ -434,7 +422,7 @@
             configButton.Image = Properties.Resources.Config;
             configButton.Location = new Point(0, -1);
             configButton.Name = "configButton";
-            configButton.Size = new Size(300, 190);
+            configButton.Size = new Size(260, 190);
             configButton.TabIndex = 0;
             configButton.TextColor = Color.White;
             configButton.TextOffsetX = 0;
@@ -447,7 +435,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(45, 48, 129);
-            label3.Location = new Point(85, 198);
+            label3.Location = new Point(65, 198);
             label3.Name = "label3";
             label3.Size = new Size(131, 41);
             label3.TabIndex = 1;
@@ -463,9 +451,9 @@
             shuzukoPanel2.GradientAngle = -90F;
             shuzukoPanel2.GradientBottomColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel2.GradientTopColor = Color.FromArgb(226, 227, 229);
-            shuzukoPanel2.Location = new Point(350, 47);
+            shuzukoPanel2.Location = new Point(281, 47);
             shuzukoPanel2.Name = "shuzukoPanel2";
-            shuzukoPanel2.Size = new Size(300, 250);
+            shuzukoPanel2.Size = new Size(260, 250);
             shuzukoPanel2.TabIndex = 2;
             // 
             // timeButton
@@ -481,7 +469,7 @@
             timeButton.Image = Properties.Resources.Time;
             timeButton.Location = new Point(0, -1);
             timeButton.Name = "timeButton";
-            timeButton.Size = new Size(300, 190);
+            timeButton.Size = new Size(260, 190);
             timeButton.TabIndex = 0;
             timeButton.TextColor = Color.White;
             timeButton.TextOffsetX = 0;
@@ -494,7 +482,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             label2.ForeColor = Color.FromArgb(45, 48, 129);
-            label2.Location = new Point(105, 198);
+            label2.Location = new Point(85, 198);
             label2.Name = "label2";
             label2.Size = new Size(91, 41);
             label2.TabIndex = 1;
@@ -512,7 +500,7 @@
             shuzukoPanel1.GradientTopColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel1.Location = new Point(15, 47);
             shuzukoPanel1.Name = "shuzukoPanel1";
-            shuzukoPanel1.Size = new Size(300, 250);
+            shuzukoPanel1.Size = new Size(260, 250);
             shuzukoPanel1.TabIndex = 2;
             // 
             // calibrationButton
@@ -528,7 +516,7 @@
             calibrationButton.Image = Properties.Resources.balance;
             calibrationButton.Location = new Point(0, -1);
             calibrationButton.Name = "calibrationButton";
-            calibrationButton.Size = new Size(300, 190);
+            calibrationButton.Size = new Size(260, 190);
             calibrationButton.TabIndex = 0;
             calibrationButton.TextColor = Color.White;
             calibrationButton.TextOffsetX = 0;
@@ -541,11 +529,105 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(45, 48, 129);
-            label1.Location = new Point(42, 198);
+            label1.Location = new Point(22, 198);
             label1.Name = "label1";
             label1.Size = new Size(216, 41);
             label1.TabIndex = 1;
             label1.Text = "CALIBRATION";
+            // 
+            // shuzukoPanel6
+            // 
+            shuzukoPanel6.BackColor = Color.White;
+            shuzukoPanel6.BorderRadius = 30;
+            shuzukoPanel6.Controls.Add(in4Button);
+            shuzukoPanel6.Controls.Add(label6);
+            shuzukoPanel6.ForeColor = Color.Black;
+            shuzukoPanel6.GradientAngle = -90F;
+            shuzukoPanel6.GradientBottomColor = Color.FromArgb(226, 227, 229);
+            shuzukoPanel6.GradientTopColor = Color.FromArgb(226, 227, 229);
+            shuzukoPanel6.Location = new Point(1611, 44);
+            shuzukoPanel6.Name = "shuzukoPanel6";
+            shuzukoPanel6.Size = new Size(260, 250);
+            shuzukoPanel6.TabIndex = 3;
+            // 
+            // in4Button
+            // 
+            in4Button.BackColor = Color.White;
+            in4Button.BackgroundColor = Color.White;
+            in4Button.BorderColor = Color.PaleVioletRed;
+            in4Button.BorderRadius = 15;
+            in4Button.BorderSize = 0;
+            in4Button.FlatAppearance.BorderSize = 0;
+            in4Button.FlatStyle = FlatStyle.Flat;
+            in4Button.ForeColor = Color.White;
+            in4Button.Image = Properties.Resources.information;
+            in4Button.Location = new Point(0, -1);
+            in4Button.Name = "in4Button";
+            in4Button.Size = new Size(260, 190);
+            in4Button.TabIndex = 0;
+            in4Button.TextColor = Color.White;
+            in4Button.TextOffsetX = 0;
+            in4Button.TextOffsetY = 0;
+            in4Button.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            label6.ForeColor = Color.FromArgb(45, 48, 129);
+            label6.Location = new Point(13, 198);
+            label6.Name = "label6";
+            label6.Size = new Size(234, 41);
+            label6.TabIndex = 1;
+            label6.Text = "INFORMATION";
+            // 
+            // shuzukoPanel7
+            // 
+            shuzukoPanel7.BackColor = Color.White;
+            shuzukoPanel7.BorderRadius = 30;
+            shuzukoPanel7.Controls.Add(otaButton);
+            shuzukoPanel7.Controls.Add(label7);
+            shuzukoPanel7.ForeColor = Color.Black;
+            shuzukoPanel7.GradientAngle = -90F;
+            shuzukoPanel7.GradientBottomColor = Color.FromArgb(226, 227, 229);
+            shuzukoPanel7.GradientTopColor = Color.FromArgb(226, 227, 229);
+            shuzukoPanel7.Location = new Point(1345, 45);
+            shuzukoPanel7.Name = "shuzukoPanel7";
+            shuzukoPanel7.Size = new Size(260, 250);
+            shuzukoPanel7.TabIndex = 4;
+            // 
+            // otaButton
+            // 
+            otaButton.BackColor = Color.White;
+            otaButton.BackgroundColor = Color.White;
+            otaButton.BorderColor = Color.PaleVioletRed;
+            otaButton.BorderRadius = 15;
+            otaButton.BorderSize = 0;
+            otaButton.FlatAppearance.BorderSize = 0;
+            otaButton.FlatStyle = FlatStyle.Flat;
+            otaButton.ForeColor = Color.White;
+            otaButton.Image = Properties.Resources.OTA;
+            otaButton.Location = new Point(0, -1);
+            otaButton.Name = "otaButton";
+            otaButton.Size = new Size(260, 190);
+            otaButton.TabIndex = 0;
+            otaButton.TextColor = Color.White;
+            otaButton.TextOffsetX = 0;
+            otaButton.TextOffsetY = 0;
+            otaButton.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            label7.ForeColor = Color.FromArgb(45, 48, 129);
+            label7.Location = new Point(30, 198);
+            label7.Name = "label7";
+            label7.Size = new Size(200, 41);
+            label7.TabIndex = 1;
+            label7.Text = "OTA UPDATE";
             // 
             // Setting
             // 
@@ -572,6 +654,10 @@
             shuzukoPanel2.PerformLayout();
             shuzukoPanel1.ResumeLayout(false);
             shuzukoPanel1.PerformLayout();
+            shuzukoPanel6.ResumeLayout(false);
+            shuzukoPanel6.PerformLayout();
+            shuzukoPanel7.ResumeLayout(false);
+            shuzukoPanel7.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -604,6 +690,11 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private ShuzukoButton nextButton;
+        private ShuzukoPanel shuzukoPanel6;
+        private ShuzukoButton in4Button;
+        private Label label6;
+        private ShuzukoPanel shuzukoPanel7;
+        private ShuzukoButton otaButton;
+        private Label label7;
     }
 }

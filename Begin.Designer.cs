@@ -295,8 +295,8 @@
             // 
             // vectorButton
             // 
-            vectorButton.BackColor = Color.White;
-            vectorButton.BackgroundColor = Color.White;
+            vectorButton.BackColor = Color.Silver;
+            vectorButton.BackgroundColor = Color.Silver;
             vectorButton.BorderColor = Color.Transparent;
             vectorButton.BorderRadius = 34;
             vectorButton.BorderSize = 0;
