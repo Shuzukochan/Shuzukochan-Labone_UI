@@ -303,6 +303,7 @@
             vectorButton.FlatAppearance.BorderSize = 0;
             vectorButton.FlatStyle = FlatStyle.Flat;
             vectorButton.ForeColor = Color.White;
+            vectorButton.Image = Properties.Resources.Vector;
             vectorButton.Location = new Point(1550, 363);
             vectorButton.Name = "vectorButton";
             vectorButton.Size = new Size(68, 68);
