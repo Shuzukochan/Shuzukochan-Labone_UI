@@ -1,6 +1,6 @@
 ﻿namespace Labone_UI
 {
-    partial class OTAUpdate
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -44,14 +44,15 @@
             shuzukoPanel9 = new ShuzukoPanel();
             label10 = new Label();
             shuzukoPanel4 = new ShuzukoPanel();
-            label6 = new Label();
             shuzukoPanel13 = new ShuzukoPanel();
             label5 = new Label();
-            shuzukoPanel5 = new ShuzukoPanel();
-            Name = new Label();
+            shuzukoPanel1 = new ShuzukoPanel();
             shuzukoPanel2 = new ShuzukoPanel();
             label3 = new Label();
-            shuzukoButton1 = new ShuzukoButton();
+            label4 = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label6 = new Label();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
@@ -61,7 +62,7 @@
             shuzukoPanel9.SuspendLayout();
             shuzukoPanel4.SuspendLayout();
             shuzukoPanel13.SuspendLayout();
-            shuzukoPanel5.SuspendLayout();
+            shuzukoPanel1.SuspendLayout();
             shuzukoPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -272,12 +273,13 @@
             // 
             leftPanel.BackColor = Color.White;
             leftPanel.BorderRadius = 30;
-            leftPanel.Controls.Add(shuzukoButton1);
+            leftPanel.Controls.Add(label6);
+            leftPanel.Controls.Add(label2);
+            leftPanel.Controls.Add(shuzukoPanel1);
             leftPanel.Controls.Add(shuzukoPanel9);
+            leftPanel.Controls.Add(shuzukoPanel2);
             leftPanel.Controls.Add(shuzukoPanel4);
             leftPanel.Controls.Add(shuzukoPanel13);
-            leftPanel.Controls.Add(shuzukoPanel5);
-            leftPanel.Controls.Add(shuzukoPanel2);
             leftPanel.ForeColor = Color.Black;
             leftPanel.GradientAngle = 180F;
             leftPanel.GradientBottomColor = Color.FromArgb(92, 158, 252);
@@ -307,37 +309,25 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label10.ForeColor = Color.FromArgb(45, 48, 129);
-            label10.Location = new Point(848, 4);
+            label10.Location = new Point(833, 6);
             label10.Name = "label10";
-            label10.Size = new Size(159, 32);
+            label10.Size = new Size(188, 32);
             label10.TabIndex = 2;
-            label10.Text = "OTA UPDATE";
+            label10.Text = "IMFORMATION";
             // 
             // shuzukoPanel4
             // 
             shuzukoPanel4.BackColor = Color.FromArgb(149, 210, 254);
             shuzukoPanel4.BorderRadius = 30;
-            shuzukoPanel4.Controls.Add(label6);
+            shuzukoPanel4.Controls.Add(label3);
             shuzukoPanel4.ForeColor = Color.Black;
             shuzukoPanel4.GradientAngle = 90F;
             shuzukoPanel4.GradientBottomColor = Color.FromArgb(149, 210, 254);
             shuzukoPanel4.GradientTopColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel4.Location = new Point(1063, 140);
+            shuzukoPanel4.Location = new Point(12, 128);
             shuzukoPanel4.Name = "shuzukoPanel4";
-            shuzukoPanel4.Size = new Size(461, 59);
+            shuzukoPanel4.Size = new Size(910, 59);
             shuzukoPanel4.TabIndex = 7;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold);
-            label6.ForeColor = Color.FromArgb(45, 48, 129);
-            label6.Location = new Point(371, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(90, 50);
-            label6.TabIndex = 10;
-            label6.Text = "mm";
-            label6.TextAlign = ContentAlignment.TopCenter;
             // 
             // shuzukoPanel13
             // 
@@ -348,100 +338,114 @@
             shuzukoPanel13.GradientAngle = 90F;
             shuzukoPanel13.GradientBottomColor = Color.FromArgb(149, 210, 254);
             shuzukoPanel13.GradientTopColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel13.Location = new Point(1063, 75);
+            shuzukoPanel13.Location = new Point(12, 62);
             shuzukoPanel13.Name = "shuzukoPanel13";
-            shuzukoPanel13.Size = new Size(461, 59);
+            shuzukoPanel13.Size = new Size(910, 59);
             shuzukoPanel13.TabIndex = 5;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(45, 48, 129);
-            label5.Location = new Point(377, 4);
+            label5.Location = new Point(14, 13);
             label5.Name = "label5";
-            label5.Size = new Size(75, 50);
+            label5.Size = new Size(98, 32);
             label5.TabIndex = 9;
-            label5.Text = "mL";
+            label5.Text = "MODEL";
             // 
-            // shuzukoPanel5
+            // shuzukoPanel1
             // 
-            shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
-            shuzukoPanel5.Controls.Add(Name);
-            shuzukoPanel5.ForeColor = Color.Black;
-            shuzukoPanel5.GradientAngle = 90F;
-            shuzukoPanel5.GradientBottomColor = Color.White;
-            shuzukoPanel5.GradientTopColor = Color.White;
-            shuzukoPanel5.Location = new Point(605, 75);
-            shuzukoPanel5.Name = "shuzukoPanel5";
-            shuzukoPanel5.Size = new Size(452, 59);
-            shuzukoPanel5.TabIndex = 1;
-            // 
-            // Name
-            // 
-            Name.AutoSize = true;
-            Name.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Name.ForeColor = Color.FromArgb(45, 48, 129);
-            Name.Location = new Point(175, 10);
-            Name.Name = "Name";
-            Name.Size = new Size(103, 40);
-            Name.TabIndex = 8;
-            Name.Text = "NAME";
+            shuzukoPanel1.BackColor = Color.FromArgb(149, 210, 254);
+            shuzukoPanel1.BorderRadius = 30;
+            shuzukoPanel1.Controls.Add(label1);
+            shuzukoPanel1.ForeColor = Color.Black;
+            shuzukoPanel1.GradientAngle = 90F;
+            shuzukoPanel1.GradientBottomColor = Color.FromArgb(149, 210, 254);
+            shuzukoPanel1.GradientTopColor = Color.FromArgb(149, 210, 254);
+            shuzukoPanel1.Location = new Point(957, 128);
+            shuzukoPanel1.Name = "shuzukoPanel1";
+            shuzukoPanel1.Size = new Size(910, 59);
+            shuzukoPanel1.TabIndex = 12;
             // 
             // shuzukoPanel2
             // 
-            shuzukoPanel2.BackColor = Color.White;
+            shuzukoPanel2.BackColor = Color.FromArgb(149, 210, 254);
             shuzukoPanel2.BorderRadius = 30;
-            shuzukoPanel2.Controls.Add(label3);
+            shuzukoPanel2.Controls.Add(label4);
             shuzukoPanel2.ForeColor = Color.Black;
             shuzukoPanel2.GradientAngle = 90F;
-            shuzukoPanel2.GradientBottomColor = Color.White;
-            shuzukoPanel2.GradientTopColor = Color.White;
-            shuzukoPanel2.Location = new Point(605, 140);
+            shuzukoPanel2.GradientBottomColor = Color.FromArgb(149, 210, 254);
+            shuzukoPanel2.GradientTopColor = Color.FromArgb(149, 210, 254);
+            shuzukoPanel2.Location = new Point(957, 62);
             shuzukoPanel2.Name = "shuzukoPanel2";
-            shuzukoPanel2.Size = new Size(452, 59);
-            shuzukoPanel2.TabIndex = 1;
+            shuzukoPanel2.Size = new Size(910, 59);
+            shuzukoPanel2.TabIndex = 11;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(45, 48, 129);
-            label3.Location = new Point(138, 10);
+            label3.Location = new Point(14, 13);
             label3.Name = "label3";
-            label3.RightToLeft = RightToLeft.Yes;
-            label3.Size = new Size(176, 40);
-            label3.TabIndex = 9;
-            label3.Text = "PASSWORD";
+            label3.Size = new Size(117, 32);
+            label3.TabIndex = 10;
+            label3.Text = "VERSION";
             // 
-            // shuzukoButton1
+            // label4
             // 
-            shuzukoButton1.BackColor = Color.White;
-            shuzukoButton1.BackgroundColor = Color.White;
-            shuzukoButton1.BorderColor = Color.White;
-            shuzukoButton1.BorderRadius = 15;
-            shuzukoButton1.BorderSize = 0;
-            shuzukoButton1.FlatAppearance.BorderSize = 0;
-            shuzukoButton1.FlatStyle = FlatStyle.Flat;
-            shuzukoButton1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
-            shuzukoButton1.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton1.Location = new Point(605, 205);
-            shuzukoButton1.Name = "shuzukoButton1";
-            shuzukoButton1.Size = new Size(452, 59);
-            shuzukoButton1.TabIndex = 13;
-            shuzukoButton1.Text = "UPDATE";
-            shuzukoButton1.TextColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton1.TextOffsetX = 0;
-            shuzukoButton1.TextOffsetY = 0;
-            shuzukoButton1.UseVisualStyleBackColor = false;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(45, 48, 129);
+            label4.Location = new Point(16, 13);
+            label4.Name = "label4";
+            label4.Size = new Size(252, 32);
+            label4.TabIndex = 10;
+            label4.Text = "FIRMWARE VERSION";
             // 
-            // OTAUpdate
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(45, 48, 129);
+            label1.Location = new Point(16, 13);
+            label1.Name = "label1";
+            label1.Size = new Size(173, 32);
+            label1.TabIndex = 11;
+            label1.Text = "HMI VERSION";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(725, 203);
+            label2.Name = "label2";
+            label2.Size = new Size(438, 32);
+            label2.TabIndex = 12;
+            label2.Text = "LABone Scientific Equipment Co.Ltd.,";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(464, 245);
+            label6.Name = "label6";
+            label6.Size = new Size(961, 32);
+            label6.TabIndex = 13;
+            label6.Text = "Website: www.labone.vn     |     Hotline: 0978 782 147     |     Email: info@labone.vn";
+            // 
+            // About
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(54, 176, 253);
             ClientSize = new Size(1904, 441);
             Controls.Add(groundPanel);
+            Name = "About";
             Text = "Form1";
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);
@@ -450,14 +454,15 @@
             ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             leftPanel.ResumeLayout(false);
+            leftPanel.PerformLayout();
             shuzukoPanel9.ResumeLayout(false);
             shuzukoPanel9.PerformLayout();
             shuzukoPanel4.ResumeLayout(false);
             shuzukoPanel4.PerformLayout();
             shuzukoPanel13.ResumeLayout(false);
             shuzukoPanel13.PerformLayout();
-            shuzukoPanel5.ResumeLayout(false);
-            shuzukoPanel5.PerformLayout();
+            shuzukoPanel1.ResumeLayout(false);
+            shuzukoPanel1.PerformLayout();
             shuzukoPanel2.ResumeLayout(false);
             shuzukoPanel2.PerformLayout();
             ResumeLayout(false);
@@ -465,7 +470,6 @@
 
         #endregion
         private ShuzukoPanel groundPanel;
-        private ShuzukoPanel leftPanel;
         private ShuzukoPanel underLeftPanel;
         private Label KingTubeAuto;
         private PictureBox logo;
@@ -477,16 +481,18 @@
         private ShuzukoButton playButton;
         private ShuzukoButton settingButton;
         private ShuzukoButton enterButton;
-        private ShuzukoPanel shuzukoPanel2;
-        private ShuzukoPanel shuzukoPanel5;
-        private ShuzukoPanel shuzukoPanel13;
-        private ShuzukoPanel shuzukoPanel4;
-        private Label Name;
-        private Label label6;
-        private Label label5;
-        private Label label3;
+        private ShuzukoPanel leftPanel;
         private ShuzukoPanel shuzukoPanel9;
         private Label label10;
-        private ShuzukoButton shuzukoButton1;
+        private ShuzukoPanel shuzukoPanel4;
+        private ShuzukoPanel shuzukoPanel13;
+        private Label label5;
+        private Label label2;
+        private ShuzukoPanel shuzukoPanel1;
+        private Label label1;
+        private ShuzukoPanel shuzukoPanel2;
+        private Label label4;
+        private Label label3;
+        private Label label6;
     }
 }
