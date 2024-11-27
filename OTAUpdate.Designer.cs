@@ -442,7 +442,6 @@
             BackColor = Color.FromArgb(54, 176, 253);
             ClientSize = new Size(1904, 441);
             Controls.Add(groundPanel);
-            Name = "OTAUpdate";
             Text = "Form1";
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);

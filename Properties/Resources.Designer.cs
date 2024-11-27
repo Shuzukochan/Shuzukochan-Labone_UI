@@ -63,6 +63,16 @@ namespace Labone_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _continue {
+            get {
+                object obj = ResourceManager.GetObject("continue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Area1 {
             get {
                 object obj = ResourceManager.GetObject("Area1", resourceCulture);
@@ -126,6 +136,16 @@ namespace Labone_UI.Properties {
         internal static System.Drawing.Bitmap Config {
             get {
                 object obj = ResourceManager.GetObject("Config", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap direction {
+            get {
+                object obj = ResourceManager.GetObject("direction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
