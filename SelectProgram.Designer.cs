@@ -36,6 +36,7 @@
             label3 = new Label();
             label2 = new Label();
             shuzukoPanel12 = new ShuzukoPanel();
+            labelProgramCur = new Label();
             shuzukoPanel11 = new ShuzukoPanel();
             label1 = new Label();
             groundPanel = new ShuzukoPanel();
@@ -51,17 +52,18 @@
             KingTubeAuto = new Label();
             logo = new PictureBox();
             leftPanel = new ShuzukoPanel();
-            shuzukoPanel10 = new ShuzukoPanel();
-            shuzukoPanel9 = new ShuzukoPanel();
-            shuzukoPanel8 = new ShuzukoPanel();
-            shuzukoPanel7 = new ShuzukoPanel();
-            shuzukoPanel6 = new ShuzukoPanel();
-            shuzukoPanel5 = new ShuzukoPanel();
-            shuzukoPanel4 = new ShuzukoPanel();
-            shuzukoPanel3 = new ShuzukoPanel();
-            shuzukoPanel2 = new ShuzukoPanel();
-            shuzukoPanel1 = new ShuzukoPanel();
+            program9Button = new ShuzukoButton();
+            program10Button = new ShuzukoButton();
+            program8Button = new ShuzukoButton();
+            program7Button = new ShuzukoButton();
+            program6Button = new ShuzukoButton();
+            program5Button = new ShuzukoButton();
+            program4Button = new ShuzukoButton();
+            program3Button = new ShuzukoButton();
+            program2Button = new ShuzukoButton();
+            program1Button = new ShuzukoButton();
             rightPanel.SuspendLayout();
+            shuzukoPanel12.SuspendLayout();
             shuzukoPanel11.SuspendLayout();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
@@ -95,7 +97,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = Color.FromArgb(119, 197, 254);
+            label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.FromArgb(45, 48, 129);
             label7.Location = new Point(256, 313);
@@ -107,7 +109,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.FromArgb(119, 197, 254);
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(45, 48, 129);
             label6.Location = new Point(212, 272);
@@ -119,7 +121,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.FromArgb(119, 197, 254);
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(45, 48, 129);
             label5.Location = new Point(269, 231);
@@ -132,7 +134,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.FromArgb(119, 197, 254);
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(45, 48, 129);
             label4.Location = new Point(224, 190);
@@ -144,7 +146,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(119, 197, 254);
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(45, 48, 129);
             label3.Location = new Point(274, 149);
@@ -157,7 +159,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(119, 197, 254);
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(45, 48, 129);
             label2.Location = new Point(310, 108);
@@ -170,6 +172,7 @@
             // 
             shuzukoPanel12.BackColor = Color.FromArgb(149, 210, 254);
             shuzukoPanel12.BorderRadius = 30;
+            shuzukoPanel12.Controls.Add(labelProgramCur);
             shuzukoPanel12.ForeColor = Color.Black;
             shuzukoPanel12.GradientAngle = 90F;
             shuzukoPanel12.GradientBottomColor = Color.FromArgb(149, 210, 254);
@@ -178,6 +181,19 @@
             shuzukoPanel12.Name = "shuzukoPanel12";
             shuzukoPanel12.Size = new Size(920, 45);
             shuzukoPanel12.TabIndex = 4;
+            // 
+            // labelProgramCur
+            // 
+            labelProgramCur.AutoSize = true;
+            labelProgramCur.BackColor = Color.Transparent;
+            labelProgramCur.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelProgramCur.ForeColor = Color.FromArgb(45, 48, 129);
+            labelProgramCur.Location = new Point(393, 6);
+            labelProgramCur.Name = "labelProgramCur";
+            labelProgramCur.Size = new Size(149, 32);
+            labelProgramCur.TabIndex = 0;
+            labelProgramCur.Text = "Program 10";
+            labelProgramCur.Click += label1_Click_1;
             // 
             // shuzukoPanel11
             // 
@@ -196,7 +212,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(149, 210, 254);
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(45, 48, 129);
             label1.Location = new Point(342, 7);
@@ -414,16 +430,16 @@
             // 
             leftPanel.BackColor = Color.White;
             leftPanel.BorderRadius = 30;
-            leftPanel.Controls.Add(shuzukoPanel10);
-            leftPanel.Controls.Add(shuzukoPanel9);
-            leftPanel.Controls.Add(shuzukoPanel8);
-            leftPanel.Controls.Add(shuzukoPanel7);
-            leftPanel.Controls.Add(shuzukoPanel6);
-            leftPanel.Controls.Add(shuzukoPanel5);
-            leftPanel.Controls.Add(shuzukoPanel4);
-            leftPanel.Controls.Add(shuzukoPanel3);
-            leftPanel.Controls.Add(shuzukoPanel2);
-            leftPanel.Controls.Add(shuzukoPanel1);
+            leftPanel.Controls.Add(program9Button);
+            leftPanel.Controls.Add(program10Button);
+            leftPanel.Controls.Add(program8Button);
+            leftPanel.Controls.Add(program7Button);
+            leftPanel.Controls.Add(program6Button);
+            leftPanel.Controls.Add(program5Button);
+            leftPanel.Controls.Add(program4Button);
+            leftPanel.Controls.Add(program3Button);
+            leftPanel.Controls.Add(program2Button);
+            leftPanel.Controls.Add(program1Button);
             leftPanel.ForeColor = Color.Black;
             leftPanel.GradientAngle = 180F;
             leftPanel.GradientBottomColor = Color.FromArgb(92, 158, 252);
@@ -434,135 +450,225 @@
             leftPanel.TabIndex = 2;
             leftPanel.Paint += leftPanel_Paint_1;
             // 
-            // shuzukoPanel10
+            // program9Button
             // 
-            shuzukoPanel10.BackColor = Color.White;
-            shuzukoPanel10.BorderRadius = 30;
-            shuzukoPanel10.ForeColor = Color.Black;
-            shuzukoPanel10.GradientAngle = 90F;
-            shuzukoPanel10.GradientBottomColor = Color.White;
-            shuzukoPanel10.GradientTopColor = Color.White;
-            shuzukoPanel10.Location = new Point(480, 291);
-            shuzukoPanel10.Name = "shuzukoPanel10";
-            shuzukoPanel10.Size = new Size(450, 45);
-            shuzukoPanel10.TabIndex = 2;
+            program9Button.BackColor = Color.White;
+            program9Button.BackgroundColor = Color.White;
+            program9Button.BorderColor = Color.PaleVioletRed;
+            program9Button.BorderRadius = 15;
+            program9Button.BorderSize = 0;
+            program9Button.FlatAppearance.BorderSize = 0;
+            program9Button.FlatStyle = FlatStyle.Flat;
+            program9Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program9Button.ForeColor = Color.Red;
+            program9Button.Location = new Point(10, 291);
+            program9Button.Name = "program9Button";
+            program9Button.Size = new Size(450, 45);
+            program9Button.TabIndex = 3;
+            program9Button.Text = "Program 9";
+            program9Button.TextColor = Color.Red;
+            program9Button.TextOffsetX = 0;
+            program9Button.TextOffsetY = 0;
+            program9Button.UseVisualStyleBackColor = false;
+            program9Button.Click += program9Button_Click;
             // 
-            // shuzukoPanel9
+            // program10Button
             // 
-            shuzukoPanel9.BackColor = Color.White;
-            shuzukoPanel9.BorderRadius = 30;
-            shuzukoPanel9.ForeColor = Color.Black;
-            shuzukoPanel9.GradientAngle = 90F;
-            shuzukoPanel9.GradientBottomColor = Color.White;
-            shuzukoPanel9.GradientTopColor = Color.White;
-            shuzukoPanel9.Location = new Point(480, 219);
-            shuzukoPanel9.Name = "shuzukoPanel9";
-            shuzukoPanel9.Size = new Size(450, 45);
-            shuzukoPanel9.TabIndex = 2;
+            program10Button.BackColor = Color.White;
+            program10Button.BackgroundColor = Color.White;
+            program10Button.BorderColor = Color.PaleVioletRed;
+            program10Button.BorderRadius = 15;
+            program10Button.BorderSize = 0;
+            program10Button.FlatAppearance.BorderSize = 0;
+            program10Button.FlatStyle = FlatStyle.Flat;
+            program10Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program10Button.ForeColor = Color.Red;
+            program10Button.Location = new Point(480, 291);
+            program10Button.Name = "program10Button";
+            program10Button.Size = new Size(450, 45);
+            program10Button.TabIndex = 3;
+            program10Button.Text = "Program 10";
+            program10Button.TextColor = Color.Red;
+            program10Button.TextOffsetX = 0;
+            program10Button.TextOffsetY = 0;
+            program10Button.UseVisualStyleBackColor = false;
+            program10Button.Click += program10Button_Click;
             // 
-            // shuzukoPanel8
+            // program8Button
             // 
-            shuzukoPanel8.BackColor = Color.White;
-            shuzukoPanel8.BorderRadius = 30;
-            shuzukoPanel8.ForeColor = Color.Black;
-            shuzukoPanel8.GradientAngle = 90F;
-            shuzukoPanel8.GradientBottomColor = Color.White;
-            shuzukoPanel8.GradientTopColor = Color.White;
-            shuzukoPanel8.Location = new Point(480, 147);
-            shuzukoPanel8.Name = "shuzukoPanel8";
-            shuzukoPanel8.Size = new Size(450, 45);
-            shuzukoPanel8.TabIndex = 2;
+            program8Button.BackColor = Color.White;
+            program8Button.BackgroundColor = Color.White;
+            program8Button.BorderColor = Color.PaleVioletRed;
+            program8Button.BorderRadius = 15;
+            program8Button.BorderSize = 0;
+            program8Button.FlatAppearance.BorderSize = 0;
+            program8Button.FlatStyle = FlatStyle.Flat;
+            program8Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program8Button.ForeColor = Color.Red;
+            program8Button.Location = new Point(480, 219);
+            program8Button.Name = "program8Button";
+            program8Button.Size = new Size(450, 45);
+            program8Button.TabIndex = 3;
+            program8Button.Text = "Program 8";
+            program8Button.TextColor = Color.Red;
+            program8Button.TextOffsetX = 0;
+            program8Button.TextOffsetY = 0;
+            program8Button.UseVisualStyleBackColor = false;
+            program8Button.Click += program8Button_Click;
             // 
-            // shuzukoPanel7
+            // program7Button
             // 
-            shuzukoPanel7.BackColor = Color.White;
-            shuzukoPanel7.BorderRadius = 30;
-            shuzukoPanel7.ForeColor = Color.Black;
-            shuzukoPanel7.GradientAngle = 90F;
-            shuzukoPanel7.GradientBottomColor = Color.White;
-            shuzukoPanel7.GradientTopColor = Color.White;
-            shuzukoPanel7.Location = new Point(480, 75);
-            shuzukoPanel7.Name = "shuzukoPanel7";
-            shuzukoPanel7.Size = new Size(450, 45);
-            shuzukoPanel7.TabIndex = 2;
+            program7Button.BackColor = Color.White;
+            program7Button.BackgroundColor = Color.White;
+            program7Button.BorderColor = Color.PaleVioletRed;
+            program7Button.BorderRadius = 15;
+            program7Button.BorderSize = 0;
+            program7Button.FlatAppearance.BorderSize = 0;
+            program7Button.FlatStyle = FlatStyle.Flat;
+            program7Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program7Button.ForeColor = Color.Red;
+            program7Button.Location = new Point(10, 219);
+            program7Button.Name = "program7Button";
+            program7Button.Size = new Size(450, 45);
+            program7Button.TabIndex = 3;
+            program7Button.Text = "Program 7";
+            program7Button.TextColor = Color.Red;
+            program7Button.TextOffsetX = 0;
+            program7Button.TextOffsetY = 0;
+            program7Button.UseVisualStyleBackColor = false;
+            program7Button.Click += program7Button_Click;
             // 
-            // shuzukoPanel6
+            // program6Button
             // 
-            shuzukoPanel6.BackColor = Color.White;
-            shuzukoPanel6.BorderRadius = 30;
-            shuzukoPanel6.ForeColor = Color.Black;
-            shuzukoPanel6.GradientAngle = 90F;
-            shuzukoPanel6.GradientBottomColor = Color.White;
-            shuzukoPanel6.GradientTopColor = Color.White;
-            shuzukoPanel6.Location = new Point(480, 10);
-            shuzukoPanel6.Name = "shuzukoPanel6";
-            shuzukoPanel6.Size = new Size(450, 45);
-            shuzukoPanel6.TabIndex = 2;
+            program6Button.BackColor = Color.White;
+            program6Button.BackgroundColor = Color.White;
+            program6Button.BorderColor = Color.PaleVioletRed;
+            program6Button.BorderRadius = 15;
+            program6Button.BorderSize = 0;
+            program6Button.FlatAppearance.BorderSize = 0;
+            program6Button.FlatStyle = FlatStyle.Flat;
+            program6Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program6Button.ForeColor = Color.Red;
+            program6Button.Location = new Point(480, 146);
+            program6Button.Name = "program6Button";
+            program6Button.Size = new Size(450, 45);
+            program6Button.TabIndex = 3;
+            program6Button.Text = "Program 6";
+            program6Button.TextColor = Color.Red;
+            program6Button.TextOffsetX = 0;
+            program6Button.TextOffsetY = 0;
+            program6Button.UseVisualStyleBackColor = false;
+            program6Button.Click += program6Button_Click;
             // 
-            // shuzukoPanel5
+            // program5Button
             // 
-            shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
-            shuzukoPanel5.ForeColor = Color.Black;
-            shuzukoPanel5.GradientAngle = 90F;
-            shuzukoPanel5.GradientBottomColor = Color.White;
-            shuzukoPanel5.GradientTopColor = Color.White;
-            shuzukoPanel5.Location = new Point(10, 80);
-            shuzukoPanel5.Name = "shuzukoPanel5";
-            shuzukoPanel5.Size = new Size(450, 45);
-            shuzukoPanel5.TabIndex = 1;
+            program5Button.BackColor = Color.White;
+            program5Button.BackgroundColor = Color.White;
+            program5Button.BorderColor = Color.PaleVioletRed;
+            program5Button.BorderRadius = 15;
+            program5Button.BorderSize = 0;
+            program5Button.FlatAppearance.BorderSize = 0;
+            program5Button.FlatStyle = FlatStyle.Flat;
+            program5Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program5Button.ForeColor = Color.Red;
+            program5Button.Location = new Point(10, 146);
+            program5Button.Name = "program5Button";
+            program5Button.Size = new Size(450, 45);
+            program5Button.TabIndex = 3;
+            program5Button.Text = "Program 5";
+            program5Button.TextColor = Color.Red;
+            program5Button.TextOffsetX = 0;
+            program5Button.TextOffsetY = 0;
+            program5Button.UseVisualStyleBackColor = false;
+            program5Button.Click += program5Button_Click;
             // 
-            // shuzukoPanel4
+            // program4Button
             // 
-            shuzukoPanel4.BackColor = Color.White;
-            shuzukoPanel4.BorderRadius = 30;
-            shuzukoPanel4.ForeColor = Color.Black;
-            shuzukoPanel4.GradientAngle = 90F;
-            shuzukoPanel4.GradientBottomColor = Color.White;
-            shuzukoPanel4.GradientTopColor = Color.White;
-            shuzukoPanel4.Location = new Point(10, 290);
-            shuzukoPanel4.Name = "shuzukoPanel4";
-            shuzukoPanel4.Size = new Size(450, 45);
-            shuzukoPanel4.TabIndex = 1;
+            program4Button.BackColor = Color.White;
+            program4Button.BackgroundColor = Color.White;
+            program4Button.BorderColor = Color.PaleVioletRed;
+            program4Button.BorderRadius = 15;
+            program4Button.BorderSize = 0;
+            program4Button.FlatAppearance.BorderSize = 0;
+            program4Button.FlatStyle = FlatStyle.Flat;
+            program4Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program4Button.ForeColor = Color.Red;
+            program4Button.Location = new Point(480, 75);
+            program4Button.Name = "program4Button";
+            program4Button.Size = new Size(450, 45);
+            program4Button.TabIndex = 3;
+            program4Button.Text = "Program 4";
+            program4Button.TextColor = Color.Red;
+            program4Button.TextOffsetX = 0;
+            program4Button.TextOffsetY = 0;
+            program4Button.UseVisualStyleBackColor = false;
+            program4Button.Click += program4Button_Click;
             // 
-            // shuzukoPanel3
+            // program3Button
             // 
-            shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 30;
-            shuzukoPanel3.ForeColor = Color.Black;
-            shuzukoPanel3.GradientAngle = 90F;
-            shuzukoPanel3.GradientBottomColor = Color.White;
-            shuzukoPanel3.GradientTopColor = Color.White;
-            shuzukoPanel3.Location = new Point(10, 220);
-            shuzukoPanel3.Name = "shuzukoPanel3";
-            shuzukoPanel3.Size = new Size(450, 45);
-            shuzukoPanel3.TabIndex = 1;
+            program3Button.BackColor = Color.White;
+            program3Button.BackgroundColor = Color.White;
+            program3Button.BorderColor = Color.PaleVioletRed;
+            program3Button.BorderRadius = 15;
+            program3Button.BorderSize = 0;
+            program3Button.FlatAppearance.BorderSize = 0;
+            program3Button.FlatStyle = FlatStyle.Flat;
+            program3Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program3Button.ForeColor = Color.Red;
+            program3Button.Location = new Point(10, 75);
+            program3Button.Name = "program3Button";
+            program3Button.Size = new Size(450, 45);
+            program3Button.TabIndex = 3;
+            program3Button.Text = "Program 3";
+            program3Button.TextColor = Color.Red;
+            program3Button.TextOffsetX = 0;
+            program3Button.TextOffsetY = 0;
+            program3Button.UseVisualStyleBackColor = false;
+            program3Button.Click += program3Button_Click;
             // 
-            // shuzukoPanel2
+            // program2Button
             // 
-            shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 30;
-            shuzukoPanel2.ForeColor = Color.Black;
-            shuzukoPanel2.GradientAngle = 90F;
-            shuzukoPanel2.GradientBottomColor = Color.White;
-            shuzukoPanel2.GradientTopColor = Color.White;
-            shuzukoPanel2.Location = new Point(10, 150);
-            shuzukoPanel2.Name = "shuzukoPanel2";
-            shuzukoPanel2.Size = new Size(450, 45);
-            shuzukoPanel2.TabIndex = 1;
+            program2Button.BackColor = Color.White;
+            program2Button.BackgroundColor = Color.White;
+            program2Button.BorderColor = Color.PaleVioletRed;
+            program2Button.BorderRadius = 15;
+            program2Button.BorderSize = 0;
+            program2Button.FlatAppearance.BorderSize = 0;
+            program2Button.FlatStyle = FlatStyle.Flat;
+            program2Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program2Button.ForeColor = Color.Red;
+            program2Button.Location = new Point(480, 10);
+            program2Button.Name = "program2Button";
+            program2Button.Size = new Size(450, 45);
+            program2Button.TabIndex = 3;
+            program2Button.Text = "Program 2";
+            program2Button.TextColor = Color.Red;
+            program2Button.TextOffsetX = 0;
+            program2Button.TextOffsetY = 0;
+            program2Button.UseVisualStyleBackColor = false;
+            program2Button.Click += program2Button_Click;
             // 
-            // shuzukoPanel1
+            // program1Button
             // 
-            shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 30;
-            shuzukoPanel1.ForeColor = Color.Black;
-            shuzukoPanel1.GradientAngle = 90F;
-            shuzukoPanel1.GradientBottomColor = Color.White;
-            shuzukoPanel1.GradientTopColor = Color.White;
-            shuzukoPanel1.Location = new Point(10, 10);
-            shuzukoPanel1.Name = "shuzukoPanel1";
-            shuzukoPanel1.Size = new Size(450, 45);
-            shuzukoPanel1.TabIndex = 0;
+            program1Button.BackColor = Color.White;
+            program1Button.BackgroundColor = Color.White;
+            program1Button.BorderColor = Color.PaleVioletRed;
+            program1Button.BorderRadius = 15;
+            program1Button.BorderSize = 0;
+            program1Button.FlatAppearance.BorderSize = 0;
+            program1Button.FlatStyle = FlatStyle.Flat;
+            program1Button.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            program1Button.ForeColor = Color.Red;
+            program1Button.Location = new Point(10, 10);
+            program1Button.Name = "program1Button";
+            program1Button.Size = new Size(450, 45);
+            program1Button.TabIndex = 3;
+            program1Button.Text = "Program 1";
+            program1Button.TextColor = Color.Red;
+            program1Button.TextOffsetX = 0;
+            program1Button.TextOffsetY = 0;
+            program1Button.UseVisualStyleBackColor = false;
+            program1Button.Click += program1Button_Click;
             // 
             // SelectProgram
             // 
@@ -576,6 +682,8 @@
             Load += Home_Load;
             rightPanel.ResumeLayout(false);
             rightPanel.PerformLayout();
+            shuzukoPanel12.ResumeLayout(false);
+            shuzukoPanel12.PerformLayout();
             shuzukoPanel11.ResumeLayout(false);
             shuzukoPanel11.PerformLayout();
             groundPanel.ResumeLayout(false);
@@ -603,16 +711,7 @@
         private ShuzukoButton playButton;
         private ShuzukoButton settingButton;
         private ShuzukoButton enterButton;
-        private ShuzukoPanel shuzukoPanel4;
-        private ShuzukoPanel shuzukoPanel3;
-        private ShuzukoPanel shuzukoPanel2;
-        private ShuzukoPanel shuzukoPanel1;
-        private ShuzukoPanel shuzukoPanel5;
-        private ShuzukoPanel shuzukoPanel10;
-        private ShuzukoPanel shuzukoPanel9;
-        private ShuzukoPanel shuzukoPanel8;
-        private ShuzukoPanel shuzukoPanel7;
-        private ShuzukoPanel shuzukoPanel6;
+        private ShuzukoPanel program9Panel;
         private ShuzukoPanel shuzukoPanel11;
         private Label label1;
         private ShuzukoPanel shuzukoPanel12;
@@ -622,5 +721,24 @@
         private Label label3;
         private Label label6;
         private Label label7;
+        private Label labelProgramCur;
+        private ShuzukoButton shuzukoButton2;
+        private ShuzukoButton shuzukoButton3;
+        private ShuzukoButton program1Button;
+        private ShuzukoButton program9Button;
+        private ShuzukoButton program10Button;
+        private ShuzukoButton program8Button;
+        private ShuzukoButton program7Button;
+        private ShuzukoButton program6Button;
+        private ShuzukoButton program5Button;
+        private ShuzukoButton program4Button;
+        private ShuzukoButton program3Button;
+        private ShuzukoButton program2Button;
+        private ShuzukoPanel program10Panel;
+        private ShuzukoPanel program8Panel;
+        private ShuzukoPanel program6Panel;
+        private ShuzukoPanel program4Panel;
+        private ShuzukoPanel program7Panel;
+        private ShuzukoPanel program5Panel;
     }
 }
