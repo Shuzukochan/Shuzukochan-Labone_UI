@@ -25,8 +25,12 @@
             // Hiển thị form con
             childForm.BringToFront();
             childForm.Show();
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.Refresh();
+            });
         }
-        private void Home_Load(object sender, EventArgs e)
+        private void SelectProgram_Load(object sender, EventArgs e)
         {
             this.BeginInvoke((MethodInvoker)delegate
             {

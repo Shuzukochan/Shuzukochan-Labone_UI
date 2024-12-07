@@ -35,6 +35,10 @@ namespace Labone_UI
             // Hiển thị form con
             childForm.BringToFront();
             childForm.Show();
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.Refresh();
+            });
         }
         private void Setting_Load(object sender, EventArgs e)
         {

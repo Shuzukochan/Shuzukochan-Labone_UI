@@ -103,7 +103,7 @@
             // leftPanel
             // 
             leftPanel.BackColor = Color.White;
-            leftPanel.BorderRadius = 30;
+            leftPanel.BorderRadius = 15;
             leftPanel.Controls.Add(shuzukoPanel1);
             leftPanel.Controls.Add(locationOfTrays);
             leftPanel.ForeColor = Color.Black;
@@ -137,7 +137,7 @@
             // shuzukoPanel9
             // 
             shuzukoPanel9.BackColor = Color.White;
-            shuzukoPanel9.BorderRadius = 30;
+            shuzukoPanel9.BorderRadius = 15;
             shuzukoPanel9.ForeColor = Color.Black;
             shuzukoPanel9.GradientAngle = 90F;
             shuzukoPanel9.GradientBottomColor = Color.FromArgb(65, 168, 76);
@@ -150,7 +150,7 @@
             // shuzukoPanel6
             // 
             shuzukoPanel6.BackColor = Color.White;
-            shuzukoPanel6.BorderRadius = 30;
+            shuzukoPanel6.BorderRadius = 15;
             shuzukoPanel6.Controls.Add(shuzukoButton2);
             shuzukoPanel6.ForeColor = Color.Black;
             shuzukoPanel6.GradientAngle = 0F;
@@ -186,7 +186,7 @@
             // shuzukoPanel3
             // 
             shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 30;
+            shuzukoPanel3.BorderRadius = 15;
             shuzukoPanel3.Controls.Add(shuzukoButton1);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 0F;
@@ -222,7 +222,7 @@
             // shuzukoPanel5
             // 
             shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
+            shuzukoPanel5.BorderRadius = 15;
             shuzukoPanel5.ForeColor = Color.Black;
             shuzukoPanel5.GradientAngle = 0F;
             shuzukoPanel5.GradientBottomColor = Color.FromArgb(224, 224, 224);
@@ -235,7 +235,7 @@
             // shuzukoPanel4
             // 
             shuzukoPanel4.BackColor = Color.White;
-            shuzukoPanel4.BorderRadius = 30;
+            shuzukoPanel4.BorderRadius = 15;
             shuzukoPanel4.ForeColor = Color.Black;
             shuzukoPanel4.GradientAngle = 0F;
             shuzukoPanel4.GradientBottomColor = Color.FromArgb(161, 208, 250);
@@ -248,7 +248,7 @@
             // shuzukoPanel2
             // 
             shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 30;
+            shuzukoPanel2.BorderRadius = 15;
             shuzukoPanel2.ForeColor = Color.Black;
             shuzukoPanel2.GradientAngle = 0F;
             shuzukoPanel2.GradientBottomColor = Color.FromArgb(224, 224, 224);
@@ -275,7 +275,7 @@
             // groundPanel
             // 
             groundPanel.BackColor = Color.White;
-            groundPanel.BorderRadius = 30;
+            groundPanel.BorderRadius = 15;
             groundPanel.Controls.Add(vectorButton);
             groundPanel.Controls.Add(playButton);
             groundPanel.Controls.Add(settingButton);
@@ -421,7 +421,7 @@
             // underLeftPanel
             // 
             underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 30;
+            underLeftPanel.BorderRadius = 15;
             underLeftPanel.Controls.Add(Clock);
             underLeftPanel.Controls.Add(Calendar);
             underLeftPanel.Controls.Add(KingTubeAuto);
@@ -516,319 +516,319 @@
             // shuzukoPanel33
             // 
             shuzukoPanel33.BackColor = Color.White;
-            shuzukoPanel33.BorderRadius = 47;
+            shuzukoPanel33.BorderRadius = 24;
             shuzukoPanel33.ForeColor = Color.Black;
             shuzukoPanel33.GradientAngle = 90F;
             shuzukoPanel33.GradientBottomColor = Color.White;
             shuzukoPanel33.GradientTopColor = Color.White;
             shuzukoPanel33.Location = new Point(402, 284);
             shuzukoPanel33.Name = "shuzukoPanel33";
-            shuzukoPanel33.Size = new Size(47, 47);
+            shuzukoPanel33.Size = new Size(48, 48);
             shuzukoPanel33.TabIndex = 1;
             // 
             // shuzukoPanel21
             // 
             shuzukoPanel21.BackColor = Color.White;
-            shuzukoPanel21.BorderRadius = 47;
+            shuzukoPanel21.BorderRadius = 24;
             shuzukoPanel21.ForeColor = Color.Black;
             shuzukoPanel21.GradientAngle = 90F;
             shuzukoPanel21.GradientBottomColor = Color.White;
             shuzukoPanel21.GradientTopColor = Color.White;
             shuzukoPanel21.Location = new Point(15, 284);
             shuzukoPanel21.Name = "shuzukoPanel21";
-            shuzukoPanel21.Size = new Size(47, 47);
+            shuzukoPanel21.Size = new Size(48, 48);
             shuzukoPanel21.TabIndex = 1;
             // 
             // shuzukoPanel32
             // 
             shuzukoPanel32.BackColor = Color.White;
-            shuzukoPanel32.BorderRadius = 47;
+            shuzukoPanel32.BorderRadius = 24;
             shuzukoPanel32.ForeColor = Color.Black;
             shuzukoPanel32.GradientAngle = 90F;
             shuzukoPanel32.GradientBottomColor = Color.White;
             shuzukoPanel32.GradientTopColor = Color.White;
             shuzukoPanel32.Location = new Point(402, 231);
             shuzukoPanel32.Name = "shuzukoPanel32";
-            shuzukoPanel32.Size = new Size(47, 47);
+            shuzukoPanel32.Size = new Size(48, 48);
             shuzukoPanel32.TabIndex = 1;
             // 
             // shuzukoPanel19
             // 
             shuzukoPanel19.BackColor = Color.White;
-            shuzukoPanel19.BorderRadius = 47;
+            shuzukoPanel19.BorderRadius = 24;
             shuzukoPanel19.ForeColor = Color.Black;
             shuzukoPanel19.GradientAngle = 90F;
             shuzukoPanel19.GradientBottomColor = Color.White;
             shuzukoPanel19.GradientTopColor = Color.White;
             shuzukoPanel19.Location = new Point(15, 231);
             shuzukoPanel19.Name = "shuzukoPanel19";
-            shuzukoPanel19.Size = new Size(47, 47);
+            shuzukoPanel19.Size = new Size(48, 48);
             shuzukoPanel19.TabIndex = 1;
             // 
             // shuzukoPanel31
             // 
             shuzukoPanel31.BackColor = Color.White;
-            shuzukoPanel31.BorderRadius = 47;
+            shuzukoPanel31.BorderRadius = 24;
             shuzukoPanel31.ForeColor = Color.Black;
             shuzukoPanel31.GradientAngle = 90F;
             shuzukoPanel31.GradientBottomColor = Color.White;
             shuzukoPanel31.GradientTopColor = Color.White;
             shuzukoPanel31.Location = new Point(402, 178);
             shuzukoPanel31.Name = "shuzukoPanel31";
-            shuzukoPanel31.Size = new Size(47, 47);
+            shuzukoPanel31.Size = new Size(48, 48);
             shuzukoPanel31.TabIndex = 1;
             // 
             // shuzukoPanel17
             // 
             shuzukoPanel17.BackColor = Color.White;
-            shuzukoPanel17.BorderRadius = 47;
+            shuzukoPanel17.BorderRadius = 24;
             shuzukoPanel17.ForeColor = Color.Black;
             shuzukoPanel17.GradientAngle = 90F;
             shuzukoPanel17.GradientBottomColor = Color.White;
             shuzukoPanel17.GradientTopColor = Color.White;
             shuzukoPanel17.Location = new Point(15, 178);
             shuzukoPanel17.Name = "shuzukoPanel17";
-            shuzukoPanel17.Size = new Size(47, 47);
+            shuzukoPanel17.Size = new Size(48, 48);
             shuzukoPanel17.TabIndex = 1;
             // 
             // shuzukoPanel30
             // 
             shuzukoPanel30.BackColor = Color.White;
-            shuzukoPanel30.BorderRadius = 47;
+            shuzukoPanel30.BorderRadius = 24;
             shuzukoPanel30.ForeColor = Color.Black;
             shuzukoPanel30.GradientAngle = 90F;
             shuzukoPanel30.GradientBottomColor = Color.White;
             shuzukoPanel30.GradientTopColor = Color.White;
             shuzukoPanel30.Location = new Point(402, 125);
             shuzukoPanel30.Name = "shuzukoPanel30";
-            shuzukoPanel30.Size = new Size(47, 47);
+            shuzukoPanel30.Size = new Size(48, 48);
             shuzukoPanel30.TabIndex = 1;
             // 
             // shuzukoPanel14
             // 
             shuzukoPanel14.BackColor = Color.White;
-            shuzukoPanel14.BorderRadius = 47;
+            shuzukoPanel14.BorderRadius = 24;
             shuzukoPanel14.ForeColor = Color.Black;
             shuzukoPanel14.GradientAngle = 90F;
             shuzukoPanel14.GradientBottomColor = Color.White;
             shuzukoPanel14.GradientTopColor = Color.White;
             shuzukoPanel14.Location = new Point(15, 125);
             shuzukoPanel14.Name = "shuzukoPanel14";
-            shuzukoPanel14.Size = new Size(47, 47);
+            shuzukoPanel14.Size = new Size(48, 48);
             shuzukoPanel14.TabIndex = 1;
             // 
             // shuzukoPanel29
             // 
             shuzukoPanel29.BackColor = Color.White;
-            shuzukoPanel29.BorderRadius = 47;
+            shuzukoPanel29.BorderRadius = 24;
             shuzukoPanel29.ForeColor = Color.Black;
             shuzukoPanel29.GradientAngle = 90F;
             shuzukoPanel29.GradientBottomColor = Color.White;
             shuzukoPanel29.GradientTopColor = Color.White;
             shuzukoPanel29.Location = new Point(402, 72);
             shuzukoPanel29.Name = "shuzukoPanel29";
-            shuzukoPanel29.Size = new Size(47, 47);
+            shuzukoPanel29.Size = new Size(48, 48);
             shuzukoPanel29.TabIndex = 1;
             // 
             // shuzukoPanel12
             // 
             shuzukoPanel12.BackColor = Color.White;
-            shuzukoPanel12.BorderRadius = 47;
+            shuzukoPanel12.BorderRadius = 24;
             shuzukoPanel12.ForeColor = Color.Black;
             shuzukoPanel12.GradientAngle = 90F;
             shuzukoPanel12.GradientBottomColor = Color.White;
             shuzukoPanel12.GradientTopColor = Color.White;
             shuzukoPanel12.Location = new Point(15, 72);
             shuzukoPanel12.Name = "shuzukoPanel12";
-            shuzukoPanel12.Size = new Size(47, 47);
+            shuzukoPanel12.Size = new Size(48, 48);
             shuzukoPanel12.TabIndex = 1;
             // 
             // shuzukoPanel28
             // 
             shuzukoPanel28.BackColor = Color.White;
-            shuzukoPanel28.BorderRadius = 47;
+            shuzukoPanel28.BorderRadius = 24;
             shuzukoPanel28.ForeColor = Color.Black;
             shuzukoPanel28.GradientAngle = 90F;
             shuzukoPanel28.GradientBottomColor = Color.White;
             shuzukoPanel28.GradientTopColor = Color.White;
             shuzukoPanel28.Location = new Point(402, 19);
             shuzukoPanel28.Name = "shuzukoPanel28";
-            shuzukoPanel28.Size = new Size(47, 47);
+            shuzukoPanel28.Size = new Size(48, 48);
             shuzukoPanel28.TabIndex = 1;
             // 
             // shuzukoPanel10
             // 
             shuzukoPanel10.BackColor = Color.White;
-            shuzukoPanel10.BorderRadius = 47;
+            shuzukoPanel10.BorderRadius = 24;
             shuzukoPanel10.ForeColor = Color.Black;
             shuzukoPanel10.GradientAngle = 90F;
             shuzukoPanel10.GradientBottomColor = Color.White;
             shuzukoPanel10.GradientTopColor = Color.White;
             shuzukoPanel10.Location = new Point(15, 19);
             shuzukoPanel10.Name = "shuzukoPanel10";
-            shuzukoPanel10.Size = new Size(47, 47);
+            shuzukoPanel10.Size = new Size(48, 48);
             shuzukoPanel10.TabIndex = 1;
             // 
             // shuzukoPanel27
             // 
             shuzukoPanel27.BackColor = Color.White;
-            shuzukoPanel27.BorderRadius = 30;
+            shuzukoPanel27.BorderRadius = 15;
             shuzukoPanel27.ForeColor = Color.Black;
             shuzukoPanel27.GradientAngle = 0F;
             shuzukoPanel27.GradientBottomColor = Color.White;
             shuzukoPanel27.GradientTopColor = Color.White;
             shuzukoPanel27.Location = new Point(461, 284);
             shuzukoPanel27.Name = "shuzukoPanel27";
-            shuzukoPanel27.Size = new Size(263, 47);
+            shuzukoPanel27.Size = new Size(263, 48);
             shuzukoPanel27.TabIndex = 0;
             // 
             // shuzukoPanel20
             // 
             shuzukoPanel20.BackColor = Color.White;
-            shuzukoPanel20.BorderRadius = 30;
+            shuzukoPanel20.BorderRadius = 15;
             shuzukoPanel20.ForeColor = Color.Black;
             shuzukoPanel20.GradientAngle = 0F;
             shuzukoPanel20.GradientBottomColor = Color.White;
             shuzukoPanel20.GradientTopColor = Color.White;
             shuzukoPanel20.Location = new Point(74, 284);
             shuzukoPanel20.Name = "shuzukoPanel20";
-            shuzukoPanel20.Size = new Size(265, 47);
+            shuzukoPanel20.Size = new Size(265, 48);
             shuzukoPanel20.TabIndex = 0;
             // 
             // shuzukoPanel26
             // 
             shuzukoPanel26.BackColor = Color.White;
-            shuzukoPanel26.BorderRadius = 30;
+            shuzukoPanel26.BorderRadius = 15;
             shuzukoPanel26.ForeColor = Color.Black;
             shuzukoPanel26.GradientAngle = 0F;
             shuzukoPanel26.GradientBottomColor = Color.White;
             shuzukoPanel26.GradientTopColor = Color.White;
             shuzukoPanel26.Location = new Point(461, 231);
             shuzukoPanel26.Name = "shuzukoPanel26";
-            shuzukoPanel26.Size = new Size(263, 47);
+            shuzukoPanel26.Size = new Size(263, 48);
             shuzukoPanel26.TabIndex = 0;
             // 
             // shuzukoPanel18
             // 
             shuzukoPanel18.BackColor = Color.White;
-            shuzukoPanel18.BorderRadius = 30;
+            shuzukoPanel18.BorderRadius = 15;
             shuzukoPanel18.ForeColor = Color.Black;
             shuzukoPanel18.GradientAngle = 0F;
             shuzukoPanel18.GradientBottomColor = Color.White;
             shuzukoPanel18.GradientTopColor = Color.White;
             shuzukoPanel18.Location = new Point(74, 231);
             shuzukoPanel18.Name = "shuzukoPanel18";
-            shuzukoPanel18.Size = new Size(265, 47);
+            shuzukoPanel18.Size = new Size(265, 48);
             shuzukoPanel18.TabIndex = 0;
             // 
             // shuzukoPanel25
             // 
             shuzukoPanel25.BackColor = Color.White;
-            shuzukoPanel25.BorderRadius = 30;
+            shuzukoPanel25.BorderRadius = 15;
             shuzukoPanel25.ForeColor = Color.Black;
             shuzukoPanel25.GradientAngle = 0F;
             shuzukoPanel25.GradientBottomColor = Color.White;
             shuzukoPanel25.GradientTopColor = Color.White;
             shuzukoPanel25.Location = new Point(461, 178);
             shuzukoPanel25.Name = "shuzukoPanel25";
-            shuzukoPanel25.Size = new Size(263, 47);
+            shuzukoPanel25.Size = new Size(263, 48);
             shuzukoPanel25.TabIndex = 0;
             // 
             // shuzukoPanel16
             // 
             shuzukoPanel16.BackColor = Color.White;
-            shuzukoPanel16.BorderRadius = 30;
+            shuzukoPanel16.BorderRadius = 15;
             shuzukoPanel16.ForeColor = Color.Black;
             shuzukoPanel16.GradientAngle = 0F;
             shuzukoPanel16.GradientBottomColor = Color.White;
             shuzukoPanel16.GradientTopColor = Color.White;
             shuzukoPanel16.Location = new Point(74, 178);
             shuzukoPanel16.Name = "shuzukoPanel16";
-            shuzukoPanel16.Size = new Size(265, 47);
+            shuzukoPanel16.Size = new Size(265, 48);
             shuzukoPanel16.TabIndex = 0;
             // 
             // shuzukoPanel24
             // 
             shuzukoPanel24.BackColor = Color.White;
-            shuzukoPanel24.BorderRadius = 30;
+            shuzukoPanel24.BorderRadius = 15;
             shuzukoPanel24.ForeColor = Color.Black;
             shuzukoPanel24.GradientAngle = 0F;
             shuzukoPanel24.GradientBottomColor = Color.White;
             shuzukoPanel24.GradientTopColor = Color.White;
             shuzukoPanel24.Location = new Point(461, 125);
             shuzukoPanel24.Name = "shuzukoPanel24";
-            shuzukoPanel24.Size = new Size(263, 47);
+            shuzukoPanel24.Size = new Size(263, 48);
             shuzukoPanel24.TabIndex = 0;
             // 
             // shuzukoPanel13
             // 
             shuzukoPanel13.BackColor = Color.White;
-            shuzukoPanel13.BorderRadius = 30;
+            shuzukoPanel13.BorderRadius = 15;
             shuzukoPanel13.ForeColor = Color.Black;
             shuzukoPanel13.GradientAngle = 0F;
             shuzukoPanel13.GradientBottomColor = Color.White;
             shuzukoPanel13.GradientTopColor = Color.White;
             shuzukoPanel13.Location = new Point(74, 125);
             shuzukoPanel13.Name = "shuzukoPanel13";
-            shuzukoPanel13.Size = new Size(265, 47);
+            shuzukoPanel13.Size = new Size(265, 48);
             shuzukoPanel13.TabIndex = 0;
             // 
             // shuzukoPanel23
             // 
             shuzukoPanel23.BackColor = Color.White;
-            shuzukoPanel23.BorderRadius = 30;
+            shuzukoPanel23.BorderRadius = 15;
             shuzukoPanel23.ForeColor = Color.Black;
             shuzukoPanel23.GradientAngle = 0F;
             shuzukoPanel23.GradientBottomColor = Color.White;
             shuzukoPanel23.GradientTopColor = Color.White;
             shuzukoPanel23.Location = new Point(461, 72);
             shuzukoPanel23.Name = "shuzukoPanel23";
-            shuzukoPanel23.Size = new Size(263, 47);
+            shuzukoPanel23.Size = new Size(263, 48);
             shuzukoPanel23.TabIndex = 0;
             // 
             // shuzukoPanel11
             // 
             shuzukoPanel11.BackColor = Color.White;
-            shuzukoPanel11.BorderRadius = 30;
+            shuzukoPanel11.BorderRadius = 15;
             shuzukoPanel11.ForeColor = Color.Black;
             shuzukoPanel11.GradientAngle = 0F;
             shuzukoPanel11.GradientBottomColor = Color.White;
             shuzukoPanel11.GradientTopColor = Color.White;
             shuzukoPanel11.Location = new Point(74, 72);
             shuzukoPanel11.Name = "shuzukoPanel11";
-            shuzukoPanel11.Size = new Size(265, 47);
+            shuzukoPanel11.Size = new Size(265, 48);
             shuzukoPanel11.TabIndex = 0;
             // 
             // shuzukoPanel22
             // 
             shuzukoPanel22.BackColor = Color.White;
-            shuzukoPanel22.BorderRadius = 30;
+            shuzukoPanel22.BorderRadius = 15;
             shuzukoPanel22.ForeColor = Color.Black;
             shuzukoPanel22.GradientAngle = 0F;
             shuzukoPanel22.GradientBottomColor = Color.White;
             shuzukoPanel22.GradientTopColor = Color.White;
             shuzukoPanel22.Location = new Point(461, 19);
             shuzukoPanel22.Name = "shuzukoPanel22";
-            shuzukoPanel22.Size = new Size(263, 47);
+            shuzukoPanel22.Size = new Size(263, 48);
             shuzukoPanel22.TabIndex = 0;
             // 
             // shuzukoPanel8
             // 
             shuzukoPanel8.BackColor = Color.White;
-            shuzukoPanel8.BorderRadius = 30;
+            shuzukoPanel8.BorderRadius = 15;
             shuzukoPanel8.ForeColor = Color.Black;
             shuzukoPanel8.GradientAngle = 0F;
             shuzukoPanel8.GradientBottomColor = Color.White;
             shuzukoPanel8.GradientTopColor = Color.White;
             shuzukoPanel8.Location = new Point(74, 19);
             shuzukoPanel8.Name = "shuzukoPanel8";
-            shuzukoPanel8.Size = new Size(265, 47);
+            shuzukoPanel8.Size = new Size(265, 48);
             shuzukoPanel8.TabIndex = 0;
             // 
             // midPanel
             // 
             midPanel.BackColor = Color.White;
-            midPanel.BorderRadius = 30;
+            midPanel.BorderRadius = 15;
             midPanel.Controls.Add(shuzukoPanel7);
             midPanel.Controls.Add(label1);
             midPanel.ForeColor = Color.Black;
@@ -843,7 +843,7 @@
             // shuzukoPanel7
             // 
             shuzukoPanel7.BackColor = Color.White;
-            shuzukoPanel7.BorderRadius = 30;
+            shuzukoPanel7.BorderRadius = 15;
             shuzukoPanel7.Controls.Add(shuzukoPanel15);
             shuzukoPanel7.Controls.Add(label7);
             shuzukoPanel7.Controls.Add(label6);
@@ -863,7 +863,7 @@
             // shuzukoPanel15
             // 
             shuzukoPanel15.BackColor = Color.White;
-            shuzukoPanel15.BorderRadius = 30;
+            shuzukoPanel15.BorderRadius = 22;
             shuzukoPanel15.ForeColor = Color.Black;
             shuzukoPanel15.GradientAngle = 90F;
             shuzukoPanel15.GradientBottomColor = Color.FromArgb(169, 218, 251);

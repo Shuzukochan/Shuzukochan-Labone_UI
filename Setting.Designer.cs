@@ -303,7 +303,7 @@
             // 
             // shuzukoPanel6
             // 
-            shuzukoPanel6.BackColor = Color.White;
+            shuzukoPanel6.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel6.BorderRadius = 30;
             shuzukoPanel6.Controls.Add(in4Button);
             shuzukoPanel6.Controls.Add(label6);
@@ -350,7 +350,7 @@
             // 
             // shuzukoPanel7
             // 
-            shuzukoPanel7.BackColor = Color.White;
+            shuzukoPanel7.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel7.BorderRadius = 30;
             shuzukoPanel7.Controls.Add(otaButton);
             shuzukoPanel7.Controls.Add(label7);
@@ -397,7 +397,7 @@
             // 
             // shuzukoPanel5
             // 
-            shuzukoPanel5.BackColor = Color.White;
+            shuzukoPanel5.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel5.BorderRadius = 30;
             shuzukoPanel5.Controls.Add(shutdownButton);
             shuzukoPanel5.Controls.Add(label5);
@@ -444,7 +444,7 @@
             // 
             // shuzukoPanel4
             // 
-            shuzukoPanel4.BackColor = Color.White;
+            shuzukoPanel4.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel4.BorderRadius = 30;
             shuzukoPanel4.Controls.Add(setupButton);
             shuzukoPanel4.Controls.Add(label4);
@@ -492,7 +492,7 @@
             // 
             // shuzukoPanel3
             // 
-            shuzukoPanel3.BackColor = Color.White;
+            shuzukoPanel3.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel3.BorderRadius = 30;
             shuzukoPanel3.Controls.Add(configButton);
             shuzukoPanel3.Controls.Add(label3);
@@ -539,7 +539,7 @@
             // 
             // shuzukoPanel2
             // 
-            shuzukoPanel2.BackColor = Color.White;
+            shuzukoPanel2.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel2.BorderRadius = 30;
             shuzukoPanel2.Controls.Add(timeButton);
             shuzukoPanel2.Controls.Add(label2);
@@ -586,7 +586,7 @@
             // 
             // shuzukoPanel1
             // 
-            shuzukoPanel1.BackColor = Color.White;
+            shuzukoPanel1.BackColor = Color.FromArgb(226, 227, 229);
             shuzukoPanel1.BorderRadius = 30;
             shuzukoPanel1.Controls.Add(calibrationButton);
             shuzukoPanel1.Controls.Add(label1);
@@ -603,7 +603,7 @@
             // 
             calibrationButton.BackColor = Color.White;
             calibrationButton.BackgroundColor = Color.White;
-            calibrationButton.BorderColor = Color.PaleVioletRed;
+            calibrationButton.BorderColor = Color.Transparent;
             calibrationButton.BorderRadius = 15;
             calibrationButton.BorderSize = 0;
             calibrationButton.FlatAppearance.BorderSize = 0;

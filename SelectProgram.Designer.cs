@@ -573,7 +573,7 @@
             Controls.Add(groundPanel);
             Name = "SelectProgram";
             Text = "Form1";
-            Load += Home_Load;
+            Load += SelectProgram_Load;
             rightPanel.ResumeLayout(false);
             rightPanel.PerformLayout();
             shuzukoPanel11.ResumeLayout(false);
