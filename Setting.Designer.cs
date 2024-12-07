@@ -221,6 +221,7 @@
             homeButton.TextOffsetX = 0;
             homeButton.TextOffsetY = 0;
             homeButton.UseVisualStyleBackColor = false;
+            homeButton.Click += homeButton_Click;
             // 
             // underLeftPanel
             // 
@@ -469,12 +470,13 @@
             setupButton.Image = Properties.Resources.SetupProgram;
             setupButton.Location = new Point(0, -1);
             setupButton.Name = "setupButton";
-            setupButton.Size = new Size(300, 190);
+            setupButton.Size = new Size(260, 190);
             setupButton.TabIndex = 0;
             setupButton.TextColor = Color.White;
             setupButton.TextOffsetX = 0;
             setupButton.TextOffsetY = 0;
             setupButton.UseVisualStyleBackColor = false;
+            setupButton.Click += setupButton_Click;
             // 
             // label4
             // 
