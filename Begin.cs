@@ -15,6 +15,7 @@ namespace Labone_UI
         public Begin()
         {
             InitializeComponent();
+
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -38,6 +39,14 @@ namespace Labone_UI
             leftPanel.Visible = false;
             midPanel.Visible = false;
             rightPanel.Visible = false;
+        }
+
+        private void Begin_Load(object sender, EventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.Refresh();
+            });
         }
     }
 }

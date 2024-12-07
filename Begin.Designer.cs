@@ -971,6 +971,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Begin";
             Text = "Form1";
+            Load += Begin_Load;
             leftPanel.ResumeLayout(false);
             leftPanel.PerformLayout();
             shuzukoPanel1.ResumeLayout(false);
