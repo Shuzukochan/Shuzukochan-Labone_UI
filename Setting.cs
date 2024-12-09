@@ -29,7 +29,7 @@ namespace Labone_UI
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Setting_1(), groundPanel);
         }
     }
 }
