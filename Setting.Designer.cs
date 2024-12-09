@@ -386,7 +386,6 @@
             setupButton.FlatAppearance.BorderSize = 0;
             setupButton.FlatStyle = FlatStyle.Flat;
             setupButton.ForeColor = Color.White;
-            setupButton.Image = Properties.Resources.SetupProgram;
             setupButton.Location = new Point(0, -1);
             setupButton.Name = "setupButton";
             setupButton.Size = new Size(260, 190);
