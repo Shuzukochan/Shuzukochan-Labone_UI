@@ -311,6 +311,7 @@
             returnButton.TextOffsetX = 0;
             returnButton.TextOffsetY = 0;
             returnButton.UseVisualStyleBackColor = false;
+            returnButton.Click += returnButton_Click;
             // 
             // shuzukoPanel6
             // 
