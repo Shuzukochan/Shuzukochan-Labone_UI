@@ -639,7 +639,6 @@
             Controls.Add(groundPanel);
             Name = "Setting";
             Text = "Form1";
-            Load += Setting_Load;
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);
             underLeftPanel.PerformLayout();

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class Setting : BaseForm
+    public partial class ProgramParameter : BaseForm
     {
-        public Setting()
+        public ProgramParameter()
         {
             InitializeComponent();
-        }
-        private void setupButton_Click(object sender, EventArgs e)
-        {
-            // Mở form cài đặt
-            OpenChildForm(new SelectProgram(), groundPanel);
         }
 
         private void homeButton_Click(object sender, EventArgs e)

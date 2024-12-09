@@ -13,44 +13,17 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class Begin : Form
+    public partial class Begin : BaseForm
     {
-        private Form? currentFormChild; // Cho phép nullable để tránh cảnh báo CS8618
-
         public Begin()
         {
             InitializeComponent();
 
         }
-
-        private void OpenChildForm(Form childForm)
-        {
-            // Đóng form con hiện tại nếu tồn tại
-            currentFormChild?.Close();
-
-            // Thiết lập form con mới
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            // Thêm form con vào panel
-            groundPanel.Controls.Add(childForm);
-            groundPanel.Tag = childForm;
-
-            // Hiển thị form con
-            childForm.BringToFront();
-            childForm.Show();
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                this.Refresh();
-            });
-        }
-
         private void settingButton_Click(object sender, EventArgs e)
         {
             // Mở form cài đặt
-            OpenChildForm(new Setting());
+            OpenChildForm(new Setting(), groundPanel);
 
             // Ẩn các panel
             leftPanel.Visible = false;

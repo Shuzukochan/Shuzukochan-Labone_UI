@@ -1,34 +1,10 @@
 ﻿namespace Labone_UI
 {
-    public partial class SelectProgram : Form
+    public partial class SelectProgram : BaseForm
     {
-        private Form? currentFormChild; // Cho phép nullable để tránh cảnh báo CS8618
         public SelectProgram()
         {
             InitializeComponent();
-        }
-        private void OpenChildForm(Form childForm)
-        {
-            // Đóng form con hiện tại nếu tồn tại
-            currentFormChild?.Close();
-
-            // Thiết lập form con mới
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            // Thêm form con vào panel
-            groundPanel.Controls.Add(childForm);
-            groundPanel.Tag = childForm;
-
-            // Hiển thị form con
-            childForm.BringToFront();
-            childForm.Show();
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                this.Refresh();
-            });
         }
         private void SelectProgram_Load(object sender, EventArgs e)
         {
@@ -61,7 +37,7 @@
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Begin());
+            OpenChildForm(new Begin(), groundPanel);
             // Ẩn các panel
             leftPanel.Visible = false;
             rightPanel.Visible = false;
@@ -124,8 +100,16 @@
         private void program10Button_Click(object sender, EventArgs e)
         {
             labelProgramCur.Visible = true;
-            labelProgramCur.Location = new Point(388,6);
+            labelProgramCur.Location = new Point(388, 6);
             labelProgramCur.Text = "Program 10";
+        }
+
+        private void enterButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProgramParameter(), groundPanel);
+            // Ẩn các panel
+            leftPanel.Visible = false;
+            rightPanel.Visible = false;
         }
     }
 }

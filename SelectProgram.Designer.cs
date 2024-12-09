@@ -326,6 +326,7 @@
             enterButton.TextOffsetX = 0;
             enterButton.TextOffsetY = 0;
             enterButton.UseVisualStyleBackColor = false;
+            enterButton.Click += enterButton_Click;
             // 
             // backButton
             // 
