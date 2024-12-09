@@ -113,6 +113,16 @@ namespace Labone_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Barcode {
+            get {
+                object obj = ResourceManager.GetObject("Barcode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Calendar {
             get {
                 object obj = ResourceManager.GetObject("Calendar", resourceCulture);
@@ -136,6 +146,16 @@ namespace Labone_UI.Properties {
         internal static System.Drawing.Bitmap Config {
             get {
                 object obj = ResourceManager.GetObject("Config", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLogger {
+            get {
+                object obj = ResourceManager.GetObject("DataLogger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,16 @@ namespace Labone_UI.Properties {
         internal static System.Drawing.Bitmap Vector {
             get {
                 object obj = ResourceManager.GetObject("Vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wifi {
+            get {
+                object obj = ResourceManager.GetObject("Wifi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
