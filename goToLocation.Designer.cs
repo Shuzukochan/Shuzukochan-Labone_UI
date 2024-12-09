@@ -957,7 +957,6 @@
             shuzukoButton4.FlatStyle = FlatStyle.Flat;
             shuzukoButton4.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
             shuzukoButton4.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton4.Image = Properties.Resources._continue;
             shuzukoButton4.Location = new Point(675, 227);
             shuzukoButton4.Name = "shuzukoButton4";
             shuzukoButton4.RightToLeft = RightToLeft.Yes;

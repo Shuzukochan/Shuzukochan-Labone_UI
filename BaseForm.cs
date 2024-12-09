@@ -4,12 +4,6 @@ using System.Windows.Forms;
 public class BaseForm : Form
 {
     private Form? currentFormChild;
-
-    /// <summary>
-    /// Phương thức dùng để mở form con bên trong groundPanel
-    /// </summary>
-    /// <param name="childForm">Form con cần hiển thị</param>
-    /// <param name="groundPanel">Panel mà form con sẽ nằm trong</param>
     protected void OpenChildForm(Form childForm, Panel groundPanel)
     {
         // Đóng form con hiện tại nếu tồn tại

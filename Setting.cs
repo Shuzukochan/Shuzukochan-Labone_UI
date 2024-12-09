@@ -31,5 +31,13 @@ namespace Labone_UI
         {
             OpenChildForm(new Setting_1(), groundPanel);
         }
+
+        private void Setting_Load(object sender, EventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.Refresh();
+            });
+        }
     }
 }
