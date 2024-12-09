@@ -58,5 +58,10 @@ namespace Labone_UI
         {
             OpenChildForm(new Begin());
         }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
