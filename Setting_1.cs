@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labone_UI.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +29,16 @@ namespace Labone_UI
             {
                 this.Refresh();
             });
+        }
+
+        private void otaButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new OTAUpdate(), groundPanel);
+        }
+
+        private void in4Button_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new About(), groundPanel);
         }
     }
 }

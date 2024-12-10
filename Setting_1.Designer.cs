@@ -137,8 +137,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.Silver;
-            settingButton.BackgroundColor = Color.Silver;
+            settingButton.BackColor = Color.Gray;
+            settingButton.BackgroundColor = Color.Gray;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -157,8 +157,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.Silver;
-            enterButton.BackgroundColor = Color.Silver;
+            enterButton.BackColor = Color.DarkGray;
+            enterButton.BackgroundColor = Color.DarkGray;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;
@@ -347,6 +347,7 @@
             in4Button.TextOffsetX = 0;
             in4Button.TextOffsetY = 0;
             in4Button.UseVisualStyleBackColor = false;
+            in4Button.Click += in4Button_Click;
             // 
             // label6
             // 
@@ -394,6 +395,7 @@
             otaButton.TextOffsetX = 0;
             otaButton.TextOffsetY = 0;
             otaButton.UseVisualStyleBackColor = false;
+            otaButton.Click += otaButton_Click;
             // 
             // label7
             // 

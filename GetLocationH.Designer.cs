@@ -41,6 +41,8 @@
             KingTubeAuto = new Label();
             logo = new PictureBox();
             leftPanel = new ShuzukoPanel();
+            shuzukoButton3 = new ShuzukoButton();
+            shuzukoButton4 = new ShuzukoButton();
             shuzukoPanel13 = new ShuzukoPanel();
             label8 = new Label();
             shuzukoPanel12 = new ShuzukoPanel();
@@ -74,8 +76,6 @@
             shuzukoButton5 = new ShuzukoButton();
             shuzukoButton7 = new ShuzukoButton();
             shuzukoButton1 = new ShuzukoButton();
-            shuzukoButton3 = new ShuzukoButton();
-            shuzukoButton4 = new ShuzukoButton();
             groundPanel.SuspendLayout();
             underLeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
@@ -138,8 +138,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.White;
-            playButton.BackgroundColor = Color.White;
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -153,7 +153,7 @@
             playButton.Name = "playButton";
             playButton.Size = new Size(261, 68);
             playButton.TabIndex = 8;
-            playButton.Text = "LET'S GO";
+            playButton.Text = "  BEGIN";
             playButton.TextColor = Color.FromArgb(45, 48, 129);
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
@@ -161,8 +161,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.White;
-            settingButton.BackgroundColor = Color.White;
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -221,8 +221,8 @@
             // 
             // homeButton
             // 
-            homeButton.BackColor = Color.White;
-            homeButton.BackgroundColor = Color.White;
+            homeButton.BackColor = Color.Silver;
+            homeButton.BackgroundColor = Color.Silver;
             homeButton.BorderColor = Color.Transparent;
             homeButton.BorderRadius = 34;
             homeButton.BorderSize = 0;
@@ -300,7 +300,7 @@
             // leftPanel
             // 
             leftPanel.BackColor = Color.White;
-            leftPanel.BorderRadius = 30;
+            leftPanel.BorderRadius = 15;
             leftPanel.Controls.Add(shuzukoButton3);
             leftPanel.Controls.Add(shuzukoButton4);
             leftPanel.Controls.Add(shuzukoPanel13);
@@ -332,10 +332,54 @@
             leftPanel.Size = new Size(1879, 345);
             leftPanel.TabIndex = 2;
             // 
+            // shuzukoButton3
+            // 
+            shuzukoButton3.BackColor = Color.White;
+            shuzukoButton3.BackgroundColor = Color.White;
+            shuzukoButton3.BorderColor = Color.PaleVioletRed;
+            shuzukoButton3.BorderRadius = 15;
+            shuzukoButton3.BorderSize = 0;
+            shuzukoButton3.FlatAppearance.BorderSize = 0;
+            shuzukoButton3.FlatStyle = FlatStyle.Flat;
+            shuzukoButton3.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
+            shuzukoButton3.ForeColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton3.Location = new Point(1020, 241);
+            shuzukoButton3.Name = "shuzukoButton3";
+            shuzukoButton3.RightToLeft = RightToLeft.Yes;
+            shuzukoButton3.Size = new Size(106, 76);
+            shuzukoButton3.TabIndex = 6;
+            shuzukoButton3.Text = "Z+";
+            shuzukoButton3.TextColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton3.TextOffsetX = 0;
+            shuzukoButton3.TextOffsetY = 0;
+            shuzukoButton3.UseVisualStyleBackColor = false;
+            // 
+            // shuzukoButton4
+            // 
+            shuzukoButton4.BackColor = Color.White;
+            shuzukoButton4.BackgroundColor = Color.White;
+            shuzukoButton4.BorderColor = Color.PaleVioletRed;
+            shuzukoButton4.BorderRadius = 15;
+            shuzukoButton4.BorderSize = 0;
+            shuzukoButton4.FlatAppearance.BorderSize = 0;
+            shuzukoButton4.FlatStyle = FlatStyle.Flat;
+            shuzukoButton4.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
+            shuzukoButton4.ForeColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton4.Location = new Point(1020, 80);
+            shuzukoButton4.Name = "shuzukoButton4";
+            shuzukoButton4.RightToLeft = RightToLeft.Yes;
+            shuzukoButton4.Size = new Size(106, 76);
+            shuzukoButton4.TabIndex = 7;
+            shuzukoButton4.Text = "Z-";
+            shuzukoButton4.TextColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton4.TextOffsetX = 0;
+            shuzukoButton4.TextOffsetY = 0;
+            shuzukoButton4.UseVisualStyleBackColor = false;
+            // 
             // shuzukoPanel13
             // 
             shuzukoPanel13.BackColor = Color.White;
-            shuzukoPanel13.BorderRadius = 30;
+            shuzukoPanel13.BorderRadius = 15;
             shuzukoPanel13.Controls.Add(label8);
             shuzukoPanel13.ForeColor = Color.Black;
             shuzukoPanel13.GradientAngle = 90F;
@@ -361,7 +405,7 @@
             // shuzukoPanel12
             // 
             shuzukoPanel12.BackColor = Color.White;
-            shuzukoPanel12.BorderRadius = 30;
+            shuzukoPanel12.BorderRadius = 15;
             shuzukoPanel12.Controls.Add(label7);
             shuzukoPanel12.ForeColor = Color.Black;
             shuzukoPanel12.GradientAngle = 90F;
@@ -387,7 +431,7 @@
             // shuzukoPanel10
             // 
             shuzukoPanel10.BackColor = Color.White;
-            shuzukoPanel10.BorderRadius = 30;
+            shuzukoPanel10.BorderRadius = 15;
             shuzukoPanel10.Controls.Add(label5);
             shuzukoPanel10.ForeColor = Color.Black;
             shuzukoPanel10.GradientAngle = 90F;
@@ -413,7 +457,7 @@
             // shuzukoPanel9
             // 
             shuzukoPanel9.BackColor = Color.White;
-            shuzukoPanel9.BorderRadius = 30;
+            shuzukoPanel9.BorderRadius = 15;
             shuzukoPanel9.Controls.Add(label1);
             shuzukoPanel9.ForeColor = Color.Black;
             shuzukoPanel9.GradientAngle = 90F;
@@ -439,7 +483,7 @@
             // shuzukoPanel8
             // 
             shuzukoPanel8.BackColor = Color.White;
-            shuzukoPanel8.BorderRadius = 30;
+            shuzukoPanel8.BorderRadius = 15;
             shuzukoPanel8.Controls.Add(shuzukoButton15);
             shuzukoPanel8.Controls.Add(shuzukoButton16);
             shuzukoPanel8.Controls.Add(shuzukoButton13);
@@ -467,7 +511,7 @@
             shuzukoButton15.Location = new Point(476, 37);
             shuzukoButton15.Name = "shuzukoButton15";
             shuzukoButton15.RightToLeft = RightToLeft.Yes;
-            shuzukoButton15.Size = new Size(226, 76);
+            shuzukoButton15.Size = new Size(226, 72);
             shuzukoButton15.TabIndex = 2;
             shuzukoButton15.Text = "FAST";
             shuzukoButton15.TextColor = Color.FromArgb(45, 48, 129);
@@ -524,6 +568,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label4.ForeColor = Color.FromArgb(45, 48, 129);
             label4.Location = new Point(283, 2);
             label4.Name = "label4";
             label4.Size = new Size(139, 32);
@@ -533,7 +578,7 @@
             // shuzukoPanel6
             // 
             shuzukoPanel6.BackColor = Color.White;
-            shuzukoPanel6.BorderRadius = 30;
+            shuzukoPanel6.BorderRadius = 15;
             shuzukoPanel6.Controls.Add(shuzukoPanel11);
             shuzukoPanel6.ForeColor = Color.Black;
             shuzukoPanel6.GradientAngle = 90F;
@@ -547,7 +592,7 @@
             // shuzukoPanel11
             // 
             shuzukoPanel11.BackColor = Color.White;
-            shuzukoPanel11.BorderRadius = 30;
+            shuzukoPanel11.BorderRadius = 15;
             shuzukoPanel11.Controls.Add(label6);
             shuzukoPanel11.ForeColor = Color.Black;
             shuzukoPanel11.GradientAngle = 90F;
@@ -573,7 +618,7 @@
             // shuzukoPanel5
             // 
             shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
+            shuzukoPanel5.BorderRadius = 15;
             shuzukoPanel5.ForeColor = Color.Black;
             shuzukoPanel5.GradientAngle = 90F;
             shuzukoPanel5.GradientBottomColor = Color.FromArgb(147, 212, 254);
@@ -586,7 +631,7 @@
             // shuzukoPanel7
             // 
             shuzukoPanel7.BackColor = Color.White;
-            shuzukoPanel7.BorderRadius = 30;
+            shuzukoPanel7.BorderRadius = 15;
             shuzukoPanel7.ForeColor = Color.Black;
             shuzukoPanel7.GradientAngle = 90F;
             shuzukoPanel7.GradientBottomColor = Color.FromArgb(147, 212, 254);
@@ -599,7 +644,7 @@
             // shuzukoPanel4
             // 
             shuzukoPanel4.BackColor = Color.White;
-            shuzukoPanel4.BorderRadius = 30;
+            shuzukoPanel4.BorderRadius = 15;
             shuzukoPanel4.Controls.Add(label3);
             shuzukoPanel4.ForeColor = Color.Black;
             shuzukoPanel4.GradientAngle = 90F;
@@ -624,7 +669,7 @@
             // shuzukoPanel3
             // 
             shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 30;
+            shuzukoPanel3.BorderRadius = 15;
             shuzukoPanel3.Controls.Add(label2);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 90F;
@@ -649,33 +694,33 @@
             // shuzukoPanel2
             // 
             shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 25;
+            shuzukoPanel2.BorderRadius = 12;
             shuzukoPanel2.ForeColor = Color.Black;
             shuzukoPanel2.GradientAngle = 90F;
             shuzukoPanel2.GradientBottomColor = Color.DimGray;
             shuzukoPanel2.GradientTopColor = Color.DimGray;
             shuzukoPanel2.Location = new Point(137, 168);
             shuzukoPanel2.Name = "shuzukoPanel2";
-            shuzukoPanel2.Size = new Size(25, 25);
+            shuzukoPanel2.Size = new Size(24, 24);
             shuzukoPanel2.TabIndex = 1;
             // 
             // shuzukoPanel20
             // 
             shuzukoPanel20.BackColor = Color.White;
-            shuzukoPanel20.BorderRadius = 25;
+            shuzukoPanel20.BorderRadius = 12;
             shuzukoPanel20.ForeColor = Color.Black;
             shuzukoPanel20.GradientAngle = 90F;
             shuzukoPanel20.GradientBottomColor = Color.DimGray;
             shuzukoPanel20.GradientTopColor = Color.DimGray;
             shuzukoPanel20.Location = new Point(137, 94);
             shuzukoPanel20.Name = "shuzukoPanel20";
-            shuzukoPanel20.Size = new Size(25, 25);
+            shuzukoPanel20.Size = new Size(24, 24);
             shuzukoPanel20.TabIndex = 1;
             // 
             // shuzukoPanel1
             // 
             shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 30;
+            shuzukoPanel1.BorderRadius = 15;
             shuzukoPanel1.Controls.Add(label9);
             shuzukoPanel1.ForeColor = Color.Black;
             shuzukoPanel1.GradientAngle = 90F;
@@ -850,50 +895,6 @@
             shuzukoButton1.TextOffsetX = 0;
             shuzukoButton1.TextOffsetY = 0;
             shuzukoButton1.UseVisualStyleBackColor = false;
-            // 
-            // shuzukoButton3
-            // 
-            shuzukoButton3.BackColor = Color.White;
-            shuzukoButton3.BackgroundColor = Color.White;
-            shuzukoButton3.BorderColor = Color.PaleVioletRed;
-            shuzukoButton3.BorderRadius = 15;
-            shuzukoButton3.BorderSize = 0;
-            shuzukoButton3.FlatAppearance.BorderSize = 0;
-            shuzukoButton3.FlatStyle = FlatStyle.Flat;
-            shuzukoButton3.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            shuzukoButton3.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton3.Location = new Point(1020, 241);
-            shuzukoButton3.Name = "shuzukoButton3";
-            shuzukoButton3.RightToLeft = RightToLeft.Yes;
-            shuzukoButton3.Size = new Size(106, 76);
-            shuzukoButton3.TabIndex = 6;
-            shuzukoButton3.Text = "Z+";
-            shuzukoButton3.TextColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton3.TextOffsetX = 0;
-            shuzukoButton3.TextOffsetY = 0;
-            shuzukoButton3.UseVisualStyleBackColor = false;
-            // 
-            // shuzukoButton4
-            // 
-            shuzukoButton4.BackColor = Color.White;
-            shuzukoButton4.BackgroundColor = Color.White;
-            shuzukoButton4.BorderColor = Color.PaleVioletRed;
-            shuzukoButton4.BorderRadius = 15;
-            shuzukoButton4.BorderSize = 0;
-            shuzukoButton4.FlatAppearance.BorderSize = 0;
-            shuzukoButton4.FlatStyle = FlatStyle.Flat;
-            shuzukoButton4.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            shuzukoButton4.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton4.Location = new Point(1020, 80);
-            shuzukoButton4.Name = "shuzukoButton4";
-            shuzukoButton4.RightToLeft = RightToLeft.Yes;
-            shuzukoButton4.Size = new Size(106, 76);
-            shuzukoButton4.TabIndex = 7;
-            shuzukoButton4.Text = "Z-";
-            shuzukoButton4.TextColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton4.TextOffsetX = 0;
-            shuzukoButton4.TextOffsetY = 0;
-            shuzukoButton4.UseVisualStyleBackColor = false;
             // 
             // GetLocationH
             // 

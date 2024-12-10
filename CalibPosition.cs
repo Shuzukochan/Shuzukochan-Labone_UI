@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class GetLocation : BaseForm
+    public partial class CalibPosition : BaseForm
     {
-        public GetLocation()
+        public CalibPosition()
         {
             InitializeComponent();
         }
@@ -27,14 +27,14 @@ namespace Labone_UI
             OpenChildForm(new GetLocationB(), groundPanel);
         }
 
-        private void getHButton_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new GetLocationH(), groundPanel);
-        }
-
         private void getCButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new GetLocationC(), groundPanel);
+        }
+
+        private void getHButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new GetLocationH(), groundPanel);
         }
     }
 }

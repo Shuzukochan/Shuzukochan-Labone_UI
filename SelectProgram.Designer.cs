@@ -76,7 +76,7 @@
             // rightPanel
             // 
             rightPanel.BackColor = Color.White;
-            rightPanel.BorderRadius = 30;
+            rightPanel.BorderRadius = 15;
             rightPanel.Controls.Add(label7);
             rightPanel.Controls.Add(label6);
             rightPanel.Controls.Add(label5);
@@ -129,7 +129,6 @@
             label5.Size = new Size(145, 30);
             label5.TabIndex = 8;
             label5.Text = "TubeID (mm) :";
-            label5.Click += label5_Click;
             // 
             // label4
             // 
@@ -154,7 +153,6 @@
             label3.Size = new Size(140, 30);
             label3.TabIndex = 6;
             label3.Text = "Volume (mL) :";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -171,7 +169,7 @@
             // shuzukoPanel12
             // 
             shuzukoPanel12.BackColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel12.BorderRadius = 30;
+            shuzukoPanel12.BorderRadius = 15;
             shuzukoPanel12.Controls.Add(labelProgramCur);
             shuzukoPanel12.ForeColor = Color.Black;
             shuzukoPanel12.GradientAngle = 90F;
@@ -193,12 +191,11 @@
             labelProgramCur.Size = new Size(149, 32);
             labelProgramCur.TabIndex = 0;
             labelProgramCur.Text = "Program 10";
-            labelProgramCur.Click += label1_Click_1;
             // 
             // shuzukoPanel11
             // 
             shuzukoPanel11.BackColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel11.BorderRadius = 30;
+            shuzukoPanel11.BorderRadius = 15;
             shuzukoPanel11.Controls.Add(label1);
             shuzukoPanel11.ForeColor = Color.Black;
             shuzukoPanel11.GradientAngle = 90F;
@@ -220,7 +217,6 @@
             label1.Size = new Size(236, 32);
             label1.TabIndex = 0;
             label1.Text = "SELECT PROGRAMS";
-            label1.Click += label1_Click_1;
             // 
             // groundPanel
             // 
@@ -289,8 +285,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.White;
-            settingButton.BackgroundColor = Color.White;
+            settingButton.BackColor = Color.DarkGray;
+            settingButton.BackgroundColor = Color.DarkGray;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -347,6 +343,7 @@
             backButton.TextOffsetX = 0;
             backButton.TextOffsetY = 0;
             backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
             // 
             // homeButton
             // 
@@ -372,7 +369,7 @@
             // underLeftPanel
             // 
             underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 30;
+            underLeftPanel.BorderRadius = 15;
             underLeftPanel.Controls.Add(Clock);
             underLeftPanel.Controls.Add(Calendar);
             underLeftPanel.Controls.Add(KingTubeAuto);
@@ -430,7 +427,7 @@
             // leftPanel
             // 
             leftPanel.BackColor = Color.White;
-            leftPanel.BorderRadius = 30;
+            leftPanel.BorderRadius = 15;
             leftPanel.Controls.Add(program9Button);
             leftPanel.Controls.Add(program10Button);
             leftPanel.Controls.Add(program8Button);
@@ -449,7 +446,6 @@
             leftPanel.Name = "leftPanel";
             leftPanel.Size = new Size(938, 345);
             leftPanel.TabIndex = 2;
-            leftPanel.Paint += leftPanel_Paint_1;
             // 
             // program9Button
             // 

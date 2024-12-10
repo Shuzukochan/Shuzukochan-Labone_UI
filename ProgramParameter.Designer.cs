@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             groundPanel = new ShuzukoPanel();
-            shuzukoButton3 = new ShuzukoButton();
-            shuzukoButton2 = new ShuzukoButton();
+            modPositionButton = new ShuzukoButton();
+            modDistributionButton = new ShuzukoButton();
             shuzukoButton1 = new ShuzukoButton();
             vectorButton = new ShuzukoButton();
             playButton = new ShuzukoButton();
@@ -50,6 +50,7 @@
             label4 = new Label();
             label3 = new Label();
             shuzukoPanel2 = new ShuzukoPanel();
+            programNameLabel = new Label();
             shuzukoButton4 = new ShuzukoButton();
             label2 = new Label();
             groundPanel.SuspendLayout();
@@ -67,8 +68,8 @@
             // 
             groundPanel.BackColor = Color.White;
             groundPanel.BorderRadius = 0;
-            groundPanel.Controls.Add(shuzukoButton3);
-            groundPanel.Controls.Add(shuzukoButton2);
+            groundPanel.Controls.Add(modPositionButton);
+            groundPanel.Controls.Add(modDistributionButton);
             groundPanel.Controls.Add(shuzukoButton1);
             groundPanel.Controls.Add(vectorButton);
             groundPanel.Controls.Add(playButton);
@@ -88,47 +89,49 @@
             groundPanel.Size = new Size(1904, 441);
             groundPanel.TabIndex = 2;
             // 
-            // shuzukoButton3
+            // modPositionButton
             // 
-            shuzukoButton3.BackColor = Color.White;
-            shuzukoButton3.BackgroundColor = Color.White;
-            shuzukoButton3.BorderColor = Color.White;
-            shuzukoButton3.BorderRadius = 10;
-            shuzukoButton3.BorderSize = 0;
-            shuzukoButton3.FlatAppearance.BorderSize = 0;
-            shuzukoButton3.FlatStyle = FlatStyle.Flat;
-            shuzukoButton3.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            shuzukoButton3.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton3.Location = new Point(1576, 250);
-            shuzukoButton3.Name = "shuzukoButton3";
-            shuzukoButton3.Size = new Size(320, 107);
-            shuzukoButton3.TabIndex = 12;
-            shuzukoButton3.Text = " MODIFY\nPOSITION";
-            shuzukoButton3.TextColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton3.TextOffsetX = 0;
-            shuzukoButton3.TextOffsetY = 0;
-            shuzukoButton3.UseVisualStyleBackColor = false;
+            modPositionButton.BackColor = Color.White;
+            modPositionButton.BackgroundColor = Color.White;
+            modPositionButton.BorderColor = Color.White;
+            modPositionButton.BorderRadius = 10;
+            modPositionButton.BorderSize = 0;
+            modPositionButton.FlatAppearance.BorderSize = 0;
+            modPositionButton.FlatStyle = FlatStyle.Flat;
+            modPositionButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            modPositionButton.ForeColor = Color.FromArgb(45, 48, 129);
+            modPositionButton.Location = new Point(1576, 250);
+            modPositionButton.Name = "modPositionButton";
+            modPositionButton.Size = new Size(320, 107);
+            modPositionButton.TabIndex = 12;
+            modPositionButton.Text = " MODIFY\nPOSITION";
+            modPositionButton.TextColor = Color.FromArgb(45, 48, 129);
+            modPositionButton.TextOffsetX = 0;
+            modPositionButton.TextOffsetY = 0;
+            modPositionButton.UseVisualStyleBackColor = false;
+            modPositionButton.Click += modPositionButton_Click;
             // 
-            // shuzukoButton2
+            // modDistributionButton
             // 
-            shuzukoButton2.BackColor = Color.White;
-            shuzukoButton2.BackgroundColor = Color.White;
-            shuzukoButton2.BorderColor = Color.White;
-            shuzukoButton2.BorderRadius = 10;
-            shuzukoButton2.BorderSize = 0;
-            shuzukoButton2.FlatAppearance.BorderSize = 0;
-            shuzukoButton2.FlatStyle = FlatStyle.Flat;
-            shuzukoButton2.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            shuzukoButton2.ForeColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton2.Location = new Point(1576, 131);
-            shuzukoButton2.Name = "shuzukoButton2";
-            shuzukoButton2.Size = new Size(320, 107);
-            shuzukoButton2.TabIndex = 11;
-            shuzukoButton2.Text = "      MODIFY\nDISTRIBUTION";
-            shuzukoButton2.TextColor = Color.FromArgb(45, 48, 129);
-            shuzukoButton2.TextOffsetX = 0;
-            shuzukoButton2.TextOffsetY = 0;
-            shuzukoButton2.UseVisualStyleBackColor = false;
+            modDistributionButton.BackColor = Color.White;
+            modDistributionButton.BackgroundColor = Color.White;
+            modDistributionButton.BorderColor = Color.White;
+            modDistributionButton.BorderRadius = 10;
+            modDistributionButton.BorderSize = 0;
+            modDistributionButton.FlatAppearance.BorderSize = 0;
+            modDistributionButton.FlatStyle = FlatStyle.Flat;
+            modDistributionButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            modDistributionButton.ForeColor = Color.FromArgb(45, 48, 129);
+            modDistributionButton.Location = new Point(1576, 131);
+            modDistributionButton.Name = "modDistributionButton";
+            modDistributionButton.Size = new Size(320, 107);
+            modDistributionButton.TabIndex = 11;
+            modDistributionButton.Text = "      MODIFY\nDISTRIBUTION";
+            modDistributionButton.TextColor = Color.FromArgb(45, 48, 129);
+            modDistributionButton.TextOffsetX = 0;
+            modDistributionButton.TextOffsetY = 0;
+            modDistributionButton.UseVisualStyleBackColor = false;
+            modDistributionButton.Click += modDistributionButton_Click;
             // 
             // shuzukoButton1
             // 
@@ -418,6 +421,7 @@
             // 
             shuzukoPanel2.BackColor = Color.White;
             shuzukoPanel2.BorderRadius = 10;
+            shuzukoPanel2.Controls.Add(programNameLabel);
             shuzukoPanel2.Controls.Add(shuzukoButton4);
             shuzukoPanel2.Controls.Add(label2);
             shuzukoPanel2.ForeColor = Color.Black;
@@ -428,6 +432,18 @@
             shuzukoPanel2.Name = "shuzukoPanel2";
             shuzukoPanel2.Size = new Size(1341, 50);
             shuzukoPanel2.TabIndex = 3;
+            // 
+            // programNameLabel
+            // 
+            programNameLabel.AutoSize = true;
+            programNameLabel.BackColor = Color.Transparent;
+            programNameLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            programNameLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            programNameLabel.Location = new Point(550, 9);
+            programNameLabel.Name = "programNameLabel";
+            programNameLabel.Size = new Size(157, 32);
+            programNameLabel.TabIndex = 2;
+            programNameLabel.Text = "PROGRAM 1";
             // 
             // shuzukoButton4
             // 
@@ -473,6 +489,7 @@
             Controls.Add(groundPanel);
             Name = "ProgramParameter";
             Text = "Distribution";
+            Load += ProgramParameter_Load;
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);
             underLeftPanel.PerformLayout();
@@ -485,6 +502,7 @@
             shuzukoPanel3.ResumeLayout(false);
             shuzukoPanel3.PerformLayout();
             shuzukoPanel2.ResumeLayout(false);
+            shuzukoPanel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -503,8 +521,8 @@
         private ShuzukoButton settingButton;
         private ShuzukoButton enterButton;
         private ShuzukoButton shuzukoButton1;
-        private ShuzukoButton shuzukoButton2;
-        private ShuzukoButton shuzukoButton3;
+        private ShuzukoButton modDistributionButton;
+        private ShuzukoButton modPositionButton;
         private ShuzukoPanel shuzukoPanel2;
         private Label label2;
         private ShuzukoPanel shuzukoPanel3;
@@ -513,5 +531,6 @@
         private ShuzukoPanel shuzukoPanel7;
         private Label label8;
         private ShuzukoButton shuzukoButton4;
+        private Label programNameLabel;
     }
 }

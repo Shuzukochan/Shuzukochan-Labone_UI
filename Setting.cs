@@ -19,7 +19,7 @@ namespace Labone_UI
         private void setupButton_Click(object sender, EventArgs e)
         {
             // Mở form cài đặt
-            OpenChildForm(new SelectProgram(), groundPanel);
+            OpenChildForm(new SelectProgram(false), groundPanel);
         }
 
         private void homeButton_Click(object sender, EventArgs e)
@@ -32,12 +32,37 @@ namespace Labone_UI
             OpenChildForm(new Setting_1(), groundPanel);
         }
 
+        private async void StartClock()
+        {
+            while (true)
+            {
+                this.Update();
+                GlobalVariables.TimeString = DateTime.Now.ToString("HH:mm:ss");
+                timeLabel.Text = GlobalVariables.TimeString;
+                await Task.Delay(1000);
+            }
+        }
+
         private void Setting_Load(object sender, EventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                this.Refresh();
-            });
+            StartClock();
+            timeLabel.Text = GlobalVariables.TimeString;
+            dayLabel.Text = GlobalVariables.DayString;
+        }
+
+        private void configButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new goToLocation(), groundPanel);
+        }
+
+        private void calibrationButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SelectProgram(true), groundPanel);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Begin(), groundPanel);
         }
     }
 }

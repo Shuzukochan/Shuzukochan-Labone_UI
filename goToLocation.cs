@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class goToLocation : Form
+    public partial class goToLocation : BaseForm
     {
         public goToLocation()
         {
             InitializeComponent();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Setting(), groundPanel);
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Home(), groundPanel);
         }
     }
 }

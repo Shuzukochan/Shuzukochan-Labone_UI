@@ -360,9 +360,9 @@
             label10.ForeColor = Color.FromArgb(45, 48, 129);
             label10.Location = new Point(833, 6);
             label10.Name = "label10";
-            label10.Size = new Size(188, 32);
+            label10.Size = new Size(184, 32);
             label10.TabIndex = 2;
-            label10.Text = "IMFORMATION";
+            label10.Text = "INFORMATION";
             // 
             // shuzukoPanel2
             // 

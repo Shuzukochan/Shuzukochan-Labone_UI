@@ -114,8 +114,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.White;
-            playButton.BackgroundColor = Color.White;
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -129,7 +129,7 @@
             playButton.Name = "playButton";
             playButton.Size = new Size(261, 68);
             playButton.TabIndex = 8;
-            playButton.Text = "BEGIN";
+            playButton.Text = "  BEGIN";
             playButton.TextColor = Color.FromArgb(45, 48, 129);
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
@@ -177,8 +177,8 @@
             // 
             // backButton
             // 
-            backButton.BackColor = Color.White;
-            backButton.BackgroundColor = Color.White;
+            backButton.BackColor = Color.Silver;
+            backButton.BackgroundColor = Color.Silver;
             backButton.BorderColor = Color.Transparent;
             backButton.BorderRadius = 34;
             backButton.BorderSize = 0;
@@ -197,8 +197,8 @@
             // 
             // homeButton
             // 
-            homeButton.BackColor = Color.White;
-            homeButton.BackgroundColor = Color.White;
+            homeButton.BackColor = Color.Silver;
+            homeButton.BackgroundColor = Color.Silver;
             homeButton.BorderColor = Color.Transparent;
             homeButton.BorderRadius = 34;
             homeButton.BorderSize = 0;
@@ -338,7 +338,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold);
             label7.ForeColor = Color.FromArgb(45, 48, 129);
-            label7.Location = new Point(296, 6);
+            label7.Location = new Point(296, 10);
             label7.Name = "label7";
             label7.Size = new Size(173, 50);
             label7.TabIndex = 11;
@@ -363,7 +363,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold);
             label6.ForeColor = Color.FromArgb(45, 48, 129);
-            label6.Location = new Point(377, 9);
+            label6.Location = new Point(377, 10);
             label6.Name = "label6";
             label6.Size = new Size(89, 50);
             label6.TabIndex = 10;
@@ -389,7 +389,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(45, 48, 129);
-            label5.Location = new Point(377, 9);
+            label5.Location = new Point(377, 10);
             label5.Name = "label5";
             label5.Size = new Size(89, 50);
             label5.TabIndex = 9;
@@ -414,7 +414,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(45, 48, 129);
-            label2.Location = new Point(125, 17);
+            label2.Location = new Point(125, 14);
             label2.Name = "label2";
             label2.Size = new Size(227, 40);
             label2.TabIndex = 8;
@@ -464,7 +464,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(45, 48, 129);
-            label3.Location = new Point(96, 17);
+            label3.Location = new Point(96, 14);
             label3.Name = "label3";
             label3.Size = new Size(283, 40);
             label3.TabIndex = 9;

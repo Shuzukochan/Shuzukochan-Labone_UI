@@ -1,6 +1,6 @@
 ﻿namespace Labone_UI
 {
-    partial class GetLocation
+    partial class CalibPosition
     {
         /// <summary>
         /// Required designer variable.
@@ -788,19 +788,19 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(45, 48, 129);
-            label1.Location = new Point(879, 4);
+            label1.Location = new Point(798, 4);
             label1.Name = "label1";
-            label1.Size = new Size(183, 32);
+            label1.Size = new Size(259, 32);
             label1.TabIndex = 2;
-            label1.Text = "GET LOCATION";
+            label1.Text = "CALIBRATE POSITION";
             // 
-            // GetLocation
+            // CalibPosition
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(54, 176, 253);
             ClientSize = new Size(1904, 441);
             Controls.Add(groundPanel);
-            Name = "GetLocation";
+            Name = "CalibPosition";
             Text = "Form1";
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);

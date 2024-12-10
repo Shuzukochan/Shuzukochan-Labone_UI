@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            timeUpdateTimer = new System.Windows.Forms.Timer(components);
             leftPanel = new ShuzukoPanel();
             shuzukoPanel1 = new ShuzukoPanel();
             shuzukoPanel9 = new ShuzukoPanel();
@@ -49,6 +51,8 @@
             underLeftPanel = new ShuzukoPanel();
             Clock = new PictureBox();
             Calendar = new PictureBox();
+            timeLabel = new Label();
+            dayLabel = new Label();
             KingTubeAuto = new Label();
             logo = new PictureBox();
             rightPanel = new ShuzukoPanel();
@@ -99,6 +103,11 @@
             midPanel.SuspendLayout();
             shuzukoPanel7.SuspendLayout();
             SuspendLayout();
+            // 
+            // timeUpdateTimer
+            // 
+            timeUpdateTimer.Enabled = true;
+            timeUpdateTimer.Interval = 1000;
             // 
             // leftPanel
             // 
@@ -424,6 +433,8 @@
             underLeftPanel.BorderRadius = 15;
             underLeftPanel.Controls.Add(Clock);
             underLeftPanel.Controls.Add(Calendar);
+            underLeftPanel.Controls.Add(timeLabel);
+            underLeftPanel.Controls.Add(dayLabel);
             underLeftPanel.Controls.Add(KingTubeAuto);
             underLeftPanel.Controls.Add(logo);
             underLeftPanel.ForeColor = Color.Black;
@@ -454,6 +465,28 @@
             Calendar.SizeMode = PictureBoxSizeMode.StretchImage;
             Calendar.TabIndex = 2;
             Calendar.TabStop = false;
+            // 
+            // timeLabel
+            // 
+            timeLabel.AutoSize = true;
+            timeLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            timeLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            timeLabel.Location = new Point(763, 14);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Size = new Size(130, 32);
+            timeLabel.TabIndex = 1;
+            timeLabel.Text = "HH:mm:ss";
+            // 
+            // dayLabel
+            // 
+            dayLabel.AutoSize = true;
+            dayLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            dayLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            dayLabel.Location = new Point(538, 14);
+            dayLabel.Name = "dayLabel";
+            dayLabel.Size = new Size(164, 32);
+            dayLabel.TabIndex = 1;
+            dayLabel.Text = "dd/MM/yyyy";
             // 
             // KingTubeAuto
             // 
@@ -1051,5 +1084,8 @@
         private ShuzukoPanel shuzukoPanel22;
         private ShuzukoButton shuzukoButton1;
         private ShuzukoButton shuzukoButton2;
+        private Label timeLabel;
+        private Label dayLabel;
+        private System.Windows.Forms.Timer timeUpdateTimer;
     }
 }

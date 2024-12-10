@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace Labone_UI
 {
@@ -31,13 +32,30 @@ namespace Labone_UI
             rightPanel.Visible = false;
         }
 
+        private async void StartClock()
+        {
+            while (true)
+            {
+                this.Update();
+                GlobalVariables.TimeString = DateTime.Now.ToString("HH:mm:ss");
+                timeLabel.Text = GlobalVariables.TimeString;
+                await Task.Delay(1000);
+            }
+        }
+
         private void Begin_Load(object sender, EventArgs e)
         {
+            StartClock();
             this.BeginInvoke((MethodInvoker)delegate
             {
                 this.Refresh();
+
             });
+            timeLabel.Text = GlobalVariables.TimeString;
+            dayLabel.Text = GlobalVariables.DayString;
         }
+
+
     }
 }
 

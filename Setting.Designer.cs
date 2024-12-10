@@ -36,6 +36,8 @@
             backButton = new ShuzukoButton();
             homeButton = new ShuzukoButton();
             underLeftPanel = new ShuzukoPanel();
+            timeLabel = new Label();
+            dayLabel = new Label();
             Clock = new PictureBox();
             Calendar = new PictureBox();
             KingTubeAuto = new Label();
@@ -94,8 +96,8 @@
             // 
             // vectorButton
             // 
-            vectorButton.BackColor = Color.Silver;
-            vectorButton.BackgroundColor = Color.Silver;
+            vectorButton.BackColor = Color.White;
+            vectorButton.BackgroundColor = Color.White;
             vectorButton.BorderColor = Color.Transparent;
             vectorButton.BorderRadius = 34;
             vectorButton.BorderSize = 0;
@@ -137,8 +139,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.Silver;
-            settingButton.BackgroundColor = Color.Silver;
+            settingButton.BackColor = Color.DarkGray;
+            settingButton.BackgroundColor = Color.DarkGray;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -157,8 +159,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.Silver;
-            enterButton.BackgroundColor = Color.Silver;
+            enterButton.BackColor = Color.DarkGray;
+            enterButton.BackgroundColor = Color.DarkGray;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;
@@ -194,6 +196,7 @@
             backButton.TextOffsetX = 0;
             backButton.TextOffsetY = 0;
             backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
             // 
             // homeButton
             // 
@@ -220,6 +223,8 @@
             // 
             underLeftPanel.BackColor = Color.White;
             underLeftPanel.BorderRadius = 30;
+            underLeftPanel.Controls.Add(timeLabel);
+            underLeftPanel.Controls.Add(dayLabel);
             underLeftPanel.Controls.Add(Clock);
             underLeftPanel.Controls.Add(Calendar);
             underLeftPanel.Controls.Add(KingTubeAuto);
@@ -232,6 +237,28 @@
             underLeftPanel.Name = "underLeftPanel";
             underLeftPanel.Size = new Size(938, 58);
             underLeftPanel.TabIndex = 3;
+            // 
+            // timeLabel
+            // 
+            timeLabel.AutoSize = true;
+            timeLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            timeLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            timeLabel.Location = new Point(763, 14);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Size = new Size(130, 32);
+            timeLabel.TabIndex = 4;
+            timeLabel.Text = "HH:mm:ss";
+            // 
+            // dayLabel
+            // 
+            dayLabel.AutoSize = true;
+            dayLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            dayLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            dayLabel.Location = new Point(538, 14);
+            dayLabel.Name = "dayLabel";
+            dayLabel.Size = new Size(164, 32);
+            dayLabel.TabIndex = 3;
+            dayLabel.Text = "dd/MM/yyyy";
             // 
             // Clock
             // 
@@ -386,7 +413,6 @@
             setupButton.FlatAppearance.BorderSize = 0;
             setupButton.FlatStyle = FlatStyle.Flat;
             setupButton.ForeColor = Color.White;
-            setupButton.Image = Properties.Resources.SetupProgram;
             setupButton.Location = new Point(0, -1);
             setupButton.Name = "setupButton";
             setupButton.Size = new Size(260, 190);
@@ -443,6 +469,7 @@
             configButton.TextOffsetX = 0;
             configButton.TextOffsetY = 0;
             configButton.UseVisualStyleBackColor = false;
+            configButton.Click += configButton_Click;
             // 
             // label3
             // 
@@ -537,6 +564,7 @@
             calibrationButton.TextOffsetX = 0;
             calibrationButton.TextOffsetY = 0;
             calibrationButton.UseVisualStyleBackColor = false;
+            calibrationButton.Click += calibrationButton_Click;
             // 
             // label1
             // 
@@ -609,5 +637,7 @@
         private Label label3;
         private Label label2;
         private ShuzukoButton nextButton;
+        private Label dayLabel;
+        private Label timeLabel;
     }
 }

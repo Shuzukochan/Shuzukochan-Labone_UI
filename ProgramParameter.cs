@@ -12,14 +12,36 @@ namespace Labone_UI
 {
     public partial class ProgramParameter : BaseForm
     {
-        public ProgramParameter()
+        public ProgramParameter(string programName)
         {
             InitializeComponent();
+            programNameLabel.Text = programName;
+            if (programName == "Program 10")
+            {
+                programNameLabel.Location = new Point(548, 9);
+            }
+        }
+        private void ProgramParameter_Load(object sender, EventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.Refresh();
+            });
         }
 
         private void homeButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Begin(), groundPanel);
+        }
+
+        private void modDistributionButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DistributionLocation(), groundPanel);
+        }
+
+        private void modPositionButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new GetLocation(), groundPanel);
         }
     }
 }

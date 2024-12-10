@@ -137,7 +137,7 @@
             // shuzukoPanel1
             // 
             shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 30;
+            shuzukoPanel1.BorderRadius = 20;
             shuzukoPanel1.Controls.Add(shuzukoPanel29);
             shuzukoPanel1.Controls.Add(shuzukoPanel25);
             shuzukoPanel1.Controls.Add(shuzukoPanel28);
@@ -183,7 +183,7 @@
             // shuzukoPanel29
             // 
             shuzukoPanel29.BackColor = Color.White;
-            shuzukoPanel29.BorderRadius = 28;
+            shuzukoPanel29.BorderRadius = 14;
             shuzukoPanel29.ForeColor = Color.Black;
             shuzukoPanel29.GradientAngle = 90F;
             shuzukoPanel29.GradientBottomColor = Color.FromArgb(52, 171, 255);
@@ -196,7 +196,7 @@
             // shuzukoPanel25
             // 
             shuzukoPanel25.BackColor = Color.White;
-            shuzukoPanel25.BorderRadius = 28;
+            shuzukoPanel25.BorderRadius = 14;
             shuzukoPanel25.ForeColor = Color.Black;
             shuzukoPanel25.GradientAngle = 90F;
             shuzukoPanel25.GradientBottomColor = Color.FromArgb(52, 171, 255);
@@ -209,7 +209,7 @@
             // shuzukoPanel28
             // 
             shuzukoPanel28.BackColor = Color.White;
-            shuzukoPanel28.BorderRadius = 28;
+            shuzukoPanel28.BorderRadius = 14;
             shuzukoPanel28.ForeColor = Color.Black;
             shuzukoPanel28.GradientAngle = 90F;
             shuzukoPanel28.GradientBottomColor = Color.FromArgb(214, 28, 41);
@@ -222,7 +222,7 @@
             // shuzukoPanel26
             // 
             shuzukoPanel26.BackColor = Color.White;
-            shuzukoPanel26.BorderRadius = 28;
+            shuzukoPanel26.BorderRadius = 14;
             shuzukoPanel26.ForeColor = Color.Black;
             shuzukoPanel26.GradientAngle = 90F;
             shuzukoPanel26.GradientBottomColor = Color.FromArgb(214, 28, 41);
@@ -235,7 +235,7 @@
             // shuzukoPanel24
             // 
             shuzukoPanel24.BackColor = Color.White;
-            shuzukoPanel24.BorderRadius = 28;
+            shuzukoPanel24.BorderRadius = 14;
             shuzukoPanel24.ForeColor = Color.Black;
             shuzukoPanel24.GradientAngle = 90F;
             shuzukoPanel24.GradientBottomColor = Color.FromArgb(64, 173, 68);
@@ -269,7 +269,7 @@
             // shuzukoPanel27
             // 
             shuzukoPanel27.BackColor = Color.White;
-            shuzukoPanel27.BorderRadius = 28;
+            shuzukoPanel27.BorderRadius = 14;
             shuzukoPanel27.ForeColor = Color.Black;
             shuzukoPanel27.GradientAngle = 90F;
             shuzukoPanel27.GradientBottomColor = Color.FromArgb(64, 173, 68);
@@ -423,7 +423,7 @@
             // shuzukoPanel16
             // 
             shuzukoPanel16.BackColor = Color.White;
-            shuzukoPanel16.BorderRadius = 40;
+            shuzukoPanel16.BorderRadius = 20;
             shuzukoPanel16.ForeColor = Color.Black;
             shuzukoPanel16.GradientAngle = 90F;
             shuzukoPanel16.GradientBottomColor = Color.FromArgb(52, 171, 255);
@@ -436,7 +436,7 @@
             // shuzukoPanel17
             // 
             shuzukoPanel17.BackColor = Color.White;
-            shuzukoPanel17.BorderRadius = 40;
+            shuzukoPanel17.BorderRadius = 20;
             shuzukoPanel17.ForeColor = Color.Black;
             shuzukoPanel17.GradientAngle = 90F;
             shuzukoPanel17.GradientBottomColor = Color.White;
@@ -449,7 +449,7 @@
             // shuzukoPanel18
             // 
             shuzukoPanel18.BackColor = Color.White;
-            shuzukoPanel18.BorderRadius = 40;
+            shuzukoPanel18.BorderRadius = 20;
             shuzukoPanel18.ForeColor = Color.Black;
             shuzukoPanel18.GradientAngle = 90F;
             shuzukoPanel18.GradientBottomColor = Color.White;
@@ -462,7 +462,7 @@
             // shuzukoPanel19
             // 
             shuzukoPanel19.BackColor = Color.White;
-            shuzukoPanel19.BorderRadius = 40;
+            shuzukoPanel19.BorderRadius = 20;
             shuzukoPanel19.ForeColor = Color.Black;
             shuzukoPanel19.GradientAngle = 90F;
             shuzukoPanel19.GradientBottomColor = Color.FromArgb(214, 28, 41);
@@ -475,7 +475,7 @@
             // shuzukoPanel12
             // 
             shuzukoPanel12.BackColor = Color.White;
-            shuzukoPanel12.BorderRadius = 40;
+            shuzukoPanel12.BorderRadius = 20;
             shuzukoPanel12.ForeColor = Color.Black;
             shuzukoPanel12.GradientAngle = 90F;
             shuzukoPanel12.GradientBottomColor = Color.White;
@@ -488,7 +488,7 @@
             // shuzukoPanel13
             // 
             shuzukoPanel13.BackColor = Color.White;
-            shuzukoPanel13.BorderRadius = 40;
+            shuzukoPanel13.BorderRadius = 20;
             shuzukoPanel13.ForeColor = Color.Black;
             shuzukoPanel13.GradientAngle = 90F;
             shuzukoPanel13.GradientBottomColor = Color.White;
@@ -501,7 +501,7 @@
             // shuzukoPanel14
             // 
             shuzukoPanel14.BackColor = Color.White;
-            shuzukoPanel14.BorderRadius = 40;
+            shuzukoPanel14.BorderRadius = 20;
             shuzukoPanel14.ForeColor = Color.Black;
             shuzukoPanel14.GradientAngle = 90F;
             shuzukoPanel14.GradientBottomColor = Color.White;
@@ -514,7 +514,7 @@
             // shuzukoPanel15
             // 
             shuzukoPanel15.BackColor = Color.White;
-            shuzukoPanel15.BorderRadius = 40;
+            shuzukoPanel15.BorderRadius = 20;
             shuzukoPanel15.ForeColor = Color.Black;
             shuzukoPanel15.GradientAngle = 90F;
             shuzukoPanel15.GradientBottomColor = Color.White;
@@ -527,7 +527,7 @@
             // shuzukoPanel8
             // 
             shuzukoPanel8.BackColor = Color.White;
-            shuzukoPanel8.BorderRadius = 40;
+            shuzukoPanel8.BorderRadius = 20;
             shuzukoPanel8.ForeColor = Color.Black;
             shuzukoPanel8.GradientAngle = 90F;
             shuzukoPanel8.GradientBottomColor = Color.White;
@@ -540,7 +540,7 @@
             // shuzukoPanel9
             // 
             shuzukoPanel9.BackColor = Color.White;
-            shuzukoPanel9.BorderRadius = 40;
+            shuzukoPanel9.BorderRadius = 20;
             shuzukoPanel9.ForeColor = Color.Black;
             shuzukoPanel9.GradientAngle = 90F;
             shuzukoPanel9.GradientBottomColor = Color.White;
@@ -553,7 +553,7 @@
             // shuzukoPanel10
             // 
             shuzukoPanel10.BackColor = Color.White;
-            shuzukoPanel10.BorderRadius = 40;
+            shuzukoPanel10.BorderRadius = 20;
             shuzukoPanel10.ForeColor = Color.Black;
             shuzukoPanel10.GradientAngle = 90F;
             shuzukoPanel10.GradientBottomColor = Color.White;
@@ -566,7 +566,7 @@
             // shuzukoPanel11
             // 
             shuzukoPanel11.BackColor = Color.White;
-            shuzukoPanel11.BorderRadius = 40;
+            shuzukoPanel11.BorderRadius = 20;
             shuzukoPanel11.ForeColor = Color.Black;
             shuzukoPanel11.GradientAngle = 90F;
             shuzukoPanel11.GradientBottomColor = Color.White;
@@ -579,7 +579,7 @@
             // shuzukoPanel20
             // 
             shuzukoPanel20.BackColor = Color.White;
-            shuzukoPanel20.BorderRadius = 40;
+            shuzukoPanel20.BorderRadius = 20;
             shuzukoPanel20.ForeColor = Color.Black;
             shuzukoPanel20.GradientAngle = 90F;
             shuzukoPanel20.GradientBottomColor = Color.White;
@@ -592,7 +592,7 @@
             // shuzukoPanel21
             // 
             shuzukoPanel21.BackColor = Color.White;
-            shuzukoPanel21.BorderRadius = 40;
+            shuzukoPanel21.BorderRadius = 20;
             shuzukoPanel21.ForeColor = Color.Black;
             shuzukoPanel21.GradientAngle = 90F;
             shuzukoPanel21.GradientBottomColor = Color.White;
@@ -605,7 +605,7 @@
             // shuzukoPanel22
             // 
             shuzukoPanel22.BackColor = Color.White;
-            shuzukoPanel22.BorderRadius = 40;
+            shuzukoPanel22.BorderRadius = 20;
             shuzukoPanel22.ForeColor = Color.Black;
             shuzukoPanel22.GradientAngle = 90F;
             shuzukoPanel22.GradientBottomColor = Color.White;
@@ -618,7 +618,7 @@
             // shuzukoPanel23
             // 
             shuzukoPanel23.BackColor = Color.White;
-            shuzukoPanel23.BorderRadius = 40;
+            shuzukoPanel23.BorderRadius = 20;
             shuzukoPanel23.ForeColor = Color.Black;
             shuzukoPanel23.GradientAngle = 90F;
             shuzukoPanel23.GradientBottomColor = Color.FromArgb(64, 173, 68);
@@ -631,7 +631,7 @@
             // shuzukoPanel7
             // 
             shuzukoPanel7.BackColor = Color.White;
-            shuzukoPanel7.BorderRadius = 30;
+            shuzukoPanel7.BorderRadius = 15;
             shuzukoPanel7.Controls.Add(label10);
             shuzukoPanel7.Controls.Add(label8);
             shuzukoPanel7.Controls.Add(label7);
@@ -683,7 +683,7 @@
             // shuzukoPanel6
             // 
             shuzukoPanel6.BackColor = Color.White;
-            shuzukoPanel6.BorderRadius = 30;
+            shuzukoPanel6.BorderRadius = 15;
             shuzukoPanel6.Controls.Add(label9);
             shuzukoPanel6.ForeColor = Color.Black;
             shuzukoPanel6.GradientAngle = 90F;
@@ -728,8 +728,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.White;
-            playButton.BackgroundColor = Color.White;
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -751,8 +751,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.White;
-            settingButton.BackgroundColor = Color.White;
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -771,8 +771,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.White;
-            enterButton.BackgroundColor = Color.White;
+            enterButton.BackColor = Color.Silver;
+            enterButton.BackgroundColor = Color.Silver;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;
@@ -808,6 +808,7 @@
             backButton.TextOffsetX = 0;
             backButton.TextOffsetY = 0;
             backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
             // 
             // homeButton
             // 
@@ -828,11 +829,12 @@
             homeButton.TextOffsetX = 0;
             homeButton.TextOffsetY = 0;
             homeButton.UseVisualStyleBackColor = false;
+            homeButton.Click += homeButton_Click;
             // 
             // underLeftPanel
             // 
             underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 30;
+            underLeftPanel.BorderRadius = 15;
             underLeftPanel.Controls.Add(Clock);
             underLeftPanel.Controls.Add(Calendar);
             underLeftPanel.Controls.Add(KingTubeAuto);
@@ -890,7 +892,7 @@
             // leftPanel
             // 
             leftPanel.BackColor = Color.White;
-            leftPanel.BorderRadius = 30;
+            leftPanel.BorderRadius = 15;
             leftPanel.Controls.Add(label6);
             leftPanel.Controls.Add(label5);
             leftPanel.Controls.Add(label4);
@@ -1013,7 +1015,7 @@
             // shuzukoPanel5
             // 
             shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
+            shuzukoPanel5.BorderRadius = 15;
             shuzukoPanel5.Controls.Add(label3);
             shuzukoPanel5.Controls.Add(shuzukoButton6);
             shuzukoPanel5.ForeColor = Color.Black;
@@ -1062,7 +1064,7 @@
             // shuzukoPanel4
             // 
             shuzukoPanel4.BackColor = Color.White;
-            shuzukoPanel4.BorderRadius = 30;
+            shuzukoPanel4.BorderRadius = 15;
             shuzukoPanel4.Controls.Add(label2);
             shuzukoPanel4.Controls.Add(shuzukoButton5);
             shuzukoPanel4.ForeColor = Color.Black;
@@ -1111,7 +1113,7 @@
             // shuzukoPanel3
             // 
             shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 30;
+            shuzukoPanel3.BorderRadius = 15;
             shuzukoPanel3.Controls.Add(shuzukoButton1);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 180F;
@@ -1149,7 +1151,7 @@
             // shuzukoPanel2
             // 
             shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 30;
+            shuzukoPanel2.BorderRadius = 15;
             shuzukoPanel2.Controls.Add(label1);
             shuzukoPanel2.ForeColor = Color.Black;
             shuzukoPanel2.GradientAngle = 180F;
