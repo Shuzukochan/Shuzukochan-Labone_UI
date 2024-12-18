@@ -333,7 +333,7 @@
             // shuzukoPanel4
             // 
             shuzukoPanel4.BackColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel4.BorderRadius = 30;
+            shuzukoPanel4.BorderRadius = 15;
             shuzukoPanel4.ForeColor = Color.Black;
             shuzukoPanel4.GradientAngle = 90F;
             shuzukoPanel4.GradientBottomColor = Color.FromArgb(149, 210, 254);
@@ -346,7 +346,7 @@
             // shuzukoPanel13
             // 
             shuzukoPanel13.BackColor = Color.FromArgb(149, 210, 254);
-            shuzukoPanel13.BorderRadius = 30;
+            shuzukoPanel13.BorderRadius = 15;
             shuzukoPanel13.ForeColor = Color.Black;
             shuzukoPanel13.GradientAngle = 90F;
             shuzukoPanel13.GradientBottomColor = Color.FromArgb(149, 210, 254);
@@ -359,7 +359,7 @@
             // shuzukoPanel5
             // 
             shuzukoPanel5.BackColor = Color.White;
-            shuzukoPanel5.BorderRadius = 30;
+            shuzukoPanel5.BorderRadius = 15;
             shuzukoPanel5.Controls.Add(Name);
             shuzukoPanel5.ForeColor = Color.Black;
             shuzukoPanel5.GradientAngle = 90F;
@@ -384,7 +384,7 @@
             // shuzukoPanel2
             // 
             shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 30;
+            shuzukoPanel2.BorderRadius = 15;
             shuzukoPanel2.Controls.Add(label3);
             shuzukoPanel2.ForeColor = Color.Black;
             shuzukoPanel2.GradientAngle = 90F;
@@ -413,6 +413,7 @@
             BackColor = Color.FromArgb(54, 176, 253);
             ClientSize = new Size(1904, 441);
             Controls.Add(groundPanel);
+            Name = "OTAUpdate";
             Text = "Form1";
             groundPanel.ResumeLayout(false);
             underLeftPanel.ResumeLayout(false);
