@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class CelibrationAction : Form
+    public partial class CelibrationAction : BaseForm
     {
         public CelibrationAction(string programName)
         {
@@ -20,6 +20,16 @@ namespace Labone_UI
             {
                 programNameLabel.Location = new Point(425, 6);
             }
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Begin(), groundPanel);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProgramParameter_1(GlobalVariables.ProgramName), groundPanel);
         }
     }
 }

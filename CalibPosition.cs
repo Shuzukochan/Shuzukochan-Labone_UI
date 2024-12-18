@@ -36,5 +36,15 @@ namespace Labone_UI
         {
             OpenChildForm(new GetLocationH(), groundPanel);
         }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Begin(), groundPanel);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProgramParameter_1(GlobalVariables.ProgramName), groundPanel);
+        }
     }
 }

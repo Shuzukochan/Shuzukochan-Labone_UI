@@ -216,6 +216,7 @@
             settingButton.TextOffsetX = 0;
             settingButton.TextOffsetY = 0;
             settingButton.UseVisualStyleBackColor = false;
+            settingButton.Click += settingButton_Click;
             // 
             // enterButton
             // 

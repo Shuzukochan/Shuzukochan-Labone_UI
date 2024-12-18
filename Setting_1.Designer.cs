@@ -137,8 +137,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.Gray;
-            settingButton.BackgroundColor = Color.Gray;
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -157,8 +157,8 @@
             // 
             // enterButton
             // 
-            enterButton.BackColor = Color.DarkGray;
-            enterButton.BackgroundColor = Color.DarkGray;
+            enterButton.BackColor = Color.Silver;
+            enterButton.BackgroundColor = Color.Silver;
             enterButton.BorderColor = Color.Transparent;
             enterButton.BorderRadius = 34;
             enterButton.BorderSize = 0;

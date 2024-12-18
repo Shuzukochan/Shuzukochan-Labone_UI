@@ -36,6 +36,7 @@ namespace Labone_UI
                 if (foundControls.Length > 0 && foundControls[0] is Button button)
                 {
                     button.BackColor = Color.LightGray;
+                    GlobalVariables.ButtonStates_1[i - 1] = false;
                 }
             }
         }
@@ -54,6 +55,7 @@ namespace Labone_UI
                 if (foundControls.Length > 0 && foundControls[0] is Button button)
                 {
                     button.BackColor = Color.Red;
+                    GlobalVariables.ButtonStates_1[i - 1] = true;
                 }
             }
         }

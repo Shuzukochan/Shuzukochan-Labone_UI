@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class GetLocationA : Form
+    public partial class GetLocationA : BaseForm
     {
         public GetLocationA()
         {
@@ -25,6 +25,11 @@ namespace Labone_UI
         private void shuzukoButton5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new GetLocation(), groundPanel);
         }
     }
 }

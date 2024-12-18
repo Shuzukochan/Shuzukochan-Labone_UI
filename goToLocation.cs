@@ -24,7 +24,12 @@ namespace Labone_UI
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Home(), groundPanel);
+            OpenChildForm(new Begin(), groundPanel);
+        }
+
+        private void goToLocation_Load(object sender, EventArgs e)
+        {
+            programNameLabel.Text = GlobalVariables.ProgramName;
         }
     }
 }

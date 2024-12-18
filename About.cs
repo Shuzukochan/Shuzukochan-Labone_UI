@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class About : Form
+    public partial class About : BaseForm
     {
         public About()
         {
             InitializeComponent();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Setting_1(), groundPanel);
         }
     }
 }

@@ -176,8 +176,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.Silver;
-            settingButton.BackgroundColor = Color.Silver;
+            settingButton.BackColor = Color.White;
+            settingButton.BackgroundColor = Color.White;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -193,6 +193,7 @@
             settingButton.TextOffsetX = 0;
             settingButton.TextOffsetY = 0;
             settingButton.UseVisualStyleBackColor = false;
+            settingButton.Click += settingButton_Click;
             // 
             // enterButton
             // 

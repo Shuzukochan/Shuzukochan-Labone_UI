@@ -96,6 +96,7 @@
             shuzukoButton1 = new ShuzukoButton();
             shuzukoPanel2 = new ShuzukoPanel();
             label1 = new Label();
+            programNameLabel = new Label();
             groundPanel.SuspendLayout();
             shuzukoPanel1.SuspendLayout();
             shuzukoPanel7.SuspendLayout();
@@ -959,6 +960,7 @@
             shuzukoButton4.FlatStyle = FlatStyle.Flat;
             shuzukoButton4.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
             shuzukoButton4.ForeColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton4.Image = Properties.Resources._continue;
             shuzukoButton4.Location = new Point(675, 227);
             shuzukoButton4.Name = "shuzukoButton4";
             shuzukoButton4.RightToLeft = RightToLeft.Yes;
@@ -980,6 +982,7 @@
             shuzukoButton3.FlatStyle = FlatStyle.Flat;
             shuzukoButton3.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
             shuzukoButton3.ForeColor = Color.FromArgb(45, 48, 129);
+            shuzukoButton3.Image = Properties.Resources.Reset;
             shuzukoButton3.Location = new Point(351, 227);
             shuzukoButton3.Name = "shuzukoButton3";
             shuzukoButton3.RightToLeft = RightToLeft.Yes;
@@ -1114,6 +1117,7 @@
             // 
             shuzukoPanel3.BackColor = Color.White;
             shuzukoPanel3.BorderRadius = 15;
+            shuzukoPanel3.Controls.Add(programNameLabel);
             shuzukoPanel3.Controls.Add(shuzukoButton1);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 180F;
@@ -1174,6 +1178,18 @@
             label1.TabIndex = 1;
             label1.Text = "NAME";
             // 
+            // programNameLabel
+            // 
+            programNameLabel.AutoSize = true;
+            programNameLabel.BackColor = Color.Transparent;
+            programNameLabel.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            programNameLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            programNameLabel.Location = new Point(166, 12);
+            programNameLabel.Name = "programNameLabel";
+            programNameLabel.Size = new Size(153, 37);
+            programNameLabel.TabIndex = 1;
+            programNameLabel.Text = "Program 1";
+            // 
             // goToLocation
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -1182,6 +1198,7 @@
             Controls.Add(groundPanel);
             Name = "goToLocation";
             Text = "Form1";
+            Load += goToLocation_Load;
             groundPanel.ResumeLayout(false);
             shuzukoPanel1.ResumeLayout(false);
             shuzukoPanel1.PerformLayout();
@@ -1201,6 +1218,7 @@
             shuzukoPanel4.ResumeLayout(false);
             shuzukoPanel4.PerformLayout();
             shuzukoPanel3.ResumeLayout(false);
+            shuzukoPanel3.PerformLayout();
             shuzukoPanel2.ResumeLayout(false);
             shuzukoPanel2.PerformLayout();
             ResumeLayout(false);
@@ -1274,5 +1292,6 @@
         private ShuzukoButton shuzukoButton12;
         private ShuzukoButton shuzukoButton11;
         private ShuzukoButton shuzukoButton8;
+        private Label programNameLabel;
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class OTAUpdate : Form
+    public partial class OTAUpdate : BaseForm
     {
         public OTAUpdate()
         {
             InitializeComponent();
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

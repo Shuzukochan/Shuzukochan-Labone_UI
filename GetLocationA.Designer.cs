@@ -136,8 +136,8 @@
             // 
             // playButton
             // 
-            playButton.BackColor = Color.Gray;
-            playButton.BackgroundColor = Color.Gray;
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
             playButton.BorderColor = Color.Transparent;
             playButton.BorderRadius = 34;
             playButton.BorderSize = 0;
@@ -159,8 +159,8 @@
             // 
             // settingButton
             // 
-            settingButton.BackColor = Color.Gray;
-            settingButton.BackgroundColor = Color.Gray;
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
             settingButton.BorderColor = Color.Transparent;
             settingButton.BorderRadius = 34;
             settingButton.BorderSize = 0;
@@ -216,11 +216,12 @@
             backButton.TextOffsetX = 0;
             backButton.TextOffsetY = 0;
             backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
             // 
             // homeButton
             // 
-            homeButton.BackColor = Color.Gray;
-            homeButton.BackgroundColor = Color.Gray;
+            homeButton.BackColor = Color.Silver;
+            homeButton.BackgroundColor = Color.Silver;
             homeButton.BorderColor = Color.Transparent;
             homeButton.BorderRadius = 34;
             homeButton.BorderSize = 0;
