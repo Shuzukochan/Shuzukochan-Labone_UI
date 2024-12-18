@@ -12,12 +12,13 @@
         private bool isProgram8ButtonClicked = false;
         private bool isProgram9ButtonClicked = false;
         private bool isProgram10ButtonClicked = false;
-        private bool iscalibMode = false;
-        public SelectProgram(bool calibMode)
+        private UInt16 state = 0;
+        public SelectProgram(UInt16 stateMode)
         {
             InitializeComponent();
-            iscalibMode = calibMode;
+            state = stateMode;
         }
+
         private void SelectProgram_Load(object sender, EventArgs e)
         {
             this.BeginInvoke((MethodInvoker)delegate
@@ -110,11 +111,25 @@
         {
             if (isProgram1ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 1"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 1"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 1"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 1"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 1";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 1"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 1";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -126,11 +141,25 @@
 
             if (isProgram2ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 2"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 2"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 2"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 2"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 2";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 2"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 2";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -142,11 +171,25 @@
 
             if (isProgram3ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 3"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 3"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 3"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 3"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 3";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 3"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 3";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -158,11 +201,25 @@
 
             if (isProgram4ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 4"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 4"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 4"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 4"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 4";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 4"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 4";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -174,11 +231,25 @@
 
             if (isProgram5ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 5"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 5"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 5"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 5"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 5";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 5"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 5";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -190,11 +261,25 @@
 
             if (isProgram6ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 6"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 6"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 6"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 6"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 6";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 6"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 6";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -206,11 +291,25 @@
 
             if (isProgram7ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 7"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 7"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 7"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 7"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 7";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 7"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 7";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -222,11 +321,25 @@
 
             if (isProgram8ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 8"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 8"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 8"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 8"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 8";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 8"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 8";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -238,11 +351,25 @@
 
             if (isProgram9ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 9"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 9"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 9"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false)
+                    {
+                        OpenChildForm(new Distribution("Program 9"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 9";
+                    }
+                    else
+                    {
+                        OpenChildForm(new Distribution_1("Program 9"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 9";
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;
@@ -254,11 +381,25 @@
 
             if (isProgram10ButtonClicked)
             {
-                if (iscalibMode == false)
+                if (state == 0)
                 {
                     OpenChildForm(new ProgramParameter("Program 10"), groundPanel);
                 }
-                else OpenChildForm(new ProgramParameter_1("Program 10"), groundPanel);
+                else if (state == 1) OpenChildForm(new ProgramParameter_1("Program 10"), groundPanel);
+                else
+                {
+                    if (GlobalVariables.AreaState == false) 
+                    {
+                        OpenChildForm(new Distribution("Program 10"), groundPanel);
+                        GlobalVariables.ProgramName = "Program 10";
+                    }
+                    else 
+                    {
+                        OpenChildForm(new Distribution_1("Program 10"), groundPanel);
+                        GlobalVariables.ProgramName_1 = "Program 10"; 
+                    }
+
+                }
 
                 // Ẩn các panel không cần thiết
                 leftPanel.Visible = false;

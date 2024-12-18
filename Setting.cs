@@ -19,7 +19,7 @@ namespace Labone_UI
         private void setupButton_Click(object sender, EventArgs e)
         {
             // Mở form cài đặt
-            OpenChildForm(new SelectProgram(false), groundPanel);
+            OpenChildForm(new SelectProgram(0), groundPanel);
         }
 
         private void homeButton_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace Labone_UI
 
         private void calibrationButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SelectProgram(true), groundPanel);
+            OpenChildForm(new SelectProgram(1), groundPanel);
         }
 
         private void backButton_Click(object sender, EventArgs e)

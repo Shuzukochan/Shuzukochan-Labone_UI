@@ -303,6 +303,16 @@ namespace Labone_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SetupProgram1 {
+            get {
+                object obj = ResourceManager.GetObject("SetupProgram1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Shutdown {
             get {
                 object obj = ResourceManager.GetObject("Shutdown", resourceCulture);

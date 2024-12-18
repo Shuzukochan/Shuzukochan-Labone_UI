@@ -407,6 +407,8 @@
             // 
             setupButton.BackColor = Color.White;
             setupButton.BackgroundColor = Color.White;
+            setupButton.BackgroundImage = Properties.Resources.SetupProgram;
+            setupButton.BackgroundImageLayout = ImageLayout.Center;
             setupButton.BorderColor = Color.PaleVioletRed;
             setupButton.BorderRadius = 15;
             setupButton.BorderSize = 0;

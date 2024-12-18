@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Labone_UI.Resources;
 
 
 namespace Labone_UI
@@ -53,9 +54,34 @@ namespace Labone_UI
             });
             timeLabel.Text = GlobalVariables.TimeString;
             dayLabel.Text = GlobalVariables.DayString;
+            programNameLabel.Text = GlobalVariables.ProgramName;
         }
 
+        private void area1Button_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SelectProgram(3), groundPanel);
+            leftPanel.Visible = false;
+            rightPanel.Visible = false;
+            midPanel.Visible = false;
+            GlobalVariables.AreaState = false;
+        }
 
+        private void area2Button_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SelectProgram(3), groundPanel);
+            leftPanel.Visible = false;
+            rightPanel.Visible = false;
+            midPanel.Visible = false;
+            GlobalVariables.AreaState = true;
+        }
+
+        private void playButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Information(), groundPanel);
+            leftPanel.Visible = false;
+            rightPanel.Visible = false;
+            midPanel.Visible = false;
+        }
     }
 }
 

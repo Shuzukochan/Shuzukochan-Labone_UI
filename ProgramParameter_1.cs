@@ -40,7 +40,7 @@ namespace Labone_UI
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SelectProgram(true), groundPanel);
+            OpenChildForm(new SelectProgram(1), groundPanel);
             leftPanel.Visible = false;
         }
     }

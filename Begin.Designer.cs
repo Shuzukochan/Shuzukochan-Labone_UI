@@ -34,9 +34,9 @@
             shuzukoPanel1 = new ShuzukoPanel();
             shuzukoPanel9 = new ShuzukoPanel();
             shuzukoPanel6 = new ShuzukoPanel();
-            shuzukoButton2 = new ShuzukoButton();
+            area2Button = new ShuzukoButton();
             shuzukoPanel3 = new ShuzukoPanel();
-            shuzukoButton1 = new ShuzukoButton();
+            area1Button = new ShuzukoButton();
             shuzukoPanel5 = new ShuzukoPanel();
             shuzukoPanel4 = new ShuzukoPanel();
             shuzukoPanel2 = new ShuzukoPanel();
@@ -83,6 +83,7 @@
             midPanel = new ShuzukoPanel();
             shuzukoPanel7 = new ShuzukoPanel();
             shuzukoPanel15 = new ShuzukoPanel();
+            programNameLabel = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
@@ -102,6 +103,7 @@
             rightPanel.SuspendLayout();
             midPanel.SuspendLayout();
             shuzukoPanel7.SuspendLayout();
+            shuzukoPanel15.SuspendLayout();
             SuspendLayout();
             // 
             // timeUpdateTimer
@@ -127,7 +129,7 @@
             // shuzukoPanel1
             // 
             shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 30;
+            shuzukoPanel1.BorderRadius = 15;
             shuzukoPanel1.Controls.Add(shuzukoPanel9);
             shuzukoPanel1.Controls.Add(shuzukoPanel6);
             shuzukoPanel1.Controls.Add(shuzukoPanel3);
@@ -160,7 +162,7 @@
             // 
             shuzukoPanel6.BackColor = Color.White;
             shuzukoPanel6.BorderRadius = 15;
-            shuzukoPanel6.Controls.Add(shuzukoButton2);
+            shuzukoPanel6.Controls.Add(area2Button);
             shuzukoPanel6.ForeColor = Color.Black;
             shuzukoPanel6.GradientAngle = 0F;
             shuzukoPanel6.GradientBottomColor = Color.FromArgb(161, 208, 250);
@@ -170,33 +172,34 @@
             shuzukoPanel6.Size = new Size(344, 44);
             shuzukoPanel6.TabIndex = 0;
             // 
-            // shuzukoButton2
+            // area2Button
             // 
-            shuzukoButton2.Anchor = AnchorStyles.None;
-            shuzukoButton2.BackColor = Color.White;
-            shuzukoButton2.BackgroundColor = Color.White;
-            shuzukoButton2.BorderColor = Color.White;
-            shuzukoButton2.BorderRadius = 15;
-            shuzukoButton2.BorderSize = 0;
-            shuzukoButton2.FlatAppearance.BorderSize = 0;
-            shuzukoButton2.FlatStyle = FlatStyle.Flat;
-            shuzukoButton2.ForeColor = Color.White;
-            shuzukoButton2.Image = Properties.Resources.Area2;
-            shuzukoButton2.Location = new Point(229, 0);
-            shuzukoButton2.Name = "shuzukoButton2";
-            shuzukoButton2.Size = new Size(115, 44);
-            shuzukoButton2.TabIndex = 1;
-            shuzukoButton2.TextAlign = ContentAlignment.MiddleLeft;
-            shuzukoButton2.TextColor = Color.White;
-            shuzukoButton2.TextOffsetX = 0;
-            shuzukoButton2.TextOffsetY = 0;
-            shuzukoButton2.UseVisualStyleBackColor = false;
+            area2Button.Anchor = AnchorStyles.None;
+            area2Button.BackColor = Color.White;
+            area2Button.BackgroundColor = Color.White;
+            area2Button.BorderColor = Color.White;
+            area2Button.BorderRadius = 15;
+            area2Button.BorderSize = 0;
+            area2Button.FlatAppearance.BorderSize = 0;
+            area2Button.FlatStyle = FlatStyle.Flat;
+            area2Button.ForeColor = Color.White;
+            area2Button.Image = Properties.Resources.Area2;
+            area2Button.Location = new Point(229, 0);
+            area2Button.Name = "area2Button";
+            area2Button.Size = new Size(115, 44);
+            area2Button.TabIndex = 1;
+            area2Button.TextAlign = ContentAlignment.MiddleLeft;
+            area2Button.TextColor = Color.White;
+            area2Button.TextOffsetX = 0;
+            area2Button.TextOffsetY = 0;
+            area2Button.UseVisualStyleBackColor = false;
+            area2Button.Click += area2Button_Click;
             // 
             // shuzukoPanel3
             // 
             shuzukoPanel3.BackColor = Color.White;
             shuzukoPanel3.BorderRadius = 15;
-            shuzukoPanel3.Controls.Add(shuzukoButton1);
+            shuzukoPanel3.Controls.Add(area1Button);
             shuzukoPanel3.ForeColor = Color.Black;
             shuzukoPanel3.GradientAngle = 0F;
             shuzukoPanel3.GradientBottomColor = Color.FromArgb(161, 208, 250);
@@ -206,27 +209,28 @@
             shuzukoPanel3.Size = new Size(345, 44);
             shuzukoPanel3.TabIndex = 0;
             // 
-            // shuzukoButton1
+            // area1Button
             // 
-            shuzukoButton1.Anchor = AnchorStyles.None;
-            shuzukoButton1.BackColor = Color.White;
-            shuzukoButton1.BackgroundColor = Color.White;
-            shuzukoButton1.BorderColor = Color.White;
-            shuzukoButton1.BorderRadius = 15;
-            shuzukoButton1.BorderSize = 0;
-            shuzukoButton1.FlatAppearance.BorderSize = 0;
-            shuzukoButton1.FlatStyle = FlatStyle.Flat;
-            shuzukoButton1.ForeColor = Color.White;
-            shuzukoButton1.Image = Properties.Resources.Area1;
-            shuzukoButton1.Location = new Point(230, 0);
-            shuzukoButton1.Name = "shuzukoButton1";
-            shuzukoButton1.Size = new Size(115, 44);
-            shuzukoButton1.TabIndex = 0;
-            shuzukoButton1.TextAlign = ContentAlignment.MiddleLeft;
-            shuzukoButton1.TextColor = Color.White;
-            shuzukoButton1.TextOffsetX = 0;
-            shuzukoButton1.TextOffsetY = 0;
-            shuzukoButton1.UseVisualStyleBackColor = false;
+            area1Button.Anchor = AnchorStyles.None;
+            area1Button.BackColor = Color.White;
+            area1Button.BackgroundColor = Color.White;
+            area1Button.BorderColor = Color.White;
+            area1Button.BorderRadius = 15;
+            area1Button.BorderSize = 0;
+            area1Button.FlatAppearance.BorderSize = 0;
+            area1Button.FlatStyle = FlatStyle.Flat;
+            area1Button.ForeColor = Color.White;
+            area1Button.Image = Properties.Resources.Area1;
+            area1Button.Location = new Point(230, 0);
+            area1Button.Name = "area1Button";
+            area1Button.Size = new Size(115, 44);
+            area1Button.TabIndex = 0;
+            area1Button.TextAlign = ContentAlignment.MiddleLeft;
+            area1Button.TextColor = Color.White;
+            area1Button.TextOffsetX = 0;
+            area1Button.TextOffsetY = 0;
+            area1Button.UseVisualStyleBackColor = false;
+            area1Button.Click += area1Button_Click;
             // 
             // shuzukoPanel5
             // 
@@ -345,6 +349,7 @@
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
             playButton.UseVisualStyleBackColor = false;
+            playButton.Click += playButton_Click;
             // 
             // settingButton
             // 
@@ -512,7 +517,7 @@
             // rightPanel
             // 
             rightPanel.BackColor = Color.White;
-            rightPanel.BorderRadius = 30;
+            rightPanel.BorderRadius = 15;
             rightPanel.Controls.Add(shuzukoPanel33);
             rightPanel.Controls.Add(shuzukoPanel21);
             rightPanel.Controls.Add(shuzukoPanel32);
@@ -897,6 +902,7 @@
             // 
             shuzukoPanel15.BackColor = Color.White;
             shuzukoPanel15.BorderRadius = 22;
+            shuzukoPanel15.Controls.Add(programNameLabel);
             shuzukoPanel15.ForeColor = Color.Black;
             shuzukoPanel15.GradientAngle = 90F;
             shuzukoPanel15.GradientBottomColor = Color.FromArgb(169, 218, 251);
@@ -905,6 +911,20 @@
             shuzukoPanel15.Name = "shuzukoPanel15";
             shuzukoPanel15.Size = new Size(272, 44);
             shuzukoPanel15.TabIndex = 2;
+            // 
+            // programNameLabel
+            // 
+            programNameLabel.Anchor = AnchorStyles.None;
+            programNameLabel.AutoSize = true;
+            programNameLabel.BackColor = Color.Transparent;
+            programNameLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            programNameLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            programNameLabel.Location = new Point(69, 6);
+            programNameLabel.Name = "programNameLabel";
+            programNameLabel.Size = new Size(135, 32);
+            programNameLabel.TabIndex = 2;
+            programNameLabel.Text = "Program 1";
+            programNameLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -1021,6 +1041,8 @@
             midPanel.PerformLayout();
             shuzukoPanel7.ResumeLayout(false);
             shuzukoPanel7.PerformLayout();
+            shuzukoPanel15.ResumeLayout(false);
+            shuzukoPanel15.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1082,10 +1104,11 @@
         private ShuzukoPanel shuzukoPanel24;
         private ShuzukoPanel shuzukoPanel23;
         private ShuzukoPanel shuzukoPanel22;
-        private ShuzukoButton shuzukoButton1;
-        private ShuzukoButton shuzukoButton2;
+        private ShuzukoButton area1Button;
+        private ShuzukoButton area2Button;
         private Label timeLabel;
         private Label dayLabel;
         private System.Windows.Forms.Timer timeUpdateTimer;
+        private Label programNameLabel;
     }
 }

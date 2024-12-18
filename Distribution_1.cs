@@ -1,10 +1,18 @@
-﻿using System.Net.NetworkInformation;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class Distribution : BaseForm
+    public partial class Distribution_1 : BaseForm
     {
-        public Distribution(string programName)
+        public Distribution_1(string programName)
         {
             InitializeComponent();
             programNameLabel.Text = programName;
@@ -13,6 +21,7 @@ namespace Labone_UI
                 programNameLabel.Location = new Point(173, 6);
             }
         }
+
         private void clearButton_Click(object sender, EventArgs e)
         {
             for (int i = 1; i <= 96; i++)
@@ -49,7 +58,7 @@ namespace Labone_UI
             }
         }
 
-        private void Distribution_Load(object sender, EventArgs e)
+        private void Distribution_1_Load(object sender, EventArgs e)
         {
             for (int i = 1; i <= 96; i++)
             {
@@ -59,7 +68,6 @@ namespace Labone_UI
                 if (foundControls.Length > 0 && foundControls[0] is Button button)
                 {
                     button.Click += ShuzukoButton_Click;
-                    button.BackColor = GlobalVariables.ButtonStates[i - 1] ? Color.Red : Color.LightGray;
                 }
             }
         }
@@ -72,12 +80,12 @@ namespace Labone_UI
                 if (button.BackColor == Color.Red)
                 {
                     button.BackColor = Color.LightGray;
-                    GlobalVariables.ButtonStates[index] = false;
+                    GlobalVariables.ButtonStates_1[index] = false;
                 }
                 else
                 {
                     button.BackColor = Color.Red;
-                    GlobalVariables.ButtonStates[index] = true;
+                    GlobalVariables.ButtonStates_1[index] = true;
                 }
             }
         }
@@ -86,6 +94,5 @@ namespace Labone_UI
         {
             OpenChildForm(new Begin(), groundPanel);
         }
-
     }
 }
