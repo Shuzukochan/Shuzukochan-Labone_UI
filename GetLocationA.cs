@@ -17,15 +17,6 @@ namespace Labone_UI
             InitializeComponent();
         }
 
-        private void leftPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void shuzukoButton5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void backButton_Click(object sender, EventArgs e)
         {

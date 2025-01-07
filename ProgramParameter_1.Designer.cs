@@ -37,11 +37,6 @@
             enterButton = new ShuzukoButton();
             backButton = new ShuzukoButton();
             homeButton = new ShuzukoButton();
-            underLeftPanel = new ShuzukoPanel();
-            Clock = new PictureBox();
-            Calendar = new PictureBox();
-            KingTubeAuto = new Label();
-            logo = new PictureBox();
             leftPanel = new ShuzukoPanel();
             shuzukoPanel7 = new ShuzukoPanel();
             label8 = new Label();
@@ -53,10 +48,6 @@
             shuzukoButton4 = new ShuzukoButton();
             label2 = new Label();
             groundPanel.SuspendLayout();
-            underLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             leftPanel.SuspendLayout();
             shuzukoPanel7.SuspendLayout();
             shuzukoPanel3.SuspendLayout();
@@ -75,7 +66,6 @@
             groundPanel.Controls.Add(enterButton);
             groundPanel.Controls.Add(backButton);
             groundPanel.Controls.Add(homeButton);
-            groundPanel.Controls.Add(underLeftPanel);
             groundPanel.Controls.Add(leftPanel);
             groundPanel.Dock = DockStyle.Fill;
             groundPanel.ForeColor = Color.Black;
@@ -257,64 +247,6 @@
             homeButton.UseVisualStyleBackColor = false;
             homeButton.Click += homeButton_Click;
             // 
-            // underLeftPanel
-            // 
-            underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 30;
-            underLeftPanel.Controls.Add(Clock);
-            underLeftPanel.Controls.Add(Calendar);
-            underLeftPanel.Controls.Add(KingTubeAuto);
-            underLeftPanel.Controls.Add(logo);
-            underLeftPanel.ForeColor = Color.Black;
-            underLeftPanel.GradientAngle = 0F;
-            underLeftPanel.GradientBottomColor = Color.White;
-            underLeftPanel.GradientTopColor = Color.White;
-            underLeftPanel.Location = new Point(12, 372);
-            underLeftPanel.Name = "underLeftPanel";
-            underLeftPanel.Size = new Size(938, 58);
-            underLeftPanel.TabIndex = 3;
-            // 
-            // Clock
-            // 
-            Clock.Image = Properties.Resources.clock;
-            Clock.Location = new Point(717, 9);
-            Clock.Name = "Clock";
-            Clock.Size = new Size(40, 40);
-            Clock.SizeMode = PictureBoxSizeMode.StretchImage;
-            Clock.TabIndex = 3;
-            Clock.TabStop = false;
-            // 
-            // Calendar
-            // 
-            Calendar.Image = Properties.Resources.Calendar;
-            Calendar.Location = new Point(495, 9);
-            Calendar.Name = "Calendar";
-            Calendar.Size = new Size(37, 40);
-            Calendar.SizeMode = PictureBoxSizeMode.StretchImage;
-            Calendar.TabIndex = 2;
-            Calendar.TabStop = false;
-            // 
-            // KingTubeAuto
-            // 
-            KingTubeAuto.AutoSize = true;
-            KingTubeAuto.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            KingTubeAuto.ForeColor = Color.FromArgb(45, 48, 129);
-            KingTubeAuto.Location = new Point(205, 9);
-            KingTubeAuto.Name = "KingTubeAuto";
-            KingTubeAuto.Size = new Size(201, 37);
-            KingTubeAuto.TabIndex = 1;
-            KingTubeAuto.Text = "KingTubeAuto";
-            // 
-            // logo
-            // 
-            logo.Image = Properties.Resources.KingLab;
-            logo.Location = new Point(17, 4);
-            logo.Name = "logo";
-            logo.Size = new Size(143, 50);
-            logo.SizeMode = PictureBoxSizeMode.StretchImage;
-            logo.TabIndex = 0;
-            logo.TabStop = false;
-            // 
             // leftPanel
             // 
             leftPanel.BackColor = Color.White;
@@ -469,11 +401,6 @@
             Name = "ProgramParameter_1";
             Text = "Distribution";
             groundPanel.ResumeLayout(false);
-            underLeftPanel.ResumeLayout(false);
-            underLeftPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             leftPanel.ResumeLayout(false);
             shuzukoPanel7.ResumeLayout(false);
             shuzukoPanel7.PerformLayout();
@@ -487,11 +414,6 @@
         #endregion
         private ShuzukoPanel groundPanel;
         private ShuzukoPanel leftPanel;
-        private ShuzukoPanel underLeftPanel;
-        private Label KingTubeAuto;
-        private PictureBox logo;
-        private PictureBox Clock;
-        private PictureBox Calendar;
         private ShuzukoButton backButton;
         private ShuzukoButton homeButton;
         private ShuzukoButton vectorButton;

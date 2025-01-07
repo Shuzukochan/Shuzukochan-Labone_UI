@@ -51,7 +51,7 @@ namespace Labone_UI
         }
 
         [Category("Shuzuko Code Advance")]
-        public ContentAlignment TextAlign
+        public override ContentAlignment TextAlign
         {
             get { return textAlign; }
             set { textAlign = value; this.Invalidate(); }

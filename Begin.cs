@@ -11,6 +11,7 @@ using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Labone_UI.Resources;
+using System.IO.Ports;
 
 
 namespace Labone_UI
@@ -24,13 +25,11 @@ namespace Labone_UI
         }
         private void settingButton_Click(object sender, EventArgs e)
         {
-            // Mở form cài đặt
             OpenChildForm(new Setting(), groundPanel);
-
-            // Ẩn các panel
             leftPanel.Visible = false;
             midPanel.Visible = false;
             rightPanel.Visible = false;
+            underLeftPanel.BringToFront();
         }
 
         private async void StartClock()
@@ -38,8 +37,7 @@ namespace Labone_UI
             while (true)
             {
                 this.Update();
-                GlobalVariables.TimeString = DateTime.Now.ToString("HH:mm:ss");
-                timeLabel.Text = GlobalVariables.TimeString;
+                timeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
                 await Task.Delay(1000);
             }
         }
@@ -52,9 +50,49 @@ namespace Labone_UI
                 this.Refresh();
 
             });
-            timeLabel.Text = GlobalVariables.TimeString;
-            dayLabel.Text = GlobalVariables.DayString;
+            dayLabel.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
             programNameLabel.Text = GlobalVariables.ProgramName;
+            quanityRxLabel.Text = GlobalVariables.Quanity;
+            volumeRxLabel.Text = GlobalVariables.Volume;
+            pumpSpeedRxLabel.Text = GlobalVariables.PumpSpeed;
+            tubeIDRxLabel.Text = GlobalVariables.TubeID;
+            speedXYRxLabel.Text = GlobalVariables.SpeedXY;
+            antidropRxLabel.Text = GlobalVariables.Antidrop;
+
+            
+            UartManager.Instance.SerialPort.DataReceived += SerialPort_DataReceived;
+        }
+
+        private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            try
+            {
+                string data = UartManager.Instance.Receive();
+
+                this.BeginInvoke((MethodInvoker)delegate
+                {
+                    GlobalVariables.Quanity = data[0].ToString() + data[1].ToString();
+                    GlobalVariables.Volume = data[3].ToString() + data[4].ToString();
+                    GlobalVariables.PumpSpeed = data[6].ToString() + data[7].ToString();
+                    GlobalVariables.TubeID = data[9].ToString() + data[10].ToString();
+                    GlobalVariables.SpeedXY = data[12].ToString() + data[13].ToString();
+                    GlobalVariables.Antidrop = data[15].ToString() + data[16].ToString() + data[17].ToString();
+
+   
+                    quanityRxLabel.Text = GlobalVariables.Quanity;
+                    volumeRxLabel.Text = GlobalVariables.Volume;
+                    pumpSpeedRxLabel.Text = GlobalVariables.PumpSpeed;
+                    tubeIDRxLabel.Text = GlobalVariables.TubeID;
+                    speedXYRxLabel.Text = GlobalVariables.SpeedXY;
+                    antidropRxLabel.Text = GlobalVariables.Antidrop;
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error reading data from UART: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void area1Button_Click(object sender, EventArgs e)

@@ -46,5 +46,10 @@ namespace Labone_UI
         {
             OpenChildForm(new ProgramParameter_1(GlobalVariables.ProgramName), groundPanel);
         }
+
+        private void settingButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Setting(), groundPanel);
+        }
     }
 }

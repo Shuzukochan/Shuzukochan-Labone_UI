@@ -19,7 +19,7 @@ namespace Labone_UI
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Begin(), groundPanel);
         }
     }
 }

@@ -29,30 +29,6 @@
         private void InitializeComponent()
         {
             rightPanel = new ShuzukoPanel();
-            groundPanel = new ShuzukoPanel();
-            quickSelectButton = new ShuzukoButton();
-            clearButton = new ShuzukoButton();
-            fullButton = new ShuzukoButton();
-            vectorButton = new ShuzukoButton();
-            playButton = new ShuzukoButton();
-            settingButton = new ShuzukoButton();
-            enterButton = new ShuzukoButton();
-            backButton = new ShuzukoButton();
-            homeButton = new ShuzukoButton();
-            underLeftPanel = new ShuzukoPanel();
-            Clock = new PictureBox();
-            Calendar = new PictureBox();
-            KingTubeAuto = new Label();
-            logo = new PictureBox();
-            leftPanel = new ShuzukoPanel();
-            shuzukoPanel3 = new ShuzukoPanel();
-            label4 = new Label();
-            label3 = new Label();
-            shuzukoPanel2 = new ShuzukoPanel();
-            programNameLabel = new Label();
-            label2 = new Label();
-            shuzukoPanel1 = new ShuzukoPanel();
-            label1 = new Label();
             shuzukoButton25 = new ShuzukoButton();
             shuzukoButton24 = new ShuzukoButton();
             shuzukoButton20 = new ShuzukoButton();
@@ -149,12 +125,27 @@
             shuzukoButton3 = new ShuzukoButton();
             shuzukoButton1 = new ShuzukoButton();
             shuzukoButton2 = new ShuzukoButton();
+            groundPanel = new ShuzukoPanel();
+            quickSelectButton = new ShuzukoButton();
+            clearButton = new ShuzukoButton();
+            fullButton = new ShuzukoButton();
+            vectorButton = new ShuzukoButton();
+            playButton = new ShuzukoButton();
+            settingButton = new ShuzukoButton();
+            enterButton = new ShuzukoButton();
+            backButton = new ShuzukoButton();
+            homeButton = new ShuzukoButton();
+            leftPanel = new ShuzukoPanel();
+            shuzukoPanel3 = new ShuzukoPanel();
+            label4 = new Label();
+            label3 = new Label();
+            shuzukoPanel2 = new ShuzukoPanel();
+            programNameLabel = new Label();
+            label2 = new Label();
+            shuzukoPanel1 = new ShuzukoPanel();
+            label1 = new Label();
             rightPanel.SuspendLayout();
             groundPanel.SuspendLayout();
-            underLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             leftPanel.SuspendLayout();
             shuzukoPanel3.SuspendLayout();
             shuzukoPanel2.SuspendLayout();
@@ -269,399 +260,6 @@
             rightPanel.Name = "rightPanel";
             rightPanel.Size = new Size(850, 345);
             rightPanel.TabIndex = 1;
-            // 
-            // groundPanel
-            // 
-            groundPanel.BackColor = Color.White;
-            groundPanel.BorderRadius = 0;
-            groundPanel.Controls.Add(rightPanel);
-            groundPanel.Controls.Add(quickSelectButton);
-            groundPanel.Controls.Add(clearButton);
-            groundPanel.Controls.Add(fullButton);
-            groundPanel.Controls.Add(vectorButton);
-            groundPanel.Controls.Add(playButton);
-            groundPanel.Controls.Add(settingButton);
-            groundPanel.Controls.Add(enterButton);
-            groundPanel.Controls.Add(backButton);
-            groundPanel.Controls.Add(homeButton);
-            groundPanel.Controls.Add(underLeftPanel);
-            groundPanel.Controls.Add(leftPanel);
-            groundPanel.Dock = DockStyle.Fill;
-            groundPanel.ForeColor = Color.Black;
-            groundPanel.GradientAngle = 180F;
-            groundPanel.GradientBottomColor = Color.FromArgb(20, 116, 252);
-            groundPanel.GradientTopColor = Color.FromArgb(69, 198, 255);
-            groundPanel.Location = new Point(0, 0);
-            groundPanel.Name = "groundPanel";
-            groundPanel.Size = new Size(1904, 441);
-            groundPanel.TabIndex = 2;
-            // 
-            // quickSelectButton
-            // 
-            quickSelectButton.BackColor = Color.White;
-            quickSelectButton.BackgroundColor = Color.White;
-            quickSelectButton.BorderColor = Color.White;
-            quickSelectButton.BorderRadius = 10;
-            quickSelectButton.BorderSize = 0;
-            quickSelectButton.FlatAppearance.BorderSize = 0;
-            quickSelectButton.FlatStyle = FlatStyle.Flat;
-            quickSelectButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            quickSelectButton.ForeColor = Color.FromArgb(45, 48, 129);
-            quickSelectButton.Location = new Point(1576, 250);
-            quickSelectButton.Name = "quickSelectButton";
-            quickSelectButton.Size = new Size(320, 107);
-            quickSelectButton.TabIndex = 12;
-            quickSelectButton.Text = "QUICK SELECT";
-            quickSelectButton.TextColor = Color.FromArgb(45, 48, 129);
-            quickSelectButton.TextOffsetX = 0;
-            quickSelectButton.TextOffsetY = 0;
-            quickSelectButton.UseVisualStyleBackColor = false;
-            // 
-            // clearButton
-            // 
-            clearButton.BackColor = Color.White;
-            clearButton.BackgroundColor = Color.White;
-            clearButton.BorderColor = Color.White;
-            clearButton.BorderRadius = 10;
-            clearButton.BorderSize = 0;
-            clearButton.FlatAppearance.BorderSize = 0;
-            clearButton.FlatStyle = FlatStyle.Flat;
-            clearButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            clearButton.ForeColor = Color.FromArgb(45, 48, 129);
-            clearButton.Location = new Point(1576, 131);
-            clearButton.Name = "clearButton";
-            clearButton.Size = new Size(320, 107);
-            clearButton.TabIndex = 11;
-            clearButton.Text = "CLEAR";
-            clearButton.TextColor = Color.FromArgb(45, 48, 129);
-            clearButton.TextOffsetX = 0;
-            clearButton.TextOffsetY = 0;
-            clearButton.UseVisualStyleBackColor = false;
-            clearButton.Click += clearButton_Click;
-            // 
-            // fullButton
-            // 
-            fullButton.BackColor = Color.White;
-            fullButton.BackgroundColor = Color.White;
-            fullButton.BorderColor = Color.White;
-            fullButton.BorderRadius = 10;
-            fullButton.BorderSize = 0;
-            fullButton.FlatAppearance.BorderSize = 0;
-            fullButton.FlatStyle = FlatStyle.Flat;
-            fullButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            fullButton.ForeColor = Color.FromArgb(45, 48, 129);
-            fullButton.Location = new Point(1576, 12);
-            fullButton.Name = "fullButton";
-            fullButton.Size = new Size(320, 107);
-            fullButton.TabIndex = 10;
-            fullButton.Text = "FULL";
-            fullButton.TextColor = Color.FromArgb(45, 48, 129);
-            fullButton.TextOffsetX = 0;
-            fullButton.TextOffsetY = 0;
-            fullButton.UseVisualStyleBackColor = false;
-            fullButton.Click += fullButton_Click;
-            // 
-            // vectorButton
-            // 
-            vectorButton.BackColor = Color.Silver;
-            vectorButton.BackgroundColor = Color.Silver;
-            vectorButton.BorderColor = Color.Transparent;
-            vectorButton.BorderRadius = 34;
-            vectorButton.BorderSize = 0;
-            vectorButton.FlatAppearance.BorderSize = 0;
-            vectorButton.FlatStyle = FlatStyle.Flat;
-            vectorButton.ForeColor = Color.White;
-            vectorButton.Image = Properties.Resources.Vector;
-            vectorButton.Location = new Point(1550, 363);
-            vectorButton.Name = "vectorButton";
-            vectorButton.Size = new Size(68, 68);
-            vectorButton.TabIndex = 9;
-            vectorButton.TextColor = Color.White;
-            vectorButton.TextOffsetX = 0;
-            vectorButton.TextOffsetY = 0;
-            vectorButton.UseVisualStyleBackColor = false;
-            // 
-            // playButton
-            // 
-            playButton.BackColor = Color.Silver;
-            playButton.BackgroundColor = Color.Silver;
-            playButton.BorderColor = Color.Transparent;
-            playButton.BorderRadius = 34;
-            playButton.BorderSize = 0;
-            playButton.FlatAppearance.BorderSize = 0;
-            playButton.FlatStyle = FlatStyle.Flat;
-            playButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            playButton.ForeColor = Color.FromArgb(45, 48, 129);
-            playButton.Image = Properties.Resources.Play;
-            playButton.ImageAlign = ContentAlignment.MiddleLeft;
-            playButton.Location = new Point(1630, 364);
-            playButton.Name = "playButton";
-            playButton.Size = new Size(261, 68);
-            playButton.TabIndex = 8;
-            playButton.Text = "  BEGIN";
-            playButton.TextColor = Color.FromArgb(45, 48, 129);
-            playButton.TextOffsetX = 80;
-            playButton.TextOffsetY = 9;
-            playButton.UseVisualStyleBackColor = false;
-            // 
-            // settingButton
-            // 
-            settingButton.BackColor = Color.Silver;
-            settingButton.BackgroundColor = Color.Silver;
-            settingButton.BorderColor = Color.Transparent;
-            settingButton.BorderRadius = 34;
-            settingButton.BorderSize = 0;
-            settingButton.FlatAppearance.BorderSize = 0;
-            settingButton.FlatStyle = FlatStyle.Flat;
-            settingButton.ForeColor = Color.White;
-            settingButton.Image = Properties.Resources.Setting;
-            settingButton.Location = new Point(1270, 363);
-            settingButton.Name = "settingButton";
-            settingButton.Size = new Size(68, 68);
-            settingButton.TabIndex = 7;
-            settingButton.TextColor = Color.White;
-            settingButton.TextOffsetX = 0;
-            settingButton.TextOffsetY = 0;
-            settingButton.UseVisualStyleBackColor = false;
-            // 
-            // enterButton
-            // 
-            enterButton.BackColor = Color.White;
-            enterButton.BackgroundColor = Color.White;
-            enterButton.BorderColor = Color.Transparent;
-            enterButton.BorderRadius = 34;
-            enterButton.BorderSize = 0;
-            enterButton.FlatAppearance.BorderSize = 0;
-            enterButton.FlatStyle = FlatStyle.Flat;
-            enterButton.ForeColor = Color.White;
-            enterButton.Image = Properties.Resources.Enter;
-            enterButton.Location = new Point(1170, 363);
-            enterButton.Name = "enterButton";
-            enterButton.Size = new Size(68, 68);
-            enterButton.TabIndex = 6;
-            enterButton.TextColor = Color.White;
-            enterButton.TextOffsetX = 0;
-            enterButton.TextOffsetY = 0;
-            enterButton.UseVisualStyleBackColor = false;
-            enterButton.Click += enterButton_Click;
-            // 
-            // backButton
-            // 
-            backButton.BackColor = Color.White;
-            backButton.BackgroundColor = Color.White;
-            backButton.BorderColor = Color.Transparent;
-            backButton.BorderRadius = 34;
-            backButton.BorderSize = 0;
-            backButton.FlatAppearance.BorderSize = 0;
-            backButton.FlatStyle = FlatStyle.Flat;
-            backButton.ForeColor = Color.White;
-            backButton.Image = Properties.Resources.Left;
-            backButton.Location = new Point(1070, 363);
-            backButton.Name = "backButton";
-            backButton.Size = new Size(68, 68);
-            backButton.TabIndex = 5;
-            backButton.TextColor = Color.White;
-            backButton.TextOffsetX = 0;
-            backButton.TextOffsetY = 0;
-            backButton.UseVisualStyleBackColor = false;
-            // 
-            // homeButton
-            // 
-            homeButton.BackColor = Color.White;
-            homeButton.BackgroundColor = Color.White;
-            homeButton.BorderColor = Color.Transparent;
-            homeButton.BorderRadius = 34;
-            homeButton.BorderSize = 0;
-            homeButton.FlatAppearance.BorderSize = 0;
-            homeButton.FlatStyle = FlatStyle.Flat;
-            homeButton.ForeColor = Color.White;
-            homeButton.Image = Properties.Resources.Home;
-            homeButton.Location = new Point(970, 363);
-            homeButton.Name = "homeButton";
-            homeButton.Size = new Size(68, 68);
-            homeButton.TabIndex = 4;
-            homeButton.TextColor = Color.White;
-            homeButton.TextOffsetX = 0;
-            homeButton.TextOffsetY = 0;
-            homeButton.UseVisualStyleBackColor = false;
-            // 
-            // underLeftPanel
-            // 
-            underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 15;
-            underLeftPanel.Controls.Add(Clock);
-            underLeftPanel.Controls.Add(Calendar);
-            underLeftPanel.Controls.Add(KingTubeAuto);
-            underLeftPanel.Controls.Add(logo);
-            underLeftPanel.ForeColor = Color.Black;
-            underLeftPanel.GradientAngle = 0F;
-            underLeftPanel.GradientBottomColor = Color.White;
-            underLeftPanel.GradientTopColor = Color.White;
-            underLeftPanel.Location = new Point(12, 372);
-            underLeftPanel.Name = "underLeftPanel";
-            underLeftPanel.Size = new Size(938, 58);
-            underLeftPanel.TabIndex = 3;
-            // 
-            // Clock
-            // 
-            Clock.Image = Properties.Resources.clock;
-            Clock.Location = new Point(717, 9);
-            Clock.Name = "Clock";
-            Clock.Size = new Size(40, 40);
-            Clock.SizeMode = PictureBoxSizeMode.StretchImage;
-            Clock.TabIndex = 3;
-            Clock.TabStop = false;
-            // 
-            // Calendar
-            // 
-            Calendar.Image = Properties.Resources.Calendar;
-            Calendar.Location = new Point(495, 9);
-            Calendar.Name = "Calendar";
-            Calendar.Size = new Size(37, 40);
-            Calendar.SizeMode = PictureBoxSizeMode.StretchImage;
-            Calendar.TabIndex = 2;
-            Calendar.TabStop = false;
-            // 
-            // KingTubeAuto
-            // 
-            KingTubeAuto.AutoSize = true;
-            KingTubeAuto.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            KingTubeAuto.ForeColor = Color.FromArgb(45, 48, 129);
-            KingTubeAuto.Location = new Point(205, 9);
-            KingTubeAuto.Name = "KingTubeAuto";
-            KingTubeAuto.Size = new Size(201, 37);
-            KingTubeAuto.TabIndex = 1;
-            KingTubeAuto.Text = "KingTubeAuto";
-            // 
-            // logo
-            // 
-            logo.Image = Properties.Resources.KingLab;
-            logo.Location = new Point(17, 4);
-            logo.Name = "logo";
-            logo.Size = new Size(143, 50);
-            logo.SizeMode = PictureBoxSizeMode.StretchImage;
-            logo.TabIndex = 0;
-            logo.TabStop = false;
-            // 
-            // leftPanel
-            // 
-            leftPanel.BackColor = Color.White;
-            leftPanel.BorderRadius = 15;
-            leftPanel.Controls.Add(shuzukoPanel3);
-            leftPanel.Controls.Add(shuzukoPanel2);
-            leftPanel.Controls.Add(shuzukoPanel1);
-            leftPanel.ForeColor = Color.Black;
-            leftPanel.GradientAngle = 180F;
-            leftPanel.GradientBottomColor = Color.FromArgb(92, 158, 252);
-            leftPanel.GradientTopColor = Color.FromArgb(105, 182, 252);
-            leftPanel.Location = new Point(12, 12);
-            leftPanel.Name = "leftPanel";
-            leftPanel.Size = new Size(690, 345);
-            leftPanel.TabIndex = 2;
-            // 
-            // shuzukoPanel3
-            // 
-            shuzukoPanel3.BackColor = Color.White;
-            shuzukoPanel3.BorderRadius = 15;
-            shuzukoPanel3.Controls.Add(label4);
-            shuzukoPanel3.Controls.Add(label3);
-            shuzukoPanel3.ForeColor = Color.Black;
-            shuzukoPanel3.GradientAngle = 0F;
-            shuzukoPanel3.GradientBottomColor = Color.White;
-            shuzukoPanel3.GradientTopColor = Color.White;
-            shuzukoPanel3.Location = new Point(10, 72);
-            shuzukoPanel3.Name = "shuzukoPanel3";
-            shuzukoPanel3.Size = new Size(141, 50);
-            shuzukoPanel3.TabIndex = 4;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label4.ForeColor = Color.FromArgb(45, 48, 129);
-            label4.Location = new Point(22, 6);
-            label4.Name = "label4";
-            label4.Size = new Size(97, 37);
-            label4.TabIndex = 3;
-            label4.Text = "NAME";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(45, 48, 129);
-            label3.Location = new Point(143, -144);
-            label3.Name = "label3";
-            label3.Size = new Size(347, 37);
-            label3.TabIndex = 2;
-            label3.Text = "DISTRIBUTION LOCATION";
-            // 
-            // shuzukoPanel2
-            // 
-            shuzukoPanel2.BackColor = Color.White;
-            shuzukoPanel2.BorderRadius = 15;
-            shuzukoPanel2.Controls.Add(programNameLabel);
-            shuzukoPanel2.Controls.Add(label2);
-            shuzukoPanel2.ForeColor = Color.Black;
-            shuzukoPanel2.GradientAngle = 0F;
-            shuzukoPanel2.GradientBottomColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel2.GradientTopColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel2.Location = new Point(157, 72);
-            shuzukoPanel2.Name = "shuzukoPanel2";
-            shuzukoPanel2.Size = new Size(523, 50);
-            shuzukoPanel2.TabIndex = 3;
-            // 
-            // programNameLabel
-            // 
-            programNameLabel.Anchor = AnchorStyles.None;
-            programNameLabel.BackColor = Color.Transparent;
-            programNameLabel.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            programNameLabel.ForeColor = Color.FromArgb(45, 48, 129);
-            programNameLabel.Location = new Point(185, 6);
-            programNameLabel.Name = "programNameLabel";
-            programNameLabel.Size = new Size(177, 37);
-            programNameLabel.TabIndex = 2;
-            programNameLabel.Text = "Program 1";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label2.ForeColor = Color.FromArgb(45, 48, 129);
-            label2.Location = new Point(248, -69);
-            label2.Name = "label2";
-            label2.Size = new Size(347, 37);
-            label2.TabIndex = 2;
-            label2.Text = "DISTRIBUTION LOCATION";
-            // 
-            // shuzukoPanel1
-            // 
-            shuzukoPanel1.BackColor = Color.White;
-            shuzukoPanel1.BorderRadius = 15;
-            shuzukoPanel1.Controls.Add(label1);
-            shuzukoPanel1.ForeColor = Color.Black;
-            shuzukoPanel1.GradientAngle = 0F;
-            shuzukoPanel1.GradientBottomColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel1.GradientTopColor = Color.FromArgb(141, 196, 252);
-            shuzukoPanel1.Location = new Point(10, 10);
-            shuzukoPanel1.Name = "shuzukoPanel1";
-            shuzukoPanel1.Size = new Size(670, 50);
-            shuzukoPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(45, 48, 129);
-            label1.Location = new Point(162, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(347, 37);
-            label1.TabIndex = 2;
-            label1.Text = "DISTRIBUTION LOCATION";
             // 
             // shuzukoButton25
             // 
@@ -2487,6 +2085,340 @@
             shuzukoButton2.TextOffsetY = 0;
             shuzukoButton2.UseVisualStyleBackColor = false;
             // 
+            // groundPanel
+            // 
+            groundPanel.BackColor = Color.White;
+            groundPanel.BorderRadius = 0;
+            groundPanel.Controls.Add(rightPanel);
+            groundPanel.Controls.Add(quickSelectButton);
+            groundPanel.Controls.Add(clearButton);
+            groundPanel.Controls.Add(fullButton);
+            groundPanel.Controls.Add(vectorButton);
+            groundPanel.Controls.Add(playButton);
+            groundPanel.Controls.Add(settingButton);
+            groundPanel.Controls.Add(enterButton);
+            groundPanel.Controls.Add(backButton);
+            groundPanel.Controls.Add(homeButton);
+            groundPanel.Controls.Add(leftPanel);
+            groundPanel.Dock = DockStyle.Fill;
+            groundPanel.ForeColor = Color.Black;
+            groundPanel.GradientAngle = 180F;
+            groundPanel.GradientBottomColor = Color.FromArgb(20, 116, 252);
+            groundPanel.GradientTopColor = Color.FromArgb(69, 198, 255);
+            groundPanel.Location = new Point(0, 0);
+            groundPanel.Name = "groundPanel";
+            groundPanel.Size = new Size(1904, 441);
+            groundPanel.TabIndex = 2;
+            // 
+            // quickSelectButton
+            // 
+            quickSelectButton.BackColor = Color.White;
+            quickSelectButton.BackgroundColor = Color.White;
+            quickSelectButton.BorderColor = Color.White;
+            quickSelectButton.BorderRadius = 10;
+            quickSelectButton.BorderSize = 0;
+            quickSelectButton.FlatAppearance.BorderSize = 0;
+            quickSelectButton.FlatStyle = FlatStyle.Flat;
+            quickSelectButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            quickSelectButton.ForeColor = Color.FromArgb(45, 48, 129);
+            quickSelectButton.Location = new Point(1576, 250);
+            quickSelectButton.Name = "quickSelectButton";
+            quickSelectButton.Size = new Size(320, 107);
+            quickSelectButton.TabIndex = 12;
+            quickSelectButton.Text = "QUICK SELECT";
+            quickSelectButton.TextColor = Color.FromArgb(45, 48, 129);
+            quickSelectButton.TextOffsetX = 0;
+            quickSelectButton.TextOffsetY = 0;
+            quickSelectButton.UseVisualStyleBackColor = false;
+            // 
+            // clearButton
+            // 
+            clearButton.BackColor = Color.White;
+            clearButton.BackgroundColor = Color.White;
+            clearButton.BorderColor = Color.White;
+            clearButton.BorderRadius = 10;
+            clearButton.BorderSize = 0;
+            clearButton.FlatAppearance.BorderSize = 0;
+            clearButton.FlatStyle = FlatStyle.Flat;
+            clearButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            clearButton.ForeColor = Color.FromArgb(45, 48, 129);
+            clearButton.Location = new Point(1576, 131);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(320, 107);
+            clearButton.TabIndex = 11;
+            clearButton.Text = "CLEAR";
+            clearButton.TextColor = Color.FromArgb(45, 48, 129);
+            clearButton.TextOffsetX = 0;
+            clearButton.TextOffsetY = 0;
+            clearButton.UseVisualStyleBackColor = false;
+            clearButton.Click += clearButton_Click;
+            // 
+            // fullButton
+            // 
+            fullButton.BackColor = Color.White;
+            fullButton.BackgroundColor = Color.White;
+            fullButton.BorderColor = Color.White;
+            fullButton.BorderRadius = 10;
+            fullButton.BorderSize = 0;
+            fullButton.FlatAppearance.BorderSize = 0;
+            fullButton.FlatStyle = FlatStyle.Flat;
+            fullButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            fullButton.ForeColor = Color.FromArgb(45, 48, 129);
+            fullButton.Location = new Point(1576, 12);
+            fullButton.Name = "fullButton";
+            fullButton.Size = new Size(320, 107);
+            fullButton.TabIndex = 10;
+            fullButton.Text = "FULL";
+            fullButton.TextColor = Color.FromArgb(45, 48, 129);
+            fullButton.TextOffsetX = 0;
+            fullButton.TextOffsetY = 0;
+            fullButton.UseVisualStyleBackColor = false;
+            fullButton.Click += fullButton_Click;
+            // 
+            // vectorButton
+            // 
+            vectorButton.BackColor = Color.Silver;
+            vectorButton.BackgroundColor = Color.Silver;
+            vectorButton.BorderColor = Color.Transparent;
+            vectorButton.BorderRadius = 34;
+            vectorButton.BorderSize = 0;
+            vectorButton.FlatAppearance.BorderSize = 0;
+            vectorButton.FlatStyle = FlatStyle.Flat;
+            vectorButton.ForeColor = Color.White;
+            vectorButton.Image = Properties.Resources.Vector;
+            vectorButton.Location = new Point(1550, 363);
+            vectorButton.Name = "vectorButton";
+            vectorButton.Size = new Size(68, 68);
+            vectorButton.TabIndex = 9;
+            vectorButton.TextColor = Color.White;
+            vectorButton.TextOffsetX = 0;
+            vectorButton.TextOffsetY = 0;
+            vectorButton.UseVisualStyleBackColor = false;
+            // 
+            // playButton
+            // 
+            playButton.BackColor = Color.Silver;
+            playButton.BackgroundColor = Color.Silver;
+            playButton.BorderColor = Color.Transparent;
+            playButton.BorderRadius = 34;
+            playButton.BorderSize = 0;
+            playButton.FlatAppearance.BorderSize = 0;
+            playButton.FlatStyle = FlatStyle.Flat;
+            playButton.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            playButton.ForeColor = Color.FromArgb(45, 48, 129);
+            playButton.Image = Properties.Resources.Play;
+            playButton.ImageAlign = ContentAlignment.MiddleLeft;
+            playButton.Location = new Point(1630, 364);
+            playButton.Name = "playButton";
+            playButton.Size = new Size(261, 68);
+            playButton.TabIndex = 8;
+            playButton.Text = "  BEGIN";
+            playButton.TextColor = Color.FromArgb(45, 48, 129);
+            playButton.TextOffsetX = 80;
+            playButton.TextOffsetY = 9;
+            playButton.UseVisualStyleBackColor = false;
+            // 
+            // settingButton
+            // 
+            settingButton.BackColor = Color.Silver;
+            settingButton.BackgroundColor = Color.Silver;
+            settingButton.BorderColor = Color.Transparent;
+            settingButton.BorderRadius = 34;
+            settingButton.BorderSize = 0;
+            settingButton.FlatAppearance.BorderSize = 0;
+            settingButton.FlatStyle = FlatStyle.Flat;
+            settingButton.ForeColor = Color.White;
+            settingButton.Image = Properties.Resources.Setting;
+            settingButton.Location = new Point(1270, 363);
+            settingButton.Name = "settingButton";
+            settingButton.Size = new Size(68, 68);
+            settingButton.TabIndex = 7;
+            settingButton.TextColor = Color.White;
+            settingButton.TextOffsetX = 0;
+            settingButton.TextOffsetY = 0;
+            settingButton.UseVisualStyleBackColor = false;
+            // 
+            // enterButton
+            // 
+            enterButton.BackColor = Color.White;
+            enterButton.BackgroundColor = Color.White;
+            enterButton.BorderColor = Color.Transparent;
+            enterButton.BorderRadius = 34;
+            enterButton.BorderSize = 0;
+            enterButton.FlatAppearance.BorderSize = 0;
+            enterButton.FlatStyle = FlatStyle.Flat;
+            enterButton.ForeColor = Color.White;
+            enterButton.Image = Properties.Resources.Enter;
+            enterButton.Location = new Point(1170, 363);
+            enterButton.Name = "enterButton";
+            enterButton.Size = new Size(68, 68);
+            enterButton.TabIndex = 6;
+            enterButton.TextColor = Color.White;
+            enterButton.TextOffsetX = 0;
+            enterButton.TextOffsetY = 0;
+            enterButton.UseVisualStyleBackColor = false;
+            enterButton.Click += enterButton_Click;
+            // 
+            // backButton
+            // 
+            backButton.BackColor = Color.White;
+            backButton.BackgroundColor = Color.White;
+            backButton.BorderColor = Color.Transparent;
+            backButton.BorderRadius = 34;
+            backButton.BorderSize = 0;
+            backButton.FlatAppearance.BorderSize = 0;
+            backButton.FlatStyle = FlatStyle.Flat;
+            backButton.ForeColor = Color.White;
+            backButton.Image = Properties.Resources.Left;
+            backButton.Location = new Point(1070, 363);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(68, 68);
+            backButton.TabIndex = 5;
+            backButton.TextColor = Color.White;
+            backButton.TextOffsetX = 0;
+            backButton.TextOffsetY = 0;
+            backButton.UseVisualStyleBackColor = false;
+            // 
+            // homeButton
+            // 
+            homeButton.BackColor = Color.White;
+            homeButton.BackgroundColor = Color.White;
+            homeButton.BorderColor = Color.Transparent;
+            homeButton.BorderRadius = 34;
+            homeButton.BorderSize = 0;
+            homeButton.FlatAppearance.BorderSize = 0;
+            homeButton.FlatStyle = FlatStyle.Flat;
+            homeButton.ForeColor = Color.White;
+            homeButton.Image = Properties.Resources.Home;
+            homeButton.Location = new Point(970, 363);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(68, 68);
+            homeButton.TabIndex = 4;
+            homeButton.TextColor = Color.White;
+            homeButton.TextOffsetX = 0;
+            homeButton.TextOffsetY = 0;
+            homeButton.UseVisualStyleBackColor = false;
+            // 
+            // leftPanel
+            // 
+            leftPanel.BackColor = Color.White;
+            leftPanel.BorderRadius = 15;
+            leftPanel.Controls.Add(shuzukoPanel3);
+            leftPanel.Controls.Add(shuzukoPanel2);
+            leftPanel.Controls.Add(shuzukoPanel1);
+            leftPanel.ForeColor = Color.Black;
+            leftPanel.GradientAngle = 180F;
+            leftPanel.GradientBottomColor = Color.FromArgb(92, 158, 252);
+            leftPanel.GradientTopColor = Color.FromArgb(105, 182, 252);
+            leftPanel.Location = new Point(12, 12);
+            leftPanel.Name = "leftPanel";
+            leftPanel.Size = new Size(690, 345);
+            leftPanel.TabIndex = 2;
+            // 
+            // shuzukoPanel3
+            // 
+            shuzukoPanel3.BackColor = Color.White;
+            shuzukoPanel3.BorderRadius = 15;
+            shuzukoPanel3.Controls.Add(label4);
+            shuzukoPanel3.Controls.Add(label3);
+            shuzukoPanel3.ForeColor = Color.Black;
+            shuzukoPanel3.GradientAngle = 0F;
+            shuzukoPanel3.GradientBottomColor = Color.White;
+            shuzukoPanel3.GradientTopColor = Color.White;
+            shuzukoPanel3.Location = new Point(10, 72);
+            shuzukoPanel3.Name = "shuzukoPanel3";
+            shuzukoPanel3.Size = new Size(141, 50);
+            shuzukoPanel3.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(45, 48, 129);
+            label4.Location = new Point(22, 6);
+            label4.Name = "label4";
+            label4.Size = new Size(97, 37);
+            label4.TabIndex = 3;
+            label4.Text = "NAME";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.None;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label3.ForeColor = Color.FromArgb(45, 48, 129);
+            label3.Location = new Point(143, -144);
+            label3.Name = "label3";
+            label3.Size = new Size(347, 37);
+            label3.TabIndex = 2;
+            label3.Text = "DISTRIBUTION LOCATION";
+            // 
+            // shuzukoPanel2
+            // 
+            shuzukoPanel2.BackColor = Color.White;
+            shuzukoPanel2.BorderRadius = 15;
+            shuzukoPanel2.Controls.Add(programNameLabel);
+            shuzukoPanel2.Controls.Add(label2);
+            shuzukoPanel2.ForeColor = Color.Black;
+            shuzukoPanel2.GradientAngle = 0F;
+            shuzukoPanel2.GradientBottomColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel2.GradientTopColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel2.Location = new Point(157, 72);
+            shuzukoPanel2.Name = "shuzukoPanel2";
+            shuzukoPanel2.Size = new Size(523, 50);
+            shuzukoPanel2.TabIndex = 3;
+            // 
+            // programNameLabel
+            // 
+            programNameLabel.Anchor = AnchorStyles.None;
+            programNameLabel.BackColor = Color.Transparent;
+            programNameLabel.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            programNameLabel.ForeColor = Color.FromArgb(45, 48, 129);
+            programNameLabel.Location = new Point(185, 6);
+            programNameLabel.Name = "programNameLabel";
+            programNameLabel.Size = new Size(177, 37);
+            programNameLabel.TabIndex = 2;
+            programNameLabel.Text = "Program 1";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label2.ForeColor = Color.FromArgb(45, 48, 129);
+            label2.Location = new Point(248, -69);
+            label2.Name = "label2";
+            label2.Size = new Size(347, 37);
+            label2.TabIndex = 2;
+            label2.Text = "DISTRIBUTION LOCATION";
+            // 
+            // shuzukoPanel1
+            // 
+            shuzukoPanel1.BackColor = Color.White;
+            shuzukoPanel1.BorderRadius = 15;
+            shuzukoPanel1.Controls.Add(label1);
+            shuzukoPanel1.ForeColor = Color.Black;
+            shuzukoPanel1.GradientAngle = 0F;
+            shuzukoPanel1.GradientBottomColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel1.GradientTopColor = Color.FromArgb(141, 196, 252);
+            shuzukoPanel1.Location = new Point(10, 10);
+            shuzukoPanel1.Name = "shuzukoPanel1";
+            shuzukoPanel1.Size = new Size(670, 50);
+            shuzukoPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.None;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(45, 48, 129);
+            label1.Location = new Point(162, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(347, 37);
+            label1.TabIndex = 2;
+            label1.Text = "DISTRIBUTION LOCATION";
+            // 
             // Distribution_1
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -2498,11 +2430,6 @@
             Load += Distribution_1_Load;
             rightPanel.ResumeLayout(false);
             groundPanel.ResumeLayout(false);
-            underLeftPanel.ResumeLayout(false);
-            underLeftPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             leftPanel.ResumeLayout(false);
             shuzukoPanel3.ResumeLayout(false);
             shuzukoPanel3.PerformLayout();
@@ -2515,11 +2442,6 @@
         private ShuzukoPanel rightPanel;
         private ShuzukoPanel groundPanel;
         private ShuzukoPanel leftPanel;
-        private ShuzukoPanel underLeftPanel;
-        private Label KingTubeAuto;
-        private PictureBox logo;
-        private PictureBox Clock;
-        private PictureBox Calendar;
         private ShuzukoButton backButton;
         private ShuzukoButton homeButton;
         private ShuzukoButton vectorButton;

@@ -21,13 +21,6 @@ namespace Labone_UI
                 programNameLabel.Location = new Point(548, 9);
             }
         }
-        private void ProgramParameter_Load(object sender, EventArgs e)
-        {
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                this.Refresh();
-            });
-        }
 
         private void homeButton_Click(object sender, EventArgs e)
         {

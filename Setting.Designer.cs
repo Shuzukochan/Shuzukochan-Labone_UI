@@ -31,17 +31,6 @@
             groundPanel = new ShuzukoPanel();
             vectorButton = new ShuzukoButton();
             playButton = new ShuzukoButton();
-            settingButton = new ShuzukoButton();
-            enterButton = new ShuzukoButton();
-            backButton = new ShuzukoButton();
-            homeButton = new ShuzukoButton();
-            underLeftPanel = new ShuzukoPanel();
-            timeLabel = new Label();
-            dayLabel = new Label();
-            Clock = new PictureBox();
-            Calendar = new PictureBox();
-            KingTubeAuto = new Label();
-            logo = new PictureBox();
             mainPanel = new ShuzukoPanel();
             nextButton = new ShuzukoButton();
             shuzukoPanel5 = new ShuzukoPanel();
@@ -59,11 +48,11 @@
             shuzukoPanel1 = new ShuzukoPanel();
             calibrationButton = new ShuzukoButton();
             label1 = new Label();
+            settingButton = new ShuzukoButton();
+            enterButton = new ShuzukoButton();
+            backButton = new ShuzukoButton();
+            homeButton = new ShuzukoButton();
             groundPanel.SuspendLayout();
-            underLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             mainPanel.SuspendLayout();
             shuzukoPanel5.SuspendLayout();
             shuzukoPanel4.SuspendLayout();
@@ -82,7 +71,6 @@
             groundPanel.Controls.Add(enterButton);
             groundPanel.Controls.Add(backButton);
             groundPanel.Controls.Add(homeButton);
-            groundPanel.Controls.Add(underLeftPanel);
             groundPanel.Controls.Add(mainPanel);
             groundPanel.Dock = DockStyle.Fill;
             groundPanel.ForeColor = Color.Black;
@@ -136,170 +124,6 @@
             playButton.TextOffsetX = 80;
             playButton.TextOffsetY = 9;
             playButton.UseVisualStyleBackColor = false;
-            // 
-            // settingButton
-            // 
-            settingButton.BackColor = Color.DarkGray;
-            settingButton.BackgroundColor = Color.DarkGray;
-            settingButton.BorderColor = Color.Transparent;
-            settingButton.BorderRadius = 34;
-            settingButton.BorderSize = 0;
-            settingButton.FlatAppearance.BorderSize = 0;
-            settingButton.FlatStyle = FlatStyle.Flat;
-            settingButton.ForeColor = Color.White;
-            settingButton.Image = Properties.Resources.Setting;
-            settingButton.Location = new Point(1270, 363);
-            settingButton.Name = "settingButton";
-            settingButton.Size = new Size(68, 68);
-            settingButton.TabIndex = 7;
-            settingButton.TextColor = Color.White;
-            settingButton.TextOffsetX = 0;
-            settingButton.TextOffsetY = 0;
-            settingButton.UseVisualStyleBackColor = false;
-            // 
-            // enterButton
-            // 
-            enterButton.BackColor = Color.DarkGray;
-            enterButton.BackgroundColor = Color.DarkGray;
-            enterButton.BorderColor = Color.Transparent;
-            enterButton.BorderRadius = 34;
-            enterButton.BorderSize = 0;
-            enterButton.FlatAppearance.BorderSize = 0;
-            enterButton.FlatStyle = FlatStyle.Flat;
-            enterButton.ForeColor = Color.White;
-            enterButton.Image = Properties.Resources.Enter;
-            enterButton.Location = new Point(1170, 363);
-            enterButton.Name = "enterButton";
-            enterButton.Size = new Size(68, 68);
-            enterButton.TabIndex = 6;
-            enterButton.TextColor = Color.White;
-            enterButton.TextOffsetX = 0;
-            enterButton.TextOffsetY = 0;
-            enterButton.UseVisualStyleBackColor = false;
-            // 
-            // backButton
-            // 
-            backButton.BackColor = Color.White;
-            backButton.BackgroundColor = Color.White;
-            backButton.BorderColor = Color.Transparent;
-            backButton.BorderRadius = 34;
-            backButton.BorderSize = 0;
-            backButton.FlatAppearance.BorderSize = 0;
-            backButton.FlatStyle = FlatStyle.Flat;
-            backButton.ForeColor = Color.White;
-            backButton.Image = Properties.Resources.Left;
-            backButton.Location = new Point(1070, 363);
-            backButton.Name = "backButton";
-            backButton.Size = new Size(68, 68);
-            backButton.TabIndex = 5;
-            backButton.TextColor = Color.White;
-            backButton.TextOffsetX = 0;
-            backButton.TextOffsetY = 0;
-            backButton.UseVisualStyleBackColor = false;
-            backButton.Click += backButton_Click;
-            // 
-            // homeButton
-            // 
-            homeButton.BackColor = Color.White;
-            homeButton.BackgroundColor = Color.White;
-            homeButton.BorderColor = Color.Transparent;
-            homeButton.BorderRadius = 34;
-            homeButton.BorderSize = 0;
-            homeButton.FlatAppearance.BorderSize = 0;
-            homeButton.FlatStyle = FlatStyle.Flat;
-            homeButton.ForeColor = Color.White;
-            homeButton.Image = Properties.Resources.Home;
-            homeButton.Location = new Point(970, 363);
-            homeButton.Name = "homeButton";
-            homeButton.Size = new Size(68, 68);
-            homeButton.TabIndex = 4;
-            homeButton.TextColor = Color.White;
-            homeButton.TextOffsetX = 0;
-            homeButton.TextOffsetY = 0;
-            homeButton.UseVisualStyleBackColor = false;
-            homeButton.Click += homeButton_Click;
-            // 
-            // underLeftPanel
-            // 
-            underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 30;
-            underLeftPanel.Controls.Add(timeLabel);
-            underLeftPanel.Controls.Add(dayLabel);
-            underLeftPanel.Controls.Add(Clock);
-            underLeftPanel.Controls.Add(Calendar);
-            underLeftPanel.Controls.Add(KingTubeAuto);
-            underLeftPanel.Controls.Add(logo);
-            underLeftPanel.ForeColor = Color.Black;
-            underLeftPanel.GradientAngle = 0F;
-            underLeftPanel.GradientBottomColor = Color.White;
-            underLeftPanel.GradientTopColor = Color.White;
-            underLeftPanel.Location = new Point(12, 372);
-            underLeftPanel.Name = "underLeftPanel";
-            underLeftPanel.Size = new Size(938, 58);
-            underLeftPanel.TabIndex = 3;
-            // 
-            // timeLabel
-            // 
-            timeLabel.AutoSize = true;
-            timeLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            timeLabel.ForeColor = Color.FromArgb(45, 48, 129);
-            timeLabel.Location = new Point(763, 14);
-            timeLabel.Name = "timeLabel";
-            timeLabel.Size = new Size(130, 32);
-            timeLabel.TabIndex = 4;
-            timeLabel.Text = "HH:mm:ss";
-            // 
-            // dayLabel
-            // 
-            dayLabel.AutoSize = true;
-            dayLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            dayLabel.ForeColor = Color.FromArgb(45, 48, 129);
-            dayLabel.Location = new Point(538, 14);
-            dayLabel.Name = "dayLabel";
-            dayLabel.Size = new Size(164, 32);
-            dayLabel.TabIndex = 3;
-            dayLabel.Text = "dd/MM/yyyy";
-            // 
-            // Clock
-            // 
-            Clock.Image = Properties.Resources.clock;
-            Clock.Location = new Point(717, 9);
-            Clock.Name = "Clock";
-            Clock.Size = new Size(40, 40);
-            Clock.SizeMode = PictureBoxSizeMode.StretchImage;
-            Clock.TabIndex = 3;
-            Clock.TabStop = false;
-            // 
-            // Calendar
-            // 
-            Calendar.Image = Properties.Resources.Calendar;
-            Calendar.Location = new Point(495, 9);
-            Calendar.Name = "Calendar";
-            Calendar.Size = new Size(37, 40);
-            Calendar.SizeMode = PictureBoxSizeMode.StretchImage;
-            Calendar.TabIndex = 2;
-            Calendar.TabStop = false;
-            // 
-            // KingTubeAuto
-            // 
-            KingTubeAuto.AutoSize = true;
-            KingTubeAuto.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            KingTubeAuto.ForeColor = Color.FromArgb(45, 48, 129);
-            KingTubeAuto.Location = new Point(205, 9);
-            KingTubeAuto.Name = "KingTubeAuto";
-            KingTubeAuto.Size = new Size(201, 37);
-            KingTubeAuto.TabIndex = 1;
-            KingTubeAuto.Text = "KingTubeAuto";
-            // 
-            // logo
-            // 
-            logo.Image = Properties.Resources.KingLab;
-            logo.Location = new Point(17, 4);
-            logo.Name = "logo";
-            logo.Size = new Size(143, 50);
-            logo.SizeMode = PictureBoxSizeMode.StretchImage;
-            logo.TabIndex = 0;
-            logo.TabStop = false;
             // 
             // mainPanel
             // 
@@ -580,6 +404,88 @@
             label1.TabIndex = 1;
             label1.Text = "CALIBRATION";
             // 
+            // settingButton
+            // 
+            settingButton.BackColor = Color.DarkGray;
+            settingButton.BackgroundColor = Color.DarkGray;
+            settingButton.BorderColor = Color.Transparent;
+            settingButton.BorderRadius = 34;
+            settingButton.BorderSize = 0;
+            settingButton.FlatAppearance.BorderSize = 0;
+            settingButton.FlatStyle = FlatStyle.Flat;
+            settingButton.ForeColor = Color.White;
+            settingButton.Image = Properties.Resources.Setting;
+            settingButton.Location = new Point(1270, 363);
+            settingButton.Name = "settingButton";
+            settingButton.Size = new Size(68, 68);
+            settingButton.TabIndex = 7;
+            settingButton.TextColor = Color.White;
+            settingButton.TextOffsetX = 0;
+            settingButton.TextOffsetY = 0;
+            settingButton.UseVisualStyleBackColor = false;
+            // 
+            // enterButton
+            // 
+            enterButton.BackColor = Color.DarkGray;
+            enterButton.BackgroundColor = Color.DarkGray;
+            enterButton.BorderColor = Color.Transparent;
+            enterButton.BorderRadius = 34;
+            enterButton.BorderSize = 0;
+            enterButton.FlatAppearance.BorderSize = 0;
+            enterButton.FlatStyle = FlatStyle.Flat;
+            enterButton.ForeColor = Color.White;
+            enterButton.Image = Properties.Resources.Enter;
+            enterButton.Location = new Point(1170, 363);
+            enterButton.Name = "enterButton";
+            enterButton.Size = new Size(68, 68);
+            enterButton.TabIndex = 6;
+            enterButton.TextColor = Color.White;
+            enterButton.TextOffsetX = 0;
+            enterButton.TextOffsetY = 0;
+            enterButton.UseVisualStyleBackColor = false;
+            // 
+            // backButton
+            // 
+            backButton.BackColor = Color.White;
+            backButton.BackgroundColor = Color.White;
+            backButton.BorderColor = Color.Transparent;
+            backButton.BorderRadius = 34;
+            backButton.BorderSize = 0;
+            backButton.FlatAppearance.BorderSize = 0;
+            backButton.FlatStyle = FlatStyle.Flat;
+            backButton.ForeColor = Color.White;
+            backButton.Image = Properties.Resources.Left;
+            backButton.Location = new Point(1070, 363);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(68, 68);
+            backButton.TabIndex = 5;
+            backButton.TextColor = Color.White;
+            backButton.TextOffsetX = 0;
+            backButton.TextOffsetY = 0;
+            backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
+            // 
+            // homeButton
+            // 
+            homeButton.BackColor = Color.White;
+            homeButton.BackgroundColor = Color.White;
+            homeButton.BorderColor = Color.Transparent;
+            homeButton.BorderRadius = 34;
+            homeButton.BorderSize = 0;
+            homeButton.FlatAppearance.BorderSize = 0;
+            homeButton.FlatStyle = FlatStyle.Flat;
+            homeButton.ForeColor = Color.White;
+            homeButton.Image = Properties.Resources.Home;
+            homeButton.Location = new Point(970, 363);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(68, 68);
+            homeButton.TabIndex = 4;
+            homeButton.TextColor = Color.White;
+            homeButton.TextOffsetX = 0;
+            homeButton.TextOffsetY = 0;
+            homeButton.UseVisualStyleBackColor = false;
+            homeButton.Click += homeButton_Click;
+            // 
             // Setting
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -588,13 +494,7 @@
             Controls.Add(groundPanel);
             Name = "Setting";
             Text = "Form1";
-            Load += Setting_Load;
             groundPanel.ResumeLayout(false);
-            underLeftPanel.ResumeLayout(false);
-            underLeftPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             mainPanel.ResumeLayout(false);
             shuzukoPanel5.ResumeLayout(false);
             shuzukoPanel5.PerformLayout();
@@ -612,17 +512,8 @@
         #endregion
         private ShuzukoPanel groundPanel;
         private ShuzukoPanel mainPanel;
-        private ShuzukoPanel underLeftPanel;
-        private Label KingTubeAuto;
-        private PictureBox logo;
-        private PictureBox Clock;
-        private PictureBox Calendar;
-        private ShuzukoButton backButton;
-        private ShuzukoButton homeButton;
         private ShuzukoButton vectorButton;
         private ShuzukoButton playButton;
-        private ShuzukoButton settingButton;
-        private ShuzukoButton enterButton;
         private ShuzukoPanel shuzukoPanel1;
         private ShuzukoButton calibrationButton;
         private ShuzukoPanel shuzukoPanel5;
@@ -639,7 +530,9 @@
         private Label label3;
         private Label label2;
         private ShuzukoButton nextButton;
-        private Label dayLabel;
-        private Label timeLabel;
+        private ShuzukoButton settingButton;
+        private ShuzukoButton enterButton;
+        private ShuzukoButton backButton;
+        private ShuzukoButton homeButton;
     }
 }

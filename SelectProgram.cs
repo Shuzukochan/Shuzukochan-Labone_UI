@@ -19,90 +19,69 @@
             state = stateMode;
         }
 
-        private void SelectProgram_Load(object sender, EventArgs e)
-        {
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                this.Refresh();
-            });
-            labelProgramCur.Visible = false;
-        }
-
         private void homeButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Begin(), groundPanel);
-            // Ẩn các panel
-            leftPanel.Visible = false;
             rightPanel.Visible = false;
         }
 
         private void program1Button_Click(object sender, EventArgs e)
         {
             isProgram1ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 1";
         }
 
         private void program2Button_Click(object sender, EventArgs e)
         {
             isProgram2ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 2";
         }
 
         private void program3Button_Click(object sender, EventArgs e)
         {
             isProgram3ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 3";
         }
 
         private void program4Button_Click(object sender, EventArgs e)
         {
             isProgram4ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 4";
         }
 
         private void program5Button_Click(object sender, EventArgs e)
         {
             isProgram5ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 5";
         }
 
         private void program6Button_Click(object sender, EventArgs e)
         {
             isProgram6ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 6";
         }
 
         private void program7Button_Click(object sender, EventArgs e)
         {
             isProgram7ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 7";
         }
 
         private void program8Button_Click(object sender, EventArgs e)
         {
             isProgram8ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 8";
         }
 
         private void program9Button_Click(object sender, EventArgs e)
         {
             isProgram9ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Text = "Program 9";
         }
 
         private void program10Button_Click(object sender, EventArgs e)
         {
             isProgram10ButtonClicked = true;
-            labelProgramCur.Visible = true;
             labelProgramCur.Location = new Point(388, 6);
             labelProgramCur.Text = "Program 10";
         }
@@ -130,12 +109,7 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
                 isProgram1ButtonClicked = false;
             }
 
@@ -160,13 +134,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram2ButtonClicked = false;
             }
 
             if (isProgram3ButtonClicked)
@@ -190,13 +159,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram3ButtonClicked = false;
             }
 
             if (isProgram4ButtonClicked)
@@ -220,13 +184,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram4ButtonClicked = false;
             }
 
             if (isProgram5ButtonClicked)
@@ -250,13 +209,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram5ButtonClicked = false;
             }
 
             if (isProgram6ButtonClicked)
@@ -280,13 +234,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram6ButtonClicked = false;
             }
 
             if (isProgram7ButtonClicked)
@@ -310,13 +259,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram7ButtonClicked = false;
             }
 
             if (isProgram8ButtonClicked)
@@ -340,13 +284,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram8ButtonClicked = false;
             }
 
             if (isProgram9ButtonClicked)
@@ -370,13 +309,8 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram9ButtonClicked = false;
             }
 
             if (isProgram10ButtonClicked)
@@ -400,20 +334,14 @@
                     }
 
                 }
-
-                // Ẩn các panel không cần thiết
-                leftPanel.Visible = false;
                 rightPanel.Visible = false;
-
-                // Reset cờ sau khi hoàn thành
-                isProgram1ButtonClicked = false;
+                isProgram10ButtonClicked = false;
             }
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Setting(), groundPanel);
-            leftPanel.Visible = false;
             rightPanel.Visible = false;
         }
     }

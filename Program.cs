@@ -13,6 +13,19 @@ namespace Labone_UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
+            try
+            {
+                if (!UartManager.Instance.SerialPort.IsOpen)
+                {
+                    UartManager.Instance.Open();
+                }
+
+                MessageBox.Show("UART port opened successfully.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unable to open UART port: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             Application.Run(new Begin());
         }
     }

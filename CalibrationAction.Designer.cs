@@ -1,6 +1,6 @@
 ﻿namespace Labone_UI
 {
-    partial class CelibrationAction
+    partial class CalibrationAction
     {
         /// <summary>
         /// Required designer variable.

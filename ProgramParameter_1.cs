@@ -24,7 +24,7 @@ namespace Labone_UI
 
         private void calibDisButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CelibrationAction(programNameLabel.Text), groundPanel);
+            OpenChildForm(new CalibrationAction(programNameLabel.Text), groundPanel);
         }
 
         private void calibPosButton_Click(object sender, EventArgs e)

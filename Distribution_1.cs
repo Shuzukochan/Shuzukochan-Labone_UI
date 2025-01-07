@@ -26,13 +26,8 @@ namespace Labone_UI
         {
             for (int i = 1; i <= 96; i++)
             {
-                // Tạo tên của nút dựa trên chỉ số
                 string buttonName = $"shuzukoButton{i}";
-
-                // Tìm control theo tên
                 Control[] foundControls = this.Controls.Find(buttonName, true);
-
-                // Nếu tìm thấy nút, thay đổi màu nền
                 if (foundControls.Length > 0 && foundControls[0] is Button button)
                 {
                     button.BackColor = Color.LightGray;
@@ -45,13 +40,8 @@ namespace Labone_UI
         {
             for (int i = 1; i <= 96; i++)
             {
-                // Tạo tên của nút dựa trên chỉ số
                 string buttonName = $"shuzukoButton{i}";
-
-                // Tìm control theo tên
                 Control[] foundControls = this.Controls.Find(buttonName, true);
-
-                // Nếu tìm thấy nút, thay đổi màu nền
                 if (foundControls.Length > 0 && foundControls[0] is Button button)
                 {
                     button.BackColor = Color.Red;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labone_UI
 {
-    public partial class CelibrationAction : BaseForm
+    public partial class CalibrationAction : BaseForm
     {
-        public CelibrationAction(string programName)
+        public CalibrationAction(string programName)
         {
             InitializeComponent();
             programNameLabel.Text = programName;

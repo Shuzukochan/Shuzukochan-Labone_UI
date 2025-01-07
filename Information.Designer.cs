@@ -240,11 +240,6 @@
             enterButton = new ShuzukoButton();
             backButton = new ShuzukoButton();
             homeButton = new ShuzukoButton();
-            underLeftPanel = new ShuzukoPanel();
-            Clock = new PictureBox();
-            Calendar = new PictureBox();
-            KingTubeAuto = new Label();
-            logo = new PictureBox();
             midPanel = new ShuzukoPanel();
             label13 = new Label();
             label12 = new Label();
@@ -264,6 +259,11 @@
             shuzukoPanel11 = new ShuzukoPanel();
             label15 = new Label();
             shuzukoPanel7 = new ShuzukoPanel();
+            antidropRxLabel = new Label();
+            tubeIDRxLabel = new Label();
+            pumpSpeedRxLabel = new Label();
+            volumeRxLabel = new Label();
+            quanityRxLabel = new Label();
             programNameLabel1 = new Label();
             label7 = new Label();
             label5 = new Label();
@@ -277,10 +277,6 @@
             shuzukoPanel6.SuspendLayout();
             shuzukoPanel5.SuspendLayout();
             groundPanel.SuspendLayout();
-            underLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             midPanel.SuspendLayout();
             shuzukoPanel8.SuspendLayout();
             shuzukoPanel11.SuspendLayout();
@@ -3195,7 +3191,6 @@
             groundPanel.Controls.Add(enterButton);
             groundPanel.Controls.Add(backButton);
             groundPanel.Controls.Add(homeButton);
-            groundPanel.Controls.Add(underLeftPanel);
             groundPanel.Dock = DockStyle.Fill;
             groundPanel.ForeColor = Color.Black;
             groundPanel.GradientAngle = 90F;
@@ -3331,64 +3326,6 @@
             homeButton.TextOffsetY = 0;
             homeButton.UseVisualStyleBackColor = false;
             homeButton.Click += homeButton_Click;
-            // 
-            // underLeftPanel
-            // 
-            underLeftPanel.BackColor = Color.White;
-            underLeftPanel.BorderRadius = 15;
-            underLeftPanel.Controls.Add(Clock);
-            underLeftPanel.Controls.Add(Calendar);
-            underLeftPanel.Controls.Add(KingTubeAuto);
-            underLeftPanel.Controls.Add(logo);
-            underLeftPanel.ForeColor = Color.Black;
-            underLeftPanel.GradientAngle = 0F;
-            underLeftPanel.GradientBottomColor = Color.White;
-            underLeftPanel.GradientTopColor = Color.White;
-            underLeftPanel.Location = new Point(12, 372);
-            underLeftPanel.Name = "underLeftPanel";
-            underLeftPanel.Size = new Size(938, 58);
-            underLeftPanel.TabIndex = 10;
-            // 
-            // Clock
-            // 
-            Clock.Image = Properties.Resources.clock;
-            Clock.Location = new Point(717, 9);
-            Clock.Name = "Clock";
-            Clock.Size = new Size(40, 40);
-            Clock.SizeMode = PictureBoxSizeMode.StretchImage;
-            Clock.TabIndex = 3;
-            Clock.TabStop = false;
-            // 
-            // Calendar
-            // 
-            Calendar.Image = Properties.Resources.Calendar;
-            Calendar.Location = new Point(495, 9);
-            Calendar.Name = "Calendar";
-            Calendar.Size = new Size(37, 40);
-            Calendar.SizeMode = PictureBoxSizeMode.StretchImage;
-            Calendar.TabIndex = 2;
-            Calendar.TabStop = false;
-            // 
-            // KingTubeAuto
-            // 
-            KingTubeAuto.AutoSize = true;
-            KingTubeAuto.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            KingTubeAuto.ForeColor = Color.FromArgb(45, 48, 129);
-            KingTubeAuto.Location = new Point(205, 9);
-            KingTubeAuto.Name = "KingTubeAuto";
-            KingTubeAuto.Size = new Size(201, 37);
-            KingTubeAuto.TabIndex = 1;
-            KingTubeAuto.Text = "KingTubeAuto";
-            // 
-            // logo
-            // 
-            logo.Image = Properties.Resources.KingLab;
-            logo.Location = new Point(17, 4);
-            logo.Name = "logo";
-            logo.Size = new Size(143, 50);
-            logo.SizeMode = PictureBoxSizeMode.StretchImage;
-            logo.TabIndex = 0;
-            logo.TabStop = false;
             // 
             // midPanel
             // 
@@ -3661,6 +3598,11 @@
             // 
             shuzukoPanel7.BackColor = Color.White;
             shuzukoPanel7.BorderRadius = 15;
+            shuzukoPanel7.Controls.Add(antidropRxLabel);
+            shuzukoPanel7.Controls.Add(tubeIDRxLabel);
+            shuzukoPanel7.Controls.Add(pumpSpeedRxLabel);
+            shuzukoPanel7.Controls.Add(volumeRxLabel);
+            shuzukoPanel7.Controls.Add(quanityRxLabel);
             shuzukoPanel7.Controls.Add(programNameLabel1);
             shuzukoPanel7.Controls.Add(label7);
             shuzukoPanel7.Controls.Add(label5);
@@ -3675,6 +3617,66 @@
             shuzukoPanel7.Name = "shuzukoPanel7";
             shuzukoPanel7.Size = new Size(234, 254);
             shuzukoPanel7.TabIndex = 0;
+            // 
+            // antidropRxLabel
+            // 
+            antidropRxLabel.AutoSize = true;
+            antidropRxLabel.BackColor = Color.Transparent;
+            antidropRxLabel.Font = new Font("Segoe UI", 15F);
+            antidropRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            antidropRxLabel.Location = new Point(170, 201);
+            antidropRxLabel.Name = "antidropRxLabel";
+            antidropRxLabel.Size = new Size(22, 28);
+            antidropRxLabel.TabIndex = 4;
+            antidropRxLabel.Text = "  ";
+            // 
+            // tubeIDRxLabel
+            // 
+            tubeIDRxLabel.AutoSize = true;
+            tubeIDRxLabel.BackColor = Color.Transparent;
+            tubeIDRxLabel.Font = new Font("Segoe UI", 15F);
+            tubeIDRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            tubeIDRxLabel.Location = new Point(170, 173);
+            tubeIDRxLabel.Name = "tubeIDRxLabel";
+            tubeIDRxLabel.Size = new Size(22, 28);
+            tubeIDRxLabel.TabIndex = 6;
+            tubeIDRxLabel.Text = "  ";
+            // 
+            // pumpSpeedRxLabel
+            // 
+            pumpSpeedRxLabel.AutoSize = true;
+            pumpSpeedRxLabel.BackColor = Color.Transparent;
+            pumpSpeedRxLabel.Font = new Font("Segoe UI", 15F);
+            pumpSpeedRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            pumpSpeedRxLabel.Location = new Point(170, 143);
+            pumpSpeedRxLabel.Name = "pumpSpeedRxLabel";
+            pumpSpeedRxLabel.Size = new Size(22, 28);
+            pumpSpeedRxLabel.TabIndex = 7;
+            pumpSpeedRxLabel.Text = "  ";
+            // 
+            // volumeRxLabel
+            // 
+            volumeRxLabel.AutoSize = true;
+            volumeRxLabel.BackColor = Color.Transparent;
+            volumeRxLabel.Font = new Font("Segoe UI", 15F);
+            volumeRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            volumeRxLabel.Location = new Point(170, 113);
+            volumeRxLabel.Name = "volumeRxLabel";
+            volumeRxLabel.Size = new Size(27, 28);
+            volumeRxLabel.TabIndex = 8;
+            volumeRxLabel.Text = "   ";
+            // 
+            // quanityRxLabel
+            // 
+            quanityRxLabel.AutoSize = true;
+            quanityRxLabel.BackColor = Color.Transparent;
+            quanityRxLabel.Font = new Font("Segoe UI", 15F);
+            quanityRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            quanityRxLabel.Location = new Point(170, 85);
+            quanityRxLabel.Name = "quanityRxLabel";
+            quanityRxLabel.Size = new Size(17, 28);
+            quanityRxLabel.TabIndex = 9;
+            quanityRxLabel.Text = " ";
             // 
             // programNameLabel1
             // 
@@ -3771,11 +3773,6 @@
             shuzukoPanel6.PerformLayout();
             shuzukoPanel5.ResumeLayout(false);
             groundPanel.ResumeLayout(false);
-            underLeftPanel.ResumeLayout(false);
-            underLeftPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Clock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Calendar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             midPanel.ResumeLayout(false);
             midPanel.PerformLayout();
             shuzukoPanel8.ResumeLayout(false);
@@ -3805,11 +3802,6 @@
         private ShuzukoButton enterButton;
         private ShuzukoButton backButton;
         private ShuzukoButton homeButton;
-        private ShuzukoPanel underLeftPanel;
-        private PictureBox Clock;
-        private PictureBox Calendar;
-        private Label KingTubeAuto;
-        private PictureBox logo;
         private ShuzukoPanel shuzukoPanel9;
         private ShuzukoPanel shuzukoPanel6;
         private ShuzukoPanel shuzukoPanel5;
@@ -4031,5 +4023,10 @@
         private ShuzukoPanel shuzukoPanel112;
         private ShuzukoPanel shuzukoPanel111;
         private ShuzukoPanel shuzukoPanel206;
+        private Label antidropRxLabel;
+        private Label tubeIDRxLabel;
+        private Label pumpSpeedRxLabel;
+        private Label volumeRxLabel;
+        private Label quanityRxLabel;
     }
 }
