@@ -16,7 +16,7 @@ namespace Labone_UI
         {
             SerialPort = new SerialPort
             {
-                PortName = "COM16",
+                PortName = "COM12",
                 BaudRate = 115200,
                 Parity = Parity.None,
                 DataBits = 8,

@@ -90,14 +90,14 @@
             tubeIDLabel = new Label();
             pumpSpeedLabel = new Label();
             volumeLabel = new Label();
+            antidropRxLabel = new Label();
+            speedXYRxLabel = new Label();
+            tubeIDRxLabel = new Label();
+            pumpSpeedRxLabel = new Label();
+            volumeRxLabel = new Label();
+            quanityRxLabel = new Label();
             quanityLabel = new Label();
             label1 = new Label();
-            quanityRxLabel = new Label();
-            volumeRxLabel = new Label();
-            pumpSpeedRxLabel = new Label();
-            tubeIDRxLabel = new Label();
-            speedXYRxLabel = new Label();
-            antidropRxLabel = new Label();
             leftPanel.SuspendLayout();
             shuzukoPanel1.SuspendLayout();
             shuzukoPanel6.SuspendLayout();
@@ -305,7 +305,7 @@
             groundPanel.Controls.Add(underLeftPanel);
             groundPanel.Dock = DockStyle.Fill;
             groundPanel.ForeColor = Color.Black;
-            groundPanel.GradientAngle = 90F;
+            groundPanel.GradientAngle = 180F;
             groundPanel.GradientBottomColor = Color.FromArgb(20, 116, 252);
             groundPanel.GradientTopColor = Color.FromArgb(69, 198, 255);
             groundPanel.Location = new Point(0, 0);
@@ -934,9 +934,9 @@
             programNameLabel.ForeColor = Color.FromArgb(23, 55, 114);
             programNameLabel.Location = new Point(69, 6);
             programNameLabel.Name = "programNameLabel";
-            programNameLabel.Size = new Size(135, 32);
+            programNameLabel.Size = new Size(21, 32);
             programNameLabel.TabIndex = 2;
-            programNameLabel.Text = "Program 1";
+            programNameLabel.Text = " ";
             programNameLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // antidropLabel
@@ -999,6 +999,78 @@
             volumeLabel.TabIndex = 1;
             volumeLabel.Text = "Volume (mL) :";
             // 
+            // antidropRxLabel
+            // 
+            antidropRxLabel.AutoSize = true;
+            antidropRxLabel.BackColor = Color.Transparent;
+            antidropRxLabel.Font = new Font("Segoe UI", 15F);
+            antidropRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            antidropRxLabel.Location = new Point(197, 216);
+            antidropRxLabel.Name = "antidropRxLabel";
+            antidropRxLabel.Size = new Size(22, 28);
+            antidropRxLabel.TabIndex = 1;
+            antidropRxLabel.Text = "  ";
+            // 
+            // speedXYRxLabel
+            // 
+            speedXYRxLabel.AutoSize = true;
+            speedXYRxLabel.BackColor = Color.Transparent;
+            speedXYRxLabel.Font = new Font("Segoe UI", 15F);
+            speedXYRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            speedXYRxLabel.Location = new Point(197, 186);
+            speedXYRxLabel.Name = "speedXYRxLabel";
+            speedXYRxLabel.Size = new Size(22, 28);
+            speedXYRxLabel.TabIndex = 1;
+            speedXYRxLabel.Text = "  ";
+            // 
+            // tubeIDRxLabel
+            // 
+            tubeIDRxLabel.AutoSize = true;
+            tubeIDRxLabel.BackColor = Color.Transparent;
+            tubeIDRxLabel.Font = new Font("Segoe UI", 15F);
+            tubeIDRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            tubeIDRxLabel.Location = new Point(197, 156);
+            tubeIDRxLabel.Name = "tubeIDRxLabel";
+            tubeIDRxLabel.Size = new Size(22, 28);
+            tubeIDRxLabel.TabIndex = 1;
+            tubeIDRxLabel.Text = "  ";
+            // 
+            // pumpSpeedRxLabel
+            // 
+            pumpSpeedRxLabel.AutoSize = true;
+            pumpSpeedRxLabel.BackColor = Color.Transparent;
+            pumpSpeedRxLabel.Font = new Font("Segoe UI", 15F);
+            pumpSpeedRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            pumpSpeedRxLabel.Location = new Point(197, 126);
+            pumpSpeedRxLabel.Name = "pumpSpeedRxLabel";
+            pumpSpeedRxLabel.Size = new Size(22, 28);
+            pumpSpeedRxLabel.TabIndex = 1;
+            pumpSpeedRxLabel.Text = "  ";
+            // 
+            // volumeRxLabel
+            // 
+            volumeRxLabel.AutoSize = true;
+            volumeRxLabel.BackColor = Color.Transparent;
+            volumeRxLabel.Font = new Font("Segoe UI", 15F);
+            volumeRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            volumeRxLabel.Location = new Point(197, 96);
+            volumeRxLabel.Name = "volumeRxLabel";
+            volumeRxLabel.Size = new Size(27, 28);
+            volumeRxLabel.TabIndex = 1;
+            volumeRxLabel.Text = "   ";
+            // 
+            // quanityRxLabel
+            // 
+            quanityRxLabel.AutoSize = true;
+            quanityRxLabel.BackColor = Color.Transparent;
+            quanityRxLabel.Font = new Font("Segoe UI", 15F);
+            quanityRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
+            quanityRxLabel.Location = new Point(197, 68);
+            quanityRxLabel.Name = "quanityRxLabel";
+            quanityRxLabel.Size = new Size(17, 28);
+            quanityRxLabel.TabIndex = 1;
+            quanityRxLabel.Text = " ";
+            // 
             // quanityLabel
             // 
             quanityLabel.AutoSize = true;
@@ -1024,78 +1096,6 @@
             label1.TabIndex = 2;
             label1.Text = "INFORMATION";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // quanityRxLabel
-            // 
-            quanityRxLabel.AutoSize = true;
-            quanityRxLabel.BackColor = Color.Transparent;
-            quanityRxLabel.Font = new Font("Segoe UI", 15F);
-            quanityRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            quanityRxLabel.Location = new Point(197, 68);
-            quanityRxLabel.Name = "quanityRxLabel";
-            quanityRxLabel.Size = new Size(17, 28);
-            quanityRxLabel.TabIndex = 1;
-            quanityRxLabel.Text = " ";
-            // 
-            // volumeRxLabel
-            // 
-            volumeRxLabel.AutoSize = true;
-            volumeRxLabel.BackColor = Color.Transparent;
-            volumeRxLabel.Font = new Font("Segoe UI", 15F);
-            volumeRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            volumeRxLabel.Location = new Point(197, 96);
-            volumeRxLabel.Name = "volumeRxLabel";
-            volumeRxLabel.Size = new Size(27, 28);
-            volumeRxLabel.TabIndex = 1;
-            volumeRxLabel.Text = "   ";
-            // 
-            // pumpSpeedRxLabel
-            // 
-            pumpSpeedRxLabel.AutoSize = true;
-            pumpSpeedRxLabel.BackColor = Color.Transparent;
-            pumpSpeedRxLabel.Font = new Font("Segoe UI", 15F);
-            pumpSpeedRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            pumpSpeedRxLabel.Location = new Point(197, 126);
-            pumpSpeedRxLabel.Name = "pumpSpeedRxLabel";
-            pumpSpeedRxLabel.Size = new Size(22, 28);
-            pumpSpeedRxLabel.TabIndex = 1;
-            pumpSpeedRxLabel.Text = "  ";
-            // 
-            // tubeIDRxLabel
-            // 
-            tubeIDRxLabel.AutoSize = true;
-            tubeIDRxLabel.BackColor = Color.Transparent;
-            tubeIDRxLabel.Font = new Font("Segoe UI", 15F);
-            tubeIDRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            tubeIDRxLabel.Location = new Point(197, 156);
-            tubeIDRxLabel.Name = "tubeIDRxLabel";
-            tubeIDRxLabel.Size = new Size(22, 28);
-            tubeIDRxLabel.TabIndex = 1;
-            tubeIDRxLabel.Text = "  ";
-            // 
-            // speedXYRxLabel
-            // 
-            speedXYRxLabel.AutoSize = true;
-            speedXYRxLabel.BackColor = Color.Transparent;
-            speedXYRxLabel.Font = new Font("Segoe UI", 15F);
-            speedXYRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            speedXYRxLabel.Location = new Point(197, 186);
-            speedXYRxLabel.Name = "speedXYRxLabel";
-            speedXYRxLabel.Size = new Size(22, 28);
-            speedXYRxLabel.TabIndex = 1;
-            speedXYRxLabel.Text = "  ";
-            // 
-            // antidropRxLabel
-            // 
-            antidropRxLabel.AutoSize = true;
-            antidropRxLabel.BackColor = Color.Transparent;
-            antidropRxLabel.Font = new Font("Segoe UI", 15F);
-            antidropRxLabel.ForeColor = Color.FromArgb(23, 55, 114);
-            antidropRxLabel.Location = new Point(197, 216);
-            antidropRxLabel.Name = "antidropRxLabel";
-            antidropRxLabel.Size = new Size(22, 28);
-            antidropRxLabel.TabIndex = 1;
-            antidropRxLabel.Text = "  ";
             // 
             // Begin
             // 

@@ -45,6 +45,7 @@ namespace Labone_UI
         private void backButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Begin(), groundPanel);
+            mainPanel.Visible = false;
         }
     }
 }
